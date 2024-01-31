@@ -23,6 +23,17 @@ services:
             - sail
         depends_on:
             - mysql
+    phpmyadmin:
+        image: 'phpmyadmin:latest'
+        ports:
+            - '8081:80'
+        networks:
+            - sail
+        environment:
+            - PMA_HOST=mysql
+            - PMA_PORT=3306
+        depends_on:
+            - mysql
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
