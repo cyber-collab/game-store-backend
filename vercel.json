@@ -12,7 +12,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://game-store.com",
-        "APP_KEY": "",
+        "APP_KEY": "base64:8wNvftTdOJdXZH59KPTbMEhzPN0frRzFvF3fct3QsxM=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
