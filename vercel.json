@@ -24,12 +24,5 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    },
-
-    "build": {
-        "commands": [
-            { "use": "vercel-php/8.0" },
-            { "command": "composer install --no-dev" }
-        ]
     }
 }
