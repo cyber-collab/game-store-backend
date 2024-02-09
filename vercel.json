@@ -2,7 +2,7 @@
     "version": 2,
       "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": { "runtime": "vercel-php@0.5.2" }
     },
     "routes": [{
         "src": "/(.*)",
@@ -24,5 +24,12 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
+    },
+
+    "build": {
+        "commands": [
+            { "use": "vercel-php/8.0" },
+            { "command": "composer install --no-dev" }
+        ]
     }
 }
