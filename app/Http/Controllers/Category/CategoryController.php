@@ -3,28 +3,35 @@
 namespace App\Http\Controllers\Category;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CategoryResource;
 use App\Models\Category\Category;
 
 use http\Env\Response;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\View\View;
 
 class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): View
     {
         $categories = Category::latest()->paginate(10);
         $data['categories'] = $categories;
-        return   view('category.index', compact('categories'));
+        return  view('category.index', compact('categories'));
+    }
+
+    public function categoriesToJson(): AnonymousResourceCollection
+    {
+        return CategoryResource::collection(Category::all());
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(): View
     {
         return view('category.create');
     }

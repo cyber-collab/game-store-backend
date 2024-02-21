@@ -1,8 +1,8 @@
 <?php
 
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Category\CategoryController;
 
 /*
@@ -20,8 +20,8 @@ Route::get('/', function () {
     return view('main.index');
 });
 //
-Route::resource('categories', App\Http\Controllers\Category\CategoryController::class);
-//Route::resource('product', App\Http\Controllers\Product\ProdyctController::class);
+Route::resource('categories', CategoryController::class);
+//Route::resource('product', ProdyctController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
