@@ -1,7 +1,9 @@
 <?php
 
+
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Category\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main.index');
 });
+//
+Route::resource('categories', App\Http\Controllers\Category\CategoryController::class);
+//Route::resource('product', App\Http\Controllers\Product\ProdyctController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
