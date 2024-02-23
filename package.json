@@ -19,6 +19,7 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
-        "@vercel/postgres": "^0.7.2"
+        "@vercel/postgres": "^0.7.2",
+        "swagger-ui-dist": "^5.11.8"
     }
 }
