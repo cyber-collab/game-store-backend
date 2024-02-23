@@ -21,4 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('home-hero', HomeBlockHeroController::class);
-Route::apiResource('categories', CategoryController::class);
+Route::apiResource('api-categories', CategoryController::class);
