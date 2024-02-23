@@ -13,7 +13,6 @@ echo "Running migrations..."
 php artisan migrate --force
 
 echo "Update swagger json..."
-php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
 php artisan l5-swagger:generate
 
 echo "Running npm install..."
