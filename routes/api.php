@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Category\CategoryController;
+use App\Http\Controllers\Api\CategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeBlockHeroController;
@@ -21,5 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('home-hero', HomeBlockHeroController::class);
-
-Route::get('/json/categories', [CategoryController::class, 'categoriesToJson']);
+Route::apiResource('categories', CategoryController::class);
