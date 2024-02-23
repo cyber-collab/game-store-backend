@@ -22,9 +22,16 @@ class CategoryRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|max:255',
-            'slug' => 'required|max:255|unique:categories,slug,' . $this->category->id,
-            'status' => 'required|in:0,1',
+            'name' => ['required', 'string', 'max:255'],
+            'slug' =>  ['required', 'string', 'max:255'],
+            'status' => ['required', 'int'],
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'The "Name" field is required.',
         ];
     }
 }

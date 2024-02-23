@@ -3,16 +3,23 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CategoryRequest;
 use App\Http\Resources\CategoryResource;
 use App\Models\Category\Category;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-use Illuminate\View\View;
+
 
 class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
+     /**
+     * @OA\Get(
+     *     path="/api/categories",
+     *     summary="Get a list of categories",
+     *     tags={"Categories"},
+     *     @OA\Response(response="200", description="Successful operation"),
+     *     @OA\Response(response="401", description="Unauthorized")
+     * )
      */
     public function index(): AnonymousResourceCollection
     {
@@ -20,53 +27,124 @@ class CategoryController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * @OA\Post(
+     *     path="/api/categories",
+     *     summary="Add a new category",
+     *     tags={"Categories"},
+     *     @OA\Response(response="201", description="Category created"),
+     *     @OA\Response(response="401", description="Unauthorized"),
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             @OA\Property(property="id", type="string", example="1"),
+     *             @OA\Property(property="name", type="string", example="Lewis"),
+     *             @OA\Property(property="slug", type="string", example="https://example.com/"),
+     *             @OA\Property(property="status", type="int", example="1"),
+     *         )
+     *     )
+     * )
      */
-    public function create(): View
+    public function store(CategoryRequest $request)
     {
-        return view('category.create');
+        $category = Category::create($request->validated());
+
+        return new CategoryResource($category);
     }
 
     /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-       //
-    }
-
-    /**
-     * Display the specified resource.
+     * @OA\Get(
+     *     path="/api/categories/{id}",
+     *     summary="Get a category",
+     *     tags={"Categories"},
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="ID of the category",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="string"
+     *         )
+     *     ),
+     *     @OA\Response(response="200", description="Successful operation"),
+     *     @OA\Response(response="401", description="Unauthorized"),
+     *     @OA\Response(response="404", description="Category not found")
+     * )
      */
     public function show(Category $category)
     {
-        //
+        return new CategoryResource($category);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Category $category)
-    {
-       //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
+   /**
+     * Update information for a specific category.
+     *
+     * @OA\Put(
+     *      path="/api/category/{id}",
+     *      tags={"Categories"},
+     *      summary="Update a category",
+     *      description="Update information for a specific student",
+     *      @OA\Parameter(
+     *          name="id",
+     *          in="path",
+     *          required=true,
+     *          description="The ID of the category",
+     *          @OA\Schema(
+     *              type="integer",
+     *          )
+     *      ),
+     *      @OA\RequestBody(
+     *          required=true,
+     *          @OA\MediaType(
+     *              mediaType="application/json",
+     *              @OA\Schema(
+     *                  @OA\Property(property="name", type="string", maxLength=256),
+     *                  @OA\Property(property="slug", type="string", maxLength=255),
+     *                  @OA\Property(property="status", type="int", maxLength=10),
+     *              )
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Student updated successfully",
+     *      ),
+     *      @OA\Response(
+     *          response=404,
+     *          description="Student not found",
+     *      ),
+     * )
+     **/
     public function update(Request $request, Category $category)
     {
+        $category->update($request->validated());
 
-       //
+        return new CategoryResource($category);
     }
 
 
     /**
-     * Remove the specified resource from storage.
+     * @OA\Delete(
+     *     path="/api/categories/{id}",
+     *     summary="Delete a category",
+     *     tags={"Categories"},
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="id of the category",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="string"
+     *         )
+     *     ),
+     *     @OA\Response(response="200", description="Category deleted"),
+     *     @OA\Response(response="401", description="Unauthorized"),
+     *     @OA\Response(response="404", description="Category not found")
+     * )
      */
     public function destroy(Category $category)
     {
-       //
+        $category->delete();
+
+        return response()->noContent();
     }
 
 }
