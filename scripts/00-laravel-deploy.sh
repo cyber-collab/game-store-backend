@@ -12,6 +12,9 @@ php artisan route:cache
 echo "Running migrations..."
 php artisan migrate --force
 
+echo "Update swagger json..."
+php artisan l5-swagger:generate
+
 echo "Running npm install..."
 npm install
 
