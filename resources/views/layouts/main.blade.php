@@ -142,8 +142,8 @@
                         <!-- Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="dashboard.html" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <a href="{{ route('home') }}" class="nav-link">
+                                <i class="nav-icon fas fa-home-alt"></i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
@@ -175,6 +175,13 @@
                             <a href="products.html" class="nav-link">
                                 <i class="nav-icon fas fa-tag"></i>
                                 <p>Products</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('admin_home') }}" class="nav-link">
+                                <i class="nav-icon fas fa-tag"></i>
+                                <p>Home page</p>
                             </a>
                         </li>
 
