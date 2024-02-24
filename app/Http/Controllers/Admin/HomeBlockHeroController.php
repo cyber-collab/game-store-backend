@@ -1,10 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Http\Resources\HomeBlockHeroResource;
-use App\Models\HomeBlockHero;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
+use App\Models\HomeBlockHero;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\HomeBlockHeroRequest;
+use App\Http\Resources\HomeBlockHeroResource;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 class HomeBlockHeroController extends Controller
@@ -12,15 +15,22 @@ class HomeBlockHeroController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(): AnonymousResourceCollection
+    public function index(): View
     {
-        return HomeBlockHeroResource::collection(HomeBlockHero::all());
+        $homeBlockHero = HomeBlockHero::lastes();
+        return view('home.block-hero.index', compact('homeBlockHero'));
+        // return HomeBlockHeroResource::collection(HomeBlockHero::all());
+    }
+
+    public function create(): View
+    {
+        return view('home.block-hero.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, HomeBlockHero $homeBlockHero): HomeBlockHeroResource
+    public function store(HomeBlockHeroRequest $request, HomeBlockHero $homeBlockHero): HomeBlockHeroResource
     {
         $homeBlockHero = HomeBlockHero::create($request->validated());
 

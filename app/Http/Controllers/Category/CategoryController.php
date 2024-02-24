@@ -23,11 +23,6 @@ class CategoryController extends Controller
         return  view('category.index', compact('categories'));
     }
 
-    public function categoriesToJson(): AnonymousResourceCollection
-    {
-        return CategoryResource::collection(Category::all());
-    }
-
     /**
      * Show the form for creating a new resource.
      */
