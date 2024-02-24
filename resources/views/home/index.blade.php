@@ -1,29 +1,43 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Home') }}
-        </h2>
-    </x-slot>
+@extends('layouts.main')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-            <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
-                <div class="max-w-xl">
-                    @include('home.partials.update-home-information-form')
+@section('content')
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid my-2">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Home</h1>
                 </div>
-            </div>
-
-            <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
-                <div class="max-w-xl">
-                    {{-- @include('profile.partials.update-password-form') --}}
-                </div>
-            </div>
-
-            <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
-                <div class="max-w-xl">
-                    {{-- @include('profile.partials.delete-user-form') --}}
+                <div class="col-sm-6 text-right">
+                    <a href="{{ route('block-home-hero.create') }}" class="btn btn-primary">Add block hero</a>
                 </div>
             </div>
         </div>
-    </div>
-</x-app-layout>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="container-fluid my-2">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-tools">
+                        <div class="input-group input-group" style="width: 250px;">
+                            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body table-responsive p-3">
+                    @include('home.block-hero.index');
+                </div>
+            </div>
+            <!-- /.card -->
+    </section>
+    <!-- /.content -->
+@endsection
