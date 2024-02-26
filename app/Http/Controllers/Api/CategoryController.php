@@ -9,10 +9,9 @@ use App\Models\Category\Category;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
-
 class CategoryController extends Controller
 {
-     /**
+    /**
      * @OA\Get(
      *     path="/api/categories",
      *     summary="Get a list of categories",
@@ -70,12 +69,13 @@ class CategoryController extends Controller
      *     @OA\Response(response="404", description="Category not found")
      * )
      */
-    public function show(Category $category)
+    public function show(int $id)
     {
+        $category = Category::findOrFail($id);
         return new CategoryResource($category);
     }
 
-   /**
+    /**
      * Update information for a specific category.
      *
      * @OA\Put(
@@ -113,13 +113,12 @@ class CategoryController extends Controller
      *      ),
      * )
      **/
-    public function update(Request $request, Category $category)
+    public function update(CategoryRequest $request, Category $category)
     {
         $category->update($request->validated());
 
         return new CategoryResource($category);
     }
-
 
     /**
      * @OA\Delete(

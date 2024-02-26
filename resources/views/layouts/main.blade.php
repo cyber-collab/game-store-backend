@@ -154,7 +154,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="subcategory.html" class="nav-link">
+                            <a href="/subcategories" class="nav-link">
                                 <i class="nav-icon fas fa-file-alt"></i>
                                 <p>Sub Category</p>
                             </a>
