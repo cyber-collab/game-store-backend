@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Category;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CategoryRequest;
 use App\Http\Resources\CategoryResource;
 use App\Models\Category\Category;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use App\Models\SubCategory;
 
 class CategoryController extends Controller
 {
@@ -44,41 +46,23 @@ class CategoryController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(Category $category)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      */
     public function edit(Category $category)
     {
-        return view('category.edit', compact('category'));
+        $subCategories = SubCategory::all();
+        return view('category.edit', compact('category', 'subCategories'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Category $category)
+    public function update(CategoryRequest $request, int $id)
     {
-        // Валидация данных из формы редактирования
-        $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'slug' => 'required|max:255|unique:categories,slug,'.$category->id,
-            'status' => 'required|in:0,1',
-        ]);
+        $category = Category::findOrFail($id);
+        $category->update($request->validated());
+        $category->subcategories()->sync($request->subcategories);
 
-
-        // Обновление данных категории
-        $category->name = $validatedData['name'];
-        $category->slug = $validatedData['slug'];
-        $category->status = $validatedData['status'];
-        $category->save();
-
-        // Редирект после успешного обновления
         return redirect()->route('categories.index');
     }
 

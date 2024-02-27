@@ -18,7 +18,8 @@ class CategoryResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
-            'status' => $this->status
+            'status' => $this->status,
+            // 'subcategories' => SubCategoryResource::collection(),
         ];
     }
 }

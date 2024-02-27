@@ -25,6 +25,7 @@ class CategoryRequest extends FormRequest
             'name' => ['required', 'string', 'max:255'],
             'slug' =>  ['required', 'string', 'max:255'],
             'status' => ['required', 'int'],
+            'subcategories' => ['array'],
         ];
     }
 

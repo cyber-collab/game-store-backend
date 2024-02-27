@@ -57,7 +57,7 @@
                                 <input type="text" name="subcategories[]" class="form-control"
                                     placeholder="Sub-category">
                             </div>
-                            <button type="button" class="btn btn-primary add-subcategory">Add sub-category</button>
+                            {{-- <button type="button" class="btn btn-primary add-subcategory">Add sub-category</button> --}}
                         </div>
                     </div>
                 </div>
