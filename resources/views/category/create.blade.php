@@ -53,9 +53,12 @@
                         </div>
                         <div class="col-md-12">
                             <div class="mb-3">
-                                <label for="subcategories">Sub-categories</label>
-                                <input type="text" name="subcategories[]" class="form-control"
-                                    placeholder="Sub-category">
+                                <label for="subcategories">Subcategories</label>
+                                <select name="subcategories[]" id="subcategories" class="form-control" multiple>
+                                    @foreach ($subCategories as $subCategory)
+                                        <option value="{{ $subCategory->id }}">{{ $subCategory->name }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                             {{-- <button type="button" class="btn btn-primary add-subcategory">Add sub-category</button> --}}
                         </div>

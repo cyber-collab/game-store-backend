@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers\Category;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\CategoryRequest;
-use App\Http\Resources\CategoryResource;
-use App\Models\Category\Category;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 use App\Models\SubCategory;
+use App\Models\Category\Category;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
+use App\Http\Requests\CategoryRequest;
 
 class CategoryController extends Controller
 {
@@ -18,8 +17,7 @@ class CategoryController extends Controller
     public function index(): View
     {
         $categories = Category::latest()->paginate(10);
-        $data['categories'] = $categories;
-        return  view('category.index', compact('categories'));
+        return view('category.index', compact('categories'));
     }
 
     /**
@@ -27,28 +25,25 @@ class CategoryController extends Controller
      */
     public function create(): View
     {
-        return view('category.create');
+        $subCategories = SubCategory::all();
+        return view('category.create', compact('subCategories'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request): RedirectResponse
     {
-        $data = $request->validate([
-            'title' => 'required',
-        ]);
+        $category = Category::create($request->validated());
+        $category->subcategories()->attach($request->subcategories);
 
-        if (!empty($data['title'])) {
-            Category::create($data);
-        }
-        return redirect()->route('category.index');
+        return redirect()->route('categories.index');
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Category $category)
+    public function edit(Category $category): View
     {
         $subCategories = SubCategory::all();
         return view('category.edit', compact('category', 'subCategories'));
@@ -57,7 +52,7 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(CategoryRequest $request, int $id)
+    public function update(CategoryRequest $request, int $id): RedirectResponse
     {
         $category = Category::findOrFail($id);
         $category->update($request->validated());
@@ -70,7 +65,7 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Category $category)
+    public function destroy(Category $category): RedirectResponse
     {
         if ($category) {
             $category->delete();

@@ -5,13 +5,13 @@
         "version": "1.0.0"
     },
     "paths": {
-        "/api/categories": {
+        "/api/api-categories": {
             "get": {
                 "tags": [
                     "Categories"
                 ],
                 "summary": "Get a list of categories",
-                "operationId": "ac9c4d978ea4e5b72915ca9728e5b8b1",
+                "operationId": "d2de224fc6d17e925d51f093deb8aed9",
                 "responses": {
                     "200": {
                         "description": "Successful operation"
@@ -26,7 +26,7 @@
                     "Categories"
                 ],
                 "summary": "Add a new category",
-                "operationId": "cca49a87d9b0ebb9a98ad7c154b71737",
+                "operationId": "1311776632c10b83c9c166cf47bc0383",
                 "requestBody": {
                     "required": true,
                     "content": {
@@ -65,13 +65,13 @@
                 }
             }
         },
-        "/api/categories/{id}": {
+        "/api/api-categories/{id}": {
             "get": {
                 "tags": [
                     "Categories"
                 ],
                 "summary": "Get a category",
-                "operationId": "09767bb2e47dde77dd1e2591428b0ae1",
+                "operationId": "caf369d1599415260c3cd4c90865d79f",
                 "parameters": [
                     {
                         "name": "id",
@@ -100,7 +100,7 @@
                     "Categories"
                 ],
                 "summary": "Delete a category",
-                "operationId": "9b61b65823f4a21f182506b34ddf805c",
+                "operationId": "c39fe42bb6426e8726132cbbe9f7cbfc",
                 "parameters": [
                     {
                         "name": "id",
@@ -125,14 +125,14 @@
                 }
             }
         },
-        "/api/category/{id}": {
+        "/api/api-category/{id}": {
             "put": {
                 "tags": [
                     "Categories"
                 ],
                 "summary": "Update a category",
-                "description": "Update information for a specific student",
-                "operationId": "801f46c012a257176f992d879496cabb",
+                "description": "Update information for a specific category",
+                "operationId": "515d8f04c6a0e7b7402df3ff75d627f9",
                 "parameters": [
                     {
                         "name": "id",
@@ -161,6 +161,10 @@
                                     "status": {
                                         "type": "integer",
                                         "maxLength": 10
+                                    },
+                                    "subcategories": {
+                                        "type": "integer",
+                                        "maxLength": 10
                                     }
                                 },
                                 "type": "object"
@@ -170,10 +174,185 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "Student updated successfully"
+                        "description": "Category updated successfully"
                     },
                     "404": {
-                        "description": "Student not found"
+                        "description": "Category not found"
+                    }
+                }
+            }
+        },
+        "/api/api-subcategories": {
+            "get": {
+                "tags": [
+                    "Sub-categories"
+                ],
+                "summary": "Get a list of categories",
+                "operationId": "e9b43f32146f4d09af86ecae0fc32d21",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Sub-categories"
+                ],
+                "summary": "Add a new category",
+                "operationId": "9e7cb1e59bbb65e9a88cdffb6c0859ad",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "string",
+                                        "example": "1"
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "example": "Lewis"
+                                    },
+                                    "slug": {
+                                        "type": "string",
+                                        "example": "https://example.com/"
+                                    },
+                                    "status": {
+                                        "type": "integer",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Category created"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/api/api-subcategories/{id}": {
+            "get": {
+                "tags": [
+                    "Sub-categories"
+                ],
+                "summary": "Get a category",
+                "operationId": "f493927a0574dc343c3615ccb540947a",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the category",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Category not found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Sub-categories"
+                ],
+                "summary": "Update a category",
+                "description": "Update information for a specific category",
+                "operationId": "c447ccdfa5bb85b91454081db58c1c0d",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the category",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "maxLength": 256
+                                    },
+                                    "slug": {
+                                        "type": "string",
+                                        "maxLength": 255
+                                    },
+                                    "status": {
+                                        "type": "integer",
+                                        "maxLength": 10
+                                    },
+                                    "subcategories": {
+                                        "type": "integer",
+                                        "maxLength": 10
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Sub category updated successfully"
+                    },
+                    "404": {
+                        "description": "Sub category not found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Sub-categories"
+                ],
+                "summary": "Delete a category",
+                "operationId": "0b8425a4fb84920df285888b40aa1a6b",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of the category",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Category deleted"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Category not found"
                     }
                 }
             }
