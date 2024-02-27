@@ -1,0 +1,1 @@
+$(document).ready(function(){$("button.add-subcategory").click(function(){$("#subcategory-container").append('<div class="col-md-12"><div class="mb-3"><input type="text" name="subcategories[]" class="form-control" placeholder="Subcategory"></div></div>')})});
