@@ -15,6 +15,8 @@ php artisan migrate --force
 echo "Update swagger json..."
 php artisan l5-swagger:generate
 
-echo "Running vite..."
+echo "Running npm install..."
 npm install
+
+echo "Running npm build..."
 npm run build
