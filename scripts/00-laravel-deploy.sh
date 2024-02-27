@@ -15,6 +15,3 @@ php artisan migrate --force
 echo "Update swagger json..."
 php artisan l5-swagger:generate
 
-echo "Running vite..."
-npm install
-npm run build
