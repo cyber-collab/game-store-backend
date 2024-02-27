@@ -15,7 +15,7 @@
     <link rel="stylesheet" href=" {{ asset('admin/dist/css/adminlte.min.css') }} ">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href=" {{ asset('admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }} ">
-
+    {{-- @vite(['resources/js/app.js']) --}}
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -154,7 +154,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="subcategory.html" class="nav-link">
+                            <a href="/subcategories" class="nav-link">
                                 <i class="nav-icon fas fa-file-alt"></i>
                                 <p>Sub Category</p>
                             </a>

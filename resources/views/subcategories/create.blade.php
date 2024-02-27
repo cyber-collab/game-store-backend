@@ -6,10 +6,10 @@
         <div class="container-fluid my-2">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Create Category</h1>
+                    <h1>Create Sub-Categoty</h1>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <a href="{{ route('categories.index') }}" class="btn btn-primary">Back</a>
+                    <a href="{{ route('subcategories.index') }}" class="btn btn-primary">Back</a>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
     <section class="content">
         <!-- Default box -->
         <div class="container-fluid">
-            <form action="{{ route('categories.store') }}" method="post" id="categoryForm" name="categoryForm">
+            <form action="{{ route('subcategories.store') }}" method="post" id="categoryForm" name="categoryForm">
                 @csrf
                 @method('post')
                 <div class="card">
@@ -42,33 +42,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="status">Status</label>
-                                <select name="status" id="status" class="form-control">
-                                    <option value="1">Active</option>
-                                    <option value="0">Block</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="subcategories">Subcategories</label>
-                                <select name="subcategories[]" id="subcategories" class="form-control" multiple>
-                                    @foreach ($subCategories as $subCategory)
-                                        <option value="{{ $subCategory->id }}">{{ $subCategory->name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            {{-- <button type="button" class="btn btn-primary add-subcategory">Add sub-category</button> --}}
-                        </div>
                     </div>
                 </div>
-        </div>
-        <div class="pb-5 pt-3">
-            <button type="submit" class="btn btn-primary">Create</button>
-        </div>
-        </form>
+                <div class="pb-5 pt-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </form>
         </div>
         <!-- /.card -->
     </section>

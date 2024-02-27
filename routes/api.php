@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\CategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\HomeBlockHeroController;
+use App\Http\Controllers\Api\SubCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('api-home-hero', HomeBlockHeroController::class);
 Route::apiResource('api-categories', CategoryController::class);
+Route::apiResource('api-subcategories', SubCategoryController::class);

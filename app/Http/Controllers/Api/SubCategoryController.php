@@ -4,31 +4,31 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CategoryRequest;
-use App\Http\Resources\CategoryResource;
-use App\Models\Category\Category;
+use App\Http\Resources\SubCategoryResource;
+use App\Models\SubCategory;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
-class CategoryController extends Controller
+class SubCategoryController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/api-categories",
+     *     path="/api/api-subcategories",
      *     summary="Get a list of categories",
-     *     tags={"Categories"},
+     *     tags={"Sub-categories"},
      *     @OA\Response(response="200", description="Successful operation"),
      *     @OA\Response(response="401", description="Unauthorized")
      * )
      */
     public function index(): AnonymousResourceCollection
     {
-        return CategoryResource::collection(Category::all());
+        return SubCategoryResource::collection(SubCategory::all());
     }
 
     /**
      * @OA\Post(
-     *     path="/api/api-categories",
+     *     path="/api/api-subcategories",
      *     summary="Add a new category",
-     *     tags={"Categories"},
+     *     tags={"Sub-categories"},
      *     @OA\Response(response="201", description="Category created"),
      *     @OA\Response(response="401", description="Unauthorized"),
      *     @OA\RequestBody(
@@ -44,16 +44,16 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
-        $category = Category::create($request->validated());
+        $category = SubCategory::create($request->validated());
 
-        return new CategoryResource($category);
+        return new SubCategoryResource($category);
     }
 
     /**
      * @OA\Get(
-     *     path="/api/api-categories/{id}",
+     *     path="/api/api-subcategories/{id}",
      *     summary="Get a category",
-     *     tags={"Categories"},
+     *     tags={"Sub-categories"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -70,16 +70,17 @@ class CategoryController extends Controller
      */
     public function show(int $id)
     {
-        $category = Category::findOrFail($id);
-        return new CategoryResource($category);
+        $category = SubCategory::findOrFail($id);
+
+        return new SubCategoryResource($category);
     }
 
     /**
      * Update information for a specific category.
      *
      * @OA\Put(
-     *      path="/api/api-category/{id}",
-     *      tags={"Categories"},
+     *      path="/api/api-subcategories/{id}",
+     *      tags={"Sub-categories"},
      *      summary="Update a category",
      *      description="Update information for a specific category",
      *      @OA\Parameter(
@@ -98,36 +99,32 @@ class CategoryController extends Controller
      *              @OA\Schema(
      *                  @OA\Property(property="name", type="string", maxLength=256),
      *                  @OA\Property(property="slug", type="string", maxLength=255),
-     *                  @OA\Property(property="status", type="int", maxLength=10),
-     *                  @OA\Property(property="subcategories", type="int", maxLength=10),
-     *
      *              )
      *          )
      *      ),
      *      @OA\Response(
      *          response=200,
-     *          description="Category updated successfully",
+     *          description="Sub category updated successfully",
      *      ),
      *      @OA\Response(
      *          response=404,
-     *          description="Category not found",
+     *          description="Sub category not found",
      *      ),
      * )
      **/
-    public function update(CategoryRequest $request, int $id): CategoryResource
+    public function update(CategoryRequest $request, int $id): SubCategoryResource
     {
-        $category = Category::findOrFail($id);
+        $category = SubCategory::findOrFail($id);
         $category->update($request->validated());
-        $category->subcategories()->sync($request->subcategories);
 
-        return new CategoryResource($category);
+        return new SubCategoryResource($category);
     }
 
     /**
      * @OA\Delete(
-     *     path="/api/api-categories/{id}",
+     *     path="/api/api-subcategories/{id}",
      *     summary="Delete a category",
-     *     tags={"Categories"},
+     *     tags={"Sub-categories"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -142,11 +139,10 @@ class CategoryController extends Controller
      *     @OA\Response(response="404", description="Category not found")
      * )
      */
-    public function destroy(Category $category)
+    public function destroy(SubCategory $category)
     {
         $category->delete();
 
         return response()->noContent();
     }
-
 }

@@ -1,8 +1,16 @@
 {
   "resources/js/app.js": {
-    "file": "assets/app-Mbsyhqaz.js",
+    "file": "assets/app-6FcuVxT1.js",
+    "imports": [
+      "resources/js/category.js"
+    ],
     "isEntry": true,
     "src": "resources/js/app.js"
+  },
+  "resources/js/category.js": {
+    "file": "assets/category-f7to9Ldl.js",
+    "isEntry": true,
+    "src": "resources/js/category.js"
   },
   "resources/sass/app.scss": {
     "file": "assets/app-6yqoNpxc.css",

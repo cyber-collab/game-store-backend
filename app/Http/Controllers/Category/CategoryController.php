@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers\Category;
 
-use App\Http\Controllers\Controller;
-use App\Http\Resources\CategoryResource;
-use App\Models\Category\Category;
-
-use http\Env\Response;
-use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\View\View;
+use App\Models\SubCategory;
+use App\Models\Category\Category;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
+use App\Http\Requests\CategoryRequest;
 
 class CategoryController extends Controller
 {
@@ -19,8 +17,7 @@ class CategoryController extends Controller
     public function index(): View
     {
         $categories = Category::latest()->paginate(10);
-        $data['categories'] = $categories;
-        return  view('category.index', compact('categories'));
+        return view('category.index', compact('categories'));
     }
 
     /**
@@ -28,60 +25,39 @@ class CategoryController extends Controller
      */
     public function create(): View
     {
-        return view('category.create');
+        $subCategories = SubCategory::all();
+        return view('category.create', compact('subCategories'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request): RedirectResponse
     {
-        $data = $request->validate([
-            'title' => 'required',
-        ]);
+        $category = Category::create($request->validated());
+        $category->subcategories()->attach($request->subcategories);
 
-        if (!empty($data['title'])) {
-            Category::create($data);
-        }
-        return redirect()->route('category.index');
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Category $category)
-    {
-        //
+        return redirect()->route('categories.index');
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Category $category)
+    public function edit(Category $category): View
     {
-        return view('category.edit', compact('category'));
+        $subCategories = SubCategory::all();
+        return view('category.edit', compact('category', 'subCategories'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Category $category)
+    public function update(CategoryRequest $request, int $id): RedirectResponse
     {
+        $category = Category::findOrFail($id);
+        $category->update($request->validated());
+        $category->subcategories()->sync($request->subcategories);
 
-        // Валидация данных из формы редактирования
-        $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'slug' => 'required|max:255|unique:categories,slug,'.$category->id,
-            'status' => 'required|in:0,1',
-        ]);
-
-        // Обновление данных категории
-        $category->name = $validatedData['name'];
-        $category->slug = $validatedData['slug'];
-        $category->status = $validatedData['status'];
-        $category->save();
-
-        // Редирект после успешного обновления
         return redirect()->route('categories.index');
     }
 
@@ -89,7 +65,7 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Category $category)
+    public function destroy(Category $category): RedirectResponse
     {
         if ($category) {
             $category->delete();
@@ -98,5 +74,4 @@ class CategoryController extends Controller
             return redirect()->route('categories.index')->with('error', 'Category not found');
         }
     }
-
 }
