@@ -1,12 +1,7 @@
 {
   "resources/js/app.js": {
-    "file": "assets/app-Mbsyhqaz.js",
-    "isEntry": true,
-    "src": "resources/js/app.js"
-  },
-  "resources/sass/app.scss": {
-    "file": "assets/app-DrKqg2nF.css",
-    "src": "resources/sass/app.scss",
+    "file": "assets/app-DH_dDkMq.js",
+    "src": "resources/js/app.js",
     "isEntry": true
   }
 }
