@@ -1,5 +1,18 @@
 FROM richarvey/nginx-php-fpm:3.1.6
 
+# Install Node.js and npm
+RUN apk update && \
+    apk add --no-cache nodejs npm
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy package.json and install dependencies
+COPY package.json .
+RUN npm install
+RUN npm run build
+
+# Copy the rest of your application
 COPY . .
 
 # Image config
@@ -16,8 +29,5 @@ ENV LOG_CHANNEL stderr
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
-
-COPY package.json package.json
-RUN npm install
 
 CMD ["/start.sh"]
