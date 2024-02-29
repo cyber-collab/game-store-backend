@@ -10,7 +10,6 @@ WORKDIR /var/www/html
 # Copy package.json and install dependencies
 COPY package.json .
 RUN npm install
-RUN npm run build
 
 # Copy the rest of your application
 COPY . .
