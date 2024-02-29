@@ -12,8 +12,7 @@ export default defineConfig({
         }),
     ],
     build: {
-        rollupOptions: {
-            input: 'resources/js/app.js'
-        }
+        target: 'es2018',
+        ssr: true,
     }
 });
