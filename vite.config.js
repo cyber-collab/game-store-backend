@@ -12,8 +12,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    build: {
-        target: 'es2018',
-        ssr: true,
-    }
 });
