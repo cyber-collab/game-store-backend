@@ -1,7 +1,15 @@
 {
   "resources/js/app.js": {
-    "file": "assets/app-DH_dDkMq.js",
+    "file": "assets/app-CapDenfi.js",
     "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "resources/js/category.js"
+    ]
+  },
+  "resources/js/category.js": {
+    "file": "assets/category-FwAocLSo.js",
+    "src": "resources/js/category.js",
     "isEntry": true
   },
   "resources/sass/app.scss": {
