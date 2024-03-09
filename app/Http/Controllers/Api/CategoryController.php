@@ -8,6 +8,7 @@ use App\Http\Resources\CategoryResource;
 use App\Models\Category\Category;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Http\Response;
 
 
 class CategoryController extends Controller
@@ -140,7 +141,7 @@ class CategoryController extends Controller
      *     @OA\Response(response="404", description="Category not found")
      * )
      */
-    public function destroy(Category $category)
+    public function destroy(Category $category): Response
     {
         $category->delete();
 
