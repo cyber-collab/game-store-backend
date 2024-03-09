@@ -27,3 +27,7 @@ Restart the container!
 4. Run `php artisan storage:link` for create symbolic link, for upload images to public folder
 5. Run `npm install` and `npm run build`, you need have 16 versions node or higher, for build vue
 6. And you can see results!
+
+# Useful commands
+
+1. `sail artisan l5-swagger:generate` For generate swagger documentation.
