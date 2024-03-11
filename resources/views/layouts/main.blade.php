@@ -13,6 +13,8 @@
     <link rel="stylesheet" href=" {{asset('admin/dist/css/adminlte.min.css')}} ">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href=" {{asset('admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}} ">
+    <link rel="stylesheet" href="{{asset('admin/plugins/summernote/summernote-bs4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('admin/plugins/dropzone/dropzone.css')}}">
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -241,5 +243,29 @@
 <script src=" {{asset('admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}} "></script>
 <!-- AdminLTE App -->
 <script src=" {{asset('admin/dist/js/adminlte.js')}} "></script>
+<script src="{{asset('admin/plugins/summernote/summernote-bs4.min.js')}}"></script>
+<script src="{{asset('admin/plugins/dropzone/dropzone.js')}}"></script>
+<script>
+    Dropzone.autoDiscover = false;
+    $(function () {
+        // Summernote
+        $('.summernote').summernote({
+            height: '300px'
+        });
+
+        const dropzone = $("#image").dropzone({
+            url:  "create-product.html",
+            maxFiles: 5,
+            addRemoveLinks: true,
+            acceptedFiles: "image/jpeg,image/png,image/gif",
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+            }, success: function(file, response){
+                $("#image_id").val(response.id);
+            }
+        });
+
+    });
+</script>
 </body>
 </html>

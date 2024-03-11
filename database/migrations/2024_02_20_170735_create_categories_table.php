@@ -14,9 +14,13 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug');
-            $table->string('image')->default(NULL);
+            $table->string('title');
+            $table->string('slug')->nullable();
+            $table->string('description');
+            $table->string('image')->default(null)->nullable();
             $table->integer('status')->default(1);
+            $table->integer('parent_id')->unsigned()->default(1)->nullable();
+
             $table->timestamps();
         });
     }
