@@ -40,7 +40,6 @@ class ImportCategories extends Command
                 'slug' => $subcategoryData['slug'],
             ]);
 
-            // Optional: If you want to establish the reverse relationship, you can do it here
             $subcategory->categories()->attach($category->id);
         }
     }

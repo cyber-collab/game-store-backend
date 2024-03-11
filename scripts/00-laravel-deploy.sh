@@ -15,14 +15,5 @@ php artisan migrate:refresh
 echo "Running migrations..."
 php artisan migrate --force
 
-echo "Update swagger json..."
-php artisan l5-swagger:generate
-
 echo "Import categories..."
 php artisan import:categories
-
-echo "Running npm install..."
-npm install
-
-echo "Running npm build..."
-npm run build
