@@ -4,6 +4,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Category\CategoryController;
+use App\Http\Controllers\Products\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,9 @@ Route::get('/', function () {
 });
 //
 Route::resource('categories', App\Http\Controllers\Category\CategoryController::class);
-//Route::resource('product', App\Http\Controllers\Product\ProdyctController::class);
+
+
+Route::resource('/products', App\Http\Controllers\Products\ProductController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

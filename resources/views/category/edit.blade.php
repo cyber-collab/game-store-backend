@@ -1,64 +1,59 @@
 @extends('layouts.main')
-
 @section('content')
-
-    <!-- Content Header (Page header) -->
+    @php
+        /** @var \App\Models\Category $item */
+    @endphp
     <section class="content-header">
         <div class="container-fluid my-2">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Edit Category</h1>
+                    <h1>Categories</h1>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <a href="{{ route('categories.index') }}" class="btn btn-primary">Back</a>
+                    <a href="{{route('categories.index')}}" class="btn btn-primary">Categories</a>
                 </div>
             </div>
         </div>
         <!-- /.container-fluid -->
     </section>
-    <!-- Main content -->
     <section class="content">
         <!-- Default box -->
-        <div class="container-fluid">
-            <form action="{{ route('categories.update', $category->id) }}"  method="post" id="categoryForm" name="categoryForm">
-                @csrf
-                @method('PUT')
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" value="{{ $category->name }}" class="form-control" placeholder="Name">
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="slug">Slug</label>
-                                    <input type="text" name="slug" id="slug" value="{{ $category->slug }}" class="form-control" placeholder="Slug">
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="status">Status</label>
-                                    <select name="status" id="status" class="form-control">
-                                        <option value="1" {{ $category->status == 1 ? 'selected' : '' }}>Active</option>
-                                        <option value="0" {{ $category->status == 0 ? 'selected' : '' }}>Block</option>
-                                    </select>
-                                </div>
+        <div class="container-fluid my-2">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-tools">
+                        <div class="input-group input-group" style="width: 250px;">
+                            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="fas fa-search"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pb-5 pt-3">
-                    <button type="submit" class="btn btn-primary">Update</button> <!-- Изменена надпись на кнопке -->
+                <div class="card-body table-responsive p-3">
+
+                    <form method="POST" action="{{route('categories.update', $item->id)}}" >
+                        @method('PUT')
+                        @csrf
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    @include('category.includes.item_edit_main_col')
+                                </div>
+                                <div class="col-md-3">
+                                    @include('category.includes.item_edit_add_col')
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
-            </form>
+            </div>
+
         </div>
-        <!-- /.card -->
     </section>
-    <!-- /.content -->
 
 @endsection
