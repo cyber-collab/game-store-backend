@@ -14,6 +14,12 @@ echo "Caching routes..."
 php artisan route:cache
 
 echo "Running migrations..."
+php artisan migrate:refresh
+
+echo "Import categories..."
+php artisan import:categories
+
+echo "Running migrations..."
 php artisan migrate --force
 
 echo "done deploying"
