@@ -1,17 +1,5 @@
 FROM richarvey/nginx-php-fpm:3.1.6
 
-# # Install Node.js and npm
-# RUN apk update && \
-#     apk add --no-cache nodejs npm
-
-# # Set working directory
-# WORKDIR /var/www/html
-
-# # Copy package.json and install dependencies
-# COPY package.json .
-# RUN npm install
-
-# # Copy the rest of your application
 COPY . .
 
 # Image config
