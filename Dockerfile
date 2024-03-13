@@ -1,17 +1,5 @@
-FROM richarvey/nginx-php-fpm:3.1.6
+FROM richarvey/nginx-php-fpm:latest
 
-# # Install Node.js and npm
-# RUN apk update && \
-#     apk add --no-cache nodejs npm
-
-# # Set working directory
-# WORKDIR /var/www/html
-
-# # Copy package.json and install dependencies
-# COPY package.json .
-# RUN npm install
-
-# # Copy the rest of your application
 COPY . .
 
 # Image config
@@ -22,8 +10,8 @@ ENV RUN_SCRIPTS 1
 ENV REAL_IP_HEADER 1
 
 # Laravel config
-ENV APP_ENV production
-ENV APP_DEBUG false
+ENV APP_ENV staging
+ENV APP_DEBUG true
 ENV LOG_CHANNEL stderr
 
 # Allow composer to run as root

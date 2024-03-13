@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use App\Models\Category\Category;
-use App\Models\Subcategory;
+use App\Models\SubCategory;
 use Illuminate\Support\Facades\Storage;
 
 class ImportCategories extends Command
@@ -34,13 +34,12 @@ class ImportCategories extends Command
     private function createSubcategories(Category $category, array $subcategoriesData)
     {
         foreach ($subcategoriesData as $subcategoryData) {
-            $subcategory = Subcategory::create([
+            $subcategory = SubCategory::create([
                 'category_id' => $category->id,
                 'name' => $subcategoryData['name'],
                 'slug' => $subcategoryData['slug'],
             ]);
 
-            // Optional: If you want to establish the reverse relationship, you can do it here
             $subcategory->categories()->attach($category->id);
         }
     }
