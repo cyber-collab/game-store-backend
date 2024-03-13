@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\SubCategoryController;
 use App\Http\Controllers\Api\PartnerController;
 use App\Http\Controllers\Api\HomeBlockHeroController;
+use App\Http\Controllers\Api\BannerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Route::apiResource('api-home-hero', HomeBlockHeroController::class);
 Route::apiResource('api-partners', PartnerController::class);
 Route::apiResource('api-categories', CategoryController::class);
 Route::apiResource('api-subcategories', SubCategoryController::class);
+Route::apiResource('api-banners', BannerController::class);
