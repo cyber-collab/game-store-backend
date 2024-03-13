@@ -3,8 +3,10 @@
 use App\Http\Controllers\Api\CategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\HomeBlockHeroController;
 use App\Http\Controllers\Api\SubCategoryController;
+use App\Http\Controllers\Api\PartnerController;
+use App\Http\Controllers\Api\HomeBlockHeroController;
+use App\Http\Controllers\Api\BannerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('api-home-hero', HomeBlockHeroController::class);
+Route::apiResource('api-partners', PartnerController::class);
 Route::apiResource('api-categories', CategoryController::class);
 Route::apiResource('api-subcategories', SubCategoryController::class);
+Route::apiResource('api-banners', BannerController::class);

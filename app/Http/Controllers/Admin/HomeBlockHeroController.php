@@ -8,8 +8,7 @@ use App\Models\HomeBlockHero;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\HomeBlockHeroRequest;
 use App\Http\Resources\HomeBlockHeroResource;
-use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-
+use Illuminate\Http\Response;
 class HomeBlockHeroController extends Controller
 {
     /**
@@ -50,7 +49,7 @@ class HomeBlockHeroController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(HomeBlockHero $homeBlockHero)
+    public function destroy(HomeBlockHero $homeBlockHero): Response
     {
         $homeBlockHero->delete();
 
