@@ -79,7 +79,7 @@ class CategoryController extends Controller
      * Update information for a specific category.
      *
      * @OA\Put(
-     *      path="/api/api-category/{id}",
+     *      path="/api/api-categories/{id}",
      *      tags={"Categories"},
      *      summary="Update a category",
      *      description="Update information for a specific category",
