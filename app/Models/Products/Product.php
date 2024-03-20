@@ -55,7 +55,7 @@ class Product extends Model
             'quantity' => $data['quantity'] ?? 0,
             'color' => $data['color'] ?? 'black',
             'product_code' => $data['product_code'],
-            'additional_code' => $data['additional_code'],
+            'additional_code' => $data['additional_code'] ?? null,
             'article' => $data['article'],
         ]);
 

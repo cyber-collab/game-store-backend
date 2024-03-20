@@ -17,7 +17,7 @@ return new class extends Migration
             $table->boolean('sale')->nullable();;
             $table->decimal('price', 10, 2);
             $table->string('currency');
-            $table->integer('discount_percentage');
+            $table->integer('discount_percentage')->nullable();
             $table->timestamps();
 
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
