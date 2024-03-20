@@ -1,3 +1,4 @@
 *
 !.gitignore
 !api-categories.json
+!catalog.json
