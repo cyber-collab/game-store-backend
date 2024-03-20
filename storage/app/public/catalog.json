@@ -1,0 +1,391 @@
+[
+    {
+        "id": "U0898696",
+        "title": "ASUS ROG Strix G16 G614JZR-N4094W",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2024/02/u0898696-asus-rog-strix-g16-g614jzr-n4094w-90nr0ic3-m00440-flick.zone-395319_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2024/02/u0898696-asus-rog-strix-g16-g614jzr-n4094w-90nr0ic3-m00440-flick.zone-271844_nobg.png",
+                "https://flick.zone/wp-content/uploads/2024/02/u0898696-asus-rog-strix-g16-g614jzr-n4094w-90nr0ic3-m00440-flick.zone-395319_nobg.png",
+                "https://flick.zone/wp-content/uploads/2024/02/u0898696-asus-rog-strix-g16-g614jzr-n4094w-90nr0ic3-m00440-flick.zone-481744_nobg.png"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 127999,
+            "currency": "UAH",
+            "discount_percentage": 2
+        },
+        "tags": [],
+        "new": false,
+        "top_sales": true,
+        "summary": "16″, 2560×1600 (WQXGA), IPS, Intel Core i9-14900HX (2.2 – 5.8 ГГц), 16 ГБ, SSD – 1 ТБ, Windows 11 Home, 2.5 кг",
+        "color": "чорний",
+        "product_code": "U0898696",
+        "additional_code": "168492",
+        "article": "90NR0IC3-M00440",
+        "description": "Грайте з упевненістю на потужному ноутбуку Strix G16 2024-го модельного року. Беріть гору над супротивниками в найсучасніших змагальних іграх – у цьому допоможуть процесор Intel Core i9 14900HX і відеокарта Nvidia GF RTX 4080 для ноутбуків, загальна графічна потужність якої при використанні функції Dynamic Boost сягає 175 Вт. Твердотільний накопичувач 1 ТБ SSD з інтерфейсом PCIe Gen4 x4 та оперативна пам’ять DDR5 5600 МГц обсягом 32 ГБ легко вмістять велику бібліотеку ігор та впораються з багатьма активними програмами одночасно.",
+        "producer": "ASUS",
+        "model": "ROG Strix G16 G614JZR-N4094W",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "ASUS",
+            "display_size": "16″",
+            "resolving_power": "2560×1600 (WQXGA)",
+            "screen": "антиблікове покриття",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-14900HX (2.2 – 5.8 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "16 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": null,
+            "amount_of_VRAM": null,
+            "OS": "Windows 11 Home",
+            "battery_capacity": "4 cell",
+            "weight": "2.5 кг",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "U0805559",
+        "title": "MSI Raider",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2023/05/u0805559-msi-raider-raider_ge78hx_13vh-211ua-flick.zone_21532_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2023/05/u0805559-msi-raider-raider_ge78hx_13vh-211ua-flick.zone-114694_nobg.png",
+                "https://flick.zone/wp-content/uploads/2023/05/u0805559-msi-raider-raider_ge78hx_13vh-211ua-flick.zone-358546_nobg.png",
+                "https://flick.zone/wp-content/uploads/2023/05/u0805559-msi-raider-raider_ge78hx_13vh-211ua-flick.zone-499756_nobg.png"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 149999,
+            "currency": "UAH",
+            "discount_percentage": 6
+        },
+        "tags": [],
+        "new": false,
+        "top_sales": true,
+        "summary": "17″, 2560×1600 (WQXGA), IPS, Intel Core i9-13950HX (4.0-5.5 ГГц), 64 ГБ, SSD – 1 ТБ, NVIDIA GeForce RTX 4080, GPU – 12 ГБ, Windows 11, підсвічування клавіатури, 3.1 кг, чорний",
+        "color": "чорний",
+        "product_code": "U0805559",
+        "additional_code": "89855",
+        "article": "RAIDER_GE78HX_13VH-211UA",
+        "description": null,
+        "producer": "MSI",
+        "model": "MSI GE Raider",
+        "guarantee": 12,
+        "characteristics": {
+            "producer": "MSI",
+            "display_size": "17″",
+            "resolving_power": "2560×1600 (WQXGA)",
+            "screen": "матова",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-13950HX (4.0-5.5 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "64 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 4080",
+            "amount_of_VRAM": "12 ГБ",
+            "OS": "Windows 11",
+            "battery_capacity": "4 cell",
+            "weight": "3.1 кг",
+            "country_of_production": "Китай",
+            "features": ["підсвітка клавіатури"]
+        }
+    },
+
+    {
+        "id": "U0895909",
+        "title": "ASUS ROG Strix SCAR 18 G834JYR-R6059X",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2024/02/u0895909-asus-rog-strix-scar-18-g834jyr-r6059x-90nr0ip2-m002z0-flick.zone_38050_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2024/02/u0895909-asus-rog-strix-scar-18-g834jyr-r6059x-90nr0ip2-m002z0-flick.zone-131701_nobg.png",
+                "https://flick.zone/wp-content/uploads/2024/02/u0895909-asus-rog-strix-scar-18-g834jyr-r6059x-90nr0ip2-m002z0-flick.zone-367340_nobg.png",
+                "https://flick.zone/wp-content/uploads/2024/02/u0895909-asus-rog-strix-scar-18-g834jyr-r6059x-90nr0ip2-m002z0-flick.zone-447444_nobg.png"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 179999,
+            "currency": "UAH",
+            "discount_percentage": 2
+        },
+        "tags": [],
+        "new": false,
+        "top_sales": true,
+        "summary": "18″, 2560×1600 (WQXGA), Mini LED, 1100nits, Intel Core i9-14900HX (2.2 – 5.8 ГГц), 32 ГБ, SSD – 2 ТБ SSD (2 x 1 ТБ), NVIDIA GeForce RTX 4090, GPU – 16 ГБ, Windows 11 Pro, підсвічування клавіатури, TPM модуль, 3.1 кг, чорний",
+        "color": "чорний",
+        "product_code": "U0895909",
+        "additional_code": "169003",
+        "article": "90NR0IP2-M002Z0",
+        "description": "Грайте. Транслюйте. Творіть. Ноутбуки серії SCAR створені з прицілом на геймерів і, звісно, розробників ігор. На Strix SCAR 18 працюють усі сучасні ігрові рушії, тож за цим ноутбуком ви зможете розкрити свій творчий потенціал та створити нову культову гру. Займаєтеся комп’ютерною графікою, редагуванням відео, транслюванням гри чи пробуєте сили в анімації або розробці ігор – Strix SCAR 18 забезпечить всією обчислювальною потужністю, потрібною, щоб вивести ваші твори на новий рівень. У максимальній конфігурації ноутбук має процесор Intel Core i9 та відеокарту серії NVIDIA GeForce RTX 40 для ноутбуків, які легко впораються зі складними проєктами на популярних платформах розробки Unity та Autodesk. Ви здатні бути кращим у грі – та чи готові створити нову?",
+        "producer": "ASUS",
+        "model": "ROG Strix SCAR 18 G834JYR-R6059X",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "ASUS",
+            "display_size": "18″",
+            "resolving_power": "2560×1600 (WQXGA)",
+            "screen": "матова",
+            "matrix-type": "Mini LED",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-14900HX (2.2 – 5.8 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ SSD (2 x 1 ТБ)",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 4090",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "90 Втг",
+            "weight": "3.1 кг",
+            "country_of_production": "Китай",
+            "features": ["вбудований мікрофон", "стереодинаміки", "мишка в комплекті", "рюкзак в комплекті"]
+        }
+    },
+
+    {
+        "id": "U0838791",
+        "title": "Lenovo Legion T5 26IRB8 / i5-13400F",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Ігрові компьютери"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2023/08/u0838788-lenovo-legion-t5-26irb8-i5-13400f-90uu007yul-flick.zone_54667_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2023/08/u0838788-lenovo-legion-t5-26irb8-i5-13400f-90uu007yul-flick.zone-144270_nobg.png",
+                "https://flick.zone/wp-content/uploads/2023/08/u0838788-lenovo-legion-t5-26irb8-i5-13400f-90uu007yul-flick.zone-279821_nobg.png",
+                "https://flick.zone/wp-content/uploads/2023/08/u0838788-lenovo-legion-t5-26irb8-i5-13400f-90uu007yul-flick.zone-348830_nobg.png"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "discount_percentage": null,
+            "price": 39479,
+            "currency": "UAH"
+        },
+        "tags": ["АКЦІЇ"],
+        "summary": "Intel Core i5, 13400F, 10 ядер, 16 потоків, Частота, ГГц – 2.5, Частота Boost, ГГц – 4.6, Intel B660, GPU – дискретна, GeForce RTX 3060, GPU – 12 ГБ, RAM – 16 ГБ, HDD – 1 TB, SSD – 512 GB, Bluetooth 5.1, Wi-Fi 6, 3 x DisplayPort, 1 x Нeadphone, 1 х Microphone, 4 x USB 2.0, 4 x USB 3.2 Gen1 Type-A, 1 х HDMI, 1 x USB 3.2 Gen2 Type-C, 3 x Audio, 1 x RJ45, немає, PSU – 500 Вт",
+        "color": "темно-сірий",
+        "product_code": "U0838788",
+        "additional_code": "124550",
+        "article": "90UU007YUL",
+        "description": "Lenovo Legion T5 26IRB8 Storm Grey (90UU007YUL) – новий ігровий ПК від Lenovo. Продумана система охолодження, звіряча сила процесора, відеокарти та оперативної пам’яті в поєднанні з виразним яскравим корпусом. Він стане найкращим другом геймера в епічних сутичках цифрового всесвіту.",
+        "producer": "Lenovo",
+        "model": "Legion T5 26IRB8 / i5-13400F",
+        "guarantee": 12,
+        "characteristics": {
+            "pc_type": "Ігрові",
+            "producer": "Lenovo",
+            "processor_series": "Intel Core i5",
+            "processor_model": "13400F",
+            "number_of_processor_cores": 10,
+            "number_of_streams": "16 потоків",
+            "CPU_frequency": "2.5",
+            "chipset": "Intel B660",
+            "video_card_type": "дискретна",
+            "video_card": "GeForce RTX 3060",
+            "types_of_hard_drives": "HDD, SSD",
+            "HDD_size": "1 TB",
+            "SSD_size": "512 GB",
+            "optical_drive": "без DVD",
+            "OS": "без ОС",
+            "material": "метал, пластик, скло",
+            "weight": "14 кг",
+            "features": ["TPM-модуль", "вікно на боковій панелі"],
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "U0838791",
+        "title": "Lenovo Legion T5 26IRB8 / i5-13400F",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Ігрові компьютери"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2023/08/u0838791-lenovo-legion-t5-26ara8-ryzen7-7700-90uy003xul-flick.zone_96603_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2023/08/u0838791-lenovo-legion-t5-26ara8-ryzen7-7700-90uy003xul-flick.zone-118734_nobg.png",
+                "https://flick.zone/wp-content/uploads/2023/08/u0838791-lenovo-legion-t5-26ara8-ryzen7-7700-90uy003xul-flick.zone-240066_nobg.png",
+                "https://flick.zone/wp-content/uploads/2023/08/u0838788-lenovo-legion-t5-26irb8-i5-13400f-90uu007yul-flick.zone-348830_nobg.png"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "discount_percentage": 2,
+            "price": 46299,
+            "currency": "UAH"
+        },
+        "tags": ["АКЦІЇ"],
+        "summary": "AMD Ryzen 7, 7700, 8 ядер, 16 потоків, Частота, ГГц – 4.5, Частота Boost, ГГц – 5.4, AMD B650, GPU – дискретна, GeForce RTX 3060, GPU – 12 ГБ, RAM – 16 ГБ, HDD – 2 TB, SSD – 512 GB, Bluetooth 5.1, Wi-Fi 6E, 3 x DisplayPort, 1 x Нeadphone, 1 х Microphone, 2 x USB 2.0, 4 x USB 3.2 Gen1 Type-A, 1 х HDMI, 1 x USB 3.2 Gen2 Type-C, 3 x Audio, 2 x USB 3.2 Gen2, 1 x RJ45, немає, PSU – 500 Вт",
+        "color": "темно-сірий",
+        "product_code": "U0838791",
+        "additional_code": "124532",
+        "article": "90UY003XUL",
+        "description": "Lenovo Legion T5 26ARA8 Storm Grey (90UY003XUL) – новий ігровий ПК від Lenovo. Продумана система охолодження, звіряча сила процесора, відеокарти та оперативної пам’яті в поєднанні з виразним яскравим корпусом. Він стане найкращим другом геймера в епічних сутичках цифрового всесвіту.",
+        "producer": "Lenovo",
+        "model": "Legion T5 26ARA8 / Ryzen7 7700",
+        "guarantee": 12,
+        "characteristics": {
+            "pc_type": "Ігрові",
+            "producer": "Lenovo",
+            "processor_series": "AMD Ryzen 7",
+            "processor_model": "Zen 4 7700",
+            "number_of_processor_cores": 8,
+            "number_of_streams": "16 потоків",
+            "CPU_frequency": "4.5",
+            "chipset": "AMD B650",
+            "video_card_type": "дискретна",
+            "video_card": "GeForce RTX 3060",
+            "types_of_hard_drives": "HDD, SSD",
+            "HDD_size": "2 TB",
+            "SSD_size": "512 GB",
+            "optical_drive": "без DVD",
+            "OS": "без ОС",
+            "material": "метал, пластик, скло",
+            "weight": "14 кг",
+            "features": ["TPM-модуль", "вікно на боковій панелі"],
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "1604363",
+        "title": "Cougar 700K EVO",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Клавіатури"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2024/01/1604363-cougar-700k-evo-flick.zone_46843_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2024/01/1604363-cougar-700k-evo-flick.zone-123272_nobg.png",
+                "https://flick.zone/wp-content/uploads/2023/08/u0838791-lenovo-legion-t5-26ara8-ryzen7-7700-90uy003xul-flick.zone-240066_nobg.png",
+                "https://flick.zone/wp-content/uploads/2024/01/1604363-cougar-700k-evo-flick.zone-418067_nobg.png"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "discount_percentage": 10,
+            "price": 5499,
+            "currency": "UAH"
+        },
+        "tags": ["АКЦІЇ"],
+        "summary": "Клавіатура ігрова механічна, Cherry MX Red, RGB-підсвічування, USB, audio jack",
+        "color": "чорний",
+        "product_code": "1604363",
+        "additional_code": "164354",
+        "article": "700K EVO",
+        "description": null,
+        "producer": "Cougar",
+        "model": "700K EVO",
+        "guarantee": 12,
+        "characteristics": {
+        }
+    },
+
+    {
+        "id": "U0407780",
+        "title": "SteelSeries Apex 7 Red Switch Ru",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Клавіатури"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2021/05/u0407780-steelseries-apex-7-red-switch-ru-64642-flick.zone_72482_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2021/05/u0407780-steelseries-apex-7-red-switch-ru-64642-flick.zone-138833_nobg.png",
+                "https://flick.zone/wp-content/uploads/2021/05/u0407780-steelseries-apex-7-red-switch-ru-64642-flick.zone-249497_nobg.png"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "discount_percentage": null,
+            "price": 8299,
+            "currency": "UAH"
+        },
+        "tags": ["НОВИНКА"],
+        "summary": "Створення першої ігрової механічної клавіатури – одне з найважливіших подій в історії SteelSeries. Apex 7 продовжує лінійку надійних, як танки, ігрових механічних клавіатур. Корпус клавіатури має алюмінієву основу. У ній використовується алюмінієвий сплав 5000, що надає клавіатурі Apex 7 неперевершену стійкість.",
+        "color": "чорний",
+        "product_code": "U0407780",
+        "additional_code": "4839",
+        "article": "64642",
+        "description": null,
+        "producer": "SteelSeries",
+        "model": null,
+        "guarantee": 24,
+        "characteristics": {
+            "type": "ігрова, з підсвіткою",
+            "connection_type": "дротова",
+            "illumination": "так",
+            "keyboard_layout": "англійська, російська",
+            "compatibility": "Mac OS, Windows",
+            "weight": "1.8 кг",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "0200203",
+        "title": "Bloody Q100 (Black)",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Клавіатури"
+        },
+        "images": {
+            "image_cover": "https://flick.zone/wp-content/uploads/2024/01/0200203-bloody-q100-black-flick.zone_93164_nobg.png",
+            "images_set": [
+                "https://flick.zone/wp-content/uploads/2024/01/0200203-bloody-q100-black-flick.zone-234942_nobg.png",
+                "https://flick.zone/wp-content/uploads/2024/01/0200203-bloody-q100-black-flick.zone-120981_nobg.png",
+                "https://flick.zone/wp-content/uploads/2024/01/0200203-bloody-q100-black-flick.zone-4.jpg"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "discount_percentage": 13,
+            "price": 799,
+            "currency": "UAH"
+        },
+        "tags": ["АКЦІЇ"],
+        "summary": "Клавіатура USB, ігрова, чорний",
+        "color": "чорний",
+        "product_code": "0200203",
+        "additional_code": "163985",
+        "article": "Q100 (BLACK)",
+        "description": null,
+        "producer": "Bloody",
+        "model": "Q100 Bloody (Black)",
+        "guarantee": 12,
+        "characteristics": {
+        }
+    }
+
+]
