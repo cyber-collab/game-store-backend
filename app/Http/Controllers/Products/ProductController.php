@@ -13,10 +13,6 @@ use App\Http\Requests\Product\StoreProductRequest;
 use App\Models\Products\Image;
 use App\Models\Products\Characteristics;
 
-
-
-
-
 class ProductController extends Controller
 {
     /**
