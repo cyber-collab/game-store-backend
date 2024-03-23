@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\SubCategoryController;
 use App\Http\Controllers\Api\PartnerController;
 use App\Http\Controllers\Api\HomeBlockHeroController;
 use App\Http\Controllers\Api\BannerController;
+use App\Http\Controllers\Api\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,4 @@ Route::apiResource('api-partners', PartnerController::class);
 Route::apiResource('api-categories', CategoryController::class);
 Route::apiResource('api-subcategories', SubCategoryController::class);
 Route::apiResource('api-banners', BannerController::class);
+Route::apiResource('api-products', ProductController::class);

@@ -1,76 +1,59 @@
 @extends('layouts.main')
-
 @section('content')
-    <!-- Content Header (Page header) -->
+    @php
+        /** @var \App\Models\Category $item */
+    @endphp
     <section class="content-header">
         <div class="container-fluid my-2">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Create Category</h1>
+                    <h1>Categories</h1>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <a href="{{ route('categories.index') }}" class="btn btn-primary">Back</a>
+                    <a href="{{route('categories.index')}}" class="btn btn-primary">Categories</a>
                 </div>
             </div>
         </div>
         <!-- /.container-fluid -->
     </section>
-    <!-- Main content -->
     <section class="content">
         <!-- Default box -->
-        <div class="container-fluid">
-            <form action="{{ route('categories.store') }}" method="post" id="categoryForm" name="categoryForm">
-                @csrf
-                @method('post')
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" class="form-control"
-                                        placeholder="Name">
-                                    <p></p>
-                                </div>
+        <div class="container-fluid my-2">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-tools">
+                        <div class="input-group input-group" style="width: 250px;">
+                            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="fas fa-search"></i>
+                                </button>
                             </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="slug">Slug</label>
-                                    <input type="text" name="slug" id="slug" class="form-control"
-                                        placeholder="Slug">
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="status">Status</label>
-                                <select name="status" id="status" class="form-control">
-                                    <option value="1">Active</option>
-                                    <option value="0">Block</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="subcategories">Subcategories</label>
-                                <select name="subcategories[]" id="subcategories" class="form-control" multiple>
-                                    @foreach ($subCategories as $subCategory)
-                                        <option value="{{ $subCategory->id }}">{{ $subCategory->name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            {{-- <button type="button" class="btn btn-primary add-subcategory">Add sub-category</button> --}}
                         </div>
                     </div>
                 </div>
+                <div class="card-body table-responsive p-3">
+
+                    <form method="POST" action="{{route('categories.store')}}" >
+                        @csrf
+
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    @include('category.includes.item_edit_main_col')
+                                </div>
+                                <div class="col-md-3">
+                                    @include('category.includes.item_edit_add_col')
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
         </div>
-        <div class="pb-5 pt-3">
-            <button type="submit" class="btn btn-primary">Create</button>
-        </div>
-        </form>
-        </div>
-        <!-- /.card -->
     </section>
-    <!-- /.content -->
+
 @endsection

@@ -1,14 +1,10 @@
 <?php
 
 
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\HomeBlockHeroController;
 use App\Http\Controllers\Category\CategoryController;
-use App\Http\Controllers\Admin\HomeController as AdminHomeController;
-use App\Http\Controllers\SubCategoryController;
-use App\Http\Resources\SubCategoryResources;
-use App\Models\SubCategory;
+use App\Http\Controllers\Products\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,23 +17,23 @@ use App\Models\SubCategory;
 |
 */
 
-require __DIR__.'/auth.php';
-Auth::routes();
-
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('main.index');
+});
+//
+Route::resource('categories', App\Http\Controllers\Category\CategoryController::class);
+
+
+Route::resource('/products', App\Http\Controllers\Products\ProductController::class);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('categories', CategoryController::class);
-Route::resource('subcategories', SubCategoryController::class);
-Route::resource('block-home-hero', HomeBlockHeroController::class);
-//Route::resource('product', ProdyctController::class);
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/admin-home', [AdminHomeController::class, 'index'])->name('admin_home');
-
-Route::get('test2', function(){
-    $xyx=SubCategory::find(1);
-    return new SubCategoryResources($xyx);
-});
-
+require __DIR__.'/auth.php';
