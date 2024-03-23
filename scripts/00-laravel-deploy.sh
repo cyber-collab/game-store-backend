@@ -19,9 +19,6 @@ php artisan migrate:refresh
 echo "Import categories..."
 php artisan import:categories
 
-echo "Import products..."
-php artisan import:products
-
 echo "Running migrations..."
 php artisan migrate --force
 
