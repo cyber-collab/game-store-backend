@@ -9,6 +9,50 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Products\Cost;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
+/**
+ * 
+ *
+ * @property int $id
+ * @property string $title
+ * @property string|null $description
+ * @property int $new
+ * @property int $top_sales
+ * @property int $quantity
+ * @property string|null $summary
+ * @property string|null $color
+ * @property string|null $product_code
+ * @property string|null $additional_code
+ * @property string|null $article
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Category> $categories
+ * @property-read int|null $categories_count
+ * @property-read Characteristics|null $characteristics
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Cost> $costs
+ * @property-read int|null $costs_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Products\Image> $images
+ * @property-read int|null $images_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Products\Tag> $tags
+ * @property-read int|null $tags_count
+ * @method static \Database\Factories\Products\ProductFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder|Product newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Product newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Product query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereAdditionalCode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereArticle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereColor($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereNew($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereProductCode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereQuantity($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereSummary($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereTopSales($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Product whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class Product extends Model
 {
     use HasFactory;
