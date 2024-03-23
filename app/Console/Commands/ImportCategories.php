@@ -25,7 +25,9 @@ class ImportCategories extends Command
                 'status' => $categoryData['status'],
             ]);
 
-            $this->createSubcategories($category, $categoryData['subcategories']);
+            if (isset($categoryData['subcategories'])) {
+                $this->createSubcategories($category, $categoryData['subcategories']);
+            }
         }
 
         $this->info('Categories imported successfully.');
