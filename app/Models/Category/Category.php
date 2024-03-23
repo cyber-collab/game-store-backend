@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
- * 
+ *
  *
  * @property int $id
  * @property string $name
@@ -45,6 +45,8 @@ class Category extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'title',  'images', 'slug', 'description', 'parent_id', 'status'];
+
     public function products()
     {
         return $this->belongsToMany(Product::class, 'category_product');
@@ -54,7 +56,4 @@ class Category extends Model
     {
         return $this->belongsToMany(SubCategory::class, 'category_subcategory', 'category_id', 'sub_category_id');
     }
-
-    protected $fillable = ['name', 'title',  'images', 'slug', 'description', 'parent_id', 'status'];
-
 }

@@ -13,13 +13,13 @@ class ImportCategories extends Command
 
     protected $description = 'Import categories with subcategories';
 
-    public function handle()
+    public function handle(): void
     {
         $jsonFile = Storage::path('public/api-categories.json');
         $categories = json_decode(file_get_contents($jsonFile), true);
 
         foreach ($categories as $categoryData) {
-            $category = Category::create([
+            $category = Category::updateOrCreate([
                 'name' => $categoryData['name'],
                 'slug' => $categoryData['slug'],
                 'status' => $categoryData['status'],
@@ -31,7 +31,7 @@ class ImportCategories extends Command
         $this->info('Categories imported successfully.');
     }
 
-    private function createSubcategories(Category $category, array $subcategoriesData)
+    private function createSubcategories(Category $category, array $subcategoriesData): void
     {
         foreach ($subcategoriesData as $subcategoryData) {
             $subcategory = SubCategory::create([
