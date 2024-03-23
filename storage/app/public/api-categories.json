@@ -35,7 +35,7 @@
     {
         "id":"02",
         "name":"Ноутбуки",
-        "slug":"",
+        "slug":"netbooks",
         "status": 1,
         "subcategories":[
             {
@@ -173,5 +173,11 @@
                 "slug":"gaming-surfaces"
             }
         ]
+    },
+    {
+        "id":"06",
+        "name":"Акції і пропозиції",
+        "slug":"#",
+        "status": 1
     }
 ]
