@@ -10,7 +10,7 @@ use App\Models\Products\Cost;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
- * 
+ *
  *
  * @property int $id
  * @property string $title
@@ -89,7 +89,7 @@ class Product extends Model
         return $this->hasOne(Characteristics::class);
     }
 
-    public static function createProduct(array $data)
+    public static function createProduct(array $data): Product
     {
         $product = static::create([
             'title' => $data['title'],
