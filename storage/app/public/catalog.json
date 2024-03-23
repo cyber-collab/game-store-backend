@@ -4,7 +4,7 @@
         "title": "ASUS ROG Strix G16 G614JZR-N4094W",
         "navigation": {
             "category": "Ноутбуки",
-            "subcategory": "Ноутбуки"
+            "subcategory": "Ноутбуки ASUS"
         },
         "images": {
             "image_cover": "https://flick.zone/wp-content/uploads/2024/02/u0898696-asus-rog-strix-g16-g614jzr-n4094w-90nr0ic3-m00440-flick.zone-395319_nobg.png",
@@ -60,7 +60,7 @@
         "title": "MSI Raider",
         "navigation": {
             "category": "Ноутбуки",
-            "subcategory": "Ноутбуки"
+            "subcategory": "Ноутбуки MSI"
         },
         "images": {
             "image_cover": "https://flick.zone/wp-content/uploads/2023/05/u0805559-msi-raider-raider_ge78hx_13vh-211ua-flick.zone_21532_nobg.png",
@@ -117,7 +117,7 @@
         "title": "ASUS ROG Strix SCAR 18 G834JYR-R6059X",
         "navigation": {
             "category": "Ноутбуки",
-            "subcategory": "Ноутбуки"
+            "subcategory": "Ноутбуки ASUS"
         },
         "images": {
             "image_cover": "https://flick.zone/wp-content/uploads/2024/02/u0895909-asus-rog-strix-scar-18-g834jyr-r6059x-90nr0ip2-m002z0-flick.zone_38050_nobg.png",
@@ -386,6 +386,405 @@
         "guarantee": 12,
         "characteristics": {
         }
-    }
+    },
+    {
+        "id": "U0912345",
+        "title": "Razer Blade 15 Advanced",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки Razer"
+        },
+        "images": {
+            "image_cover": "https://pcshop.ua/image/cache/webp/catalog/tovar/noutbuk-razer-blade-15-advanced-edition-rz09-03305e43-r3u1-black-1024x768.webp",
+            "images_set": [
+                "https://pcshop.ua/image/cache/webp/catalog/tovar/noutbuk-razer-blade-15-advanced-edition-rz09-03305e43-r3u1-black-photo2-326x264.webp",
+                "https://pcshop.ua/image/cache/webp/catalog/tovar/noutbuk-razer-blade-15-advanced-edition-rz09-03305e43-r3u1-black-photo4-326x264.webp",
+                "https://pcshop.ua/image/cache/webp/catalog/tovar/noutbuk-razer-blade-15-advanced-edition-rz09-03305e43-r3u1-black-photo5-326x264.webp",
+                "https://pcshop.ua/image/cache/webp/catalog/tovar/noutbuk-razer-blade-15-advanced-edition-rz09-03305e43-r3u1-black-photo6-326x264.webp",
+                "https://pcshop.ua/image/cache/webp/catalog/tovar/noutbuk-razer-blade-15-advanced-edition-rz09-03305e43-r3u1-black-photo7-326x264.webp"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 54949,
+            "currency": "UAH",
+            "discount_percentage": 8
+        },
+        "tags": ["АКЦІЯ"],
+        "new": true,
+        "top_sales": false,
+        "summary": "15.6″, 3840×2160 (4K), OLED, Intel Core i9-12900H (2.4 – 5.0 ГГц), 32 ГБ, SSD – 2 ТБ, NVIDIA GeForce RTX 3080 Ti, GPU – 16 ГБ, Windows 11 Pro, 2.2 кг",
+        "color": "чорний",
+        "product_code": "U0912345",
+        "additional_code": "123456",
+        "article": "RAZERBLADE15ADV_2024",
+        "description": "Razer Blade 15 Advanced - це елітний геймерський ноутбук з вражаючим 4K OLED дисплеєм та потужними компонентами. Завдяки інноваційній конструкції та відмінному охолодженню ви зможете насолоджуватися найсучаснішими іграми з вражаючою деталізацією та плавністю.",
+        "producer": "Razer",
+        "model": "Blade 15 Advanced",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Razer",
+            "display_size": "15.6″",
+            "resolving_power": "3840×2160 (4K)",
+            "screen": "OLED",
+            "matrix-type": "OLED",
+            "screen_refresh_rate": "60Hz",
+            "processor": "Intel Core i9-12900H (2.4 – 5.0 ГГц)",
+            "number_of_processor_cores": 14,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080 Ti",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "6 cell",
+            "weight": "2.2 кг",
+            "country_of_production": "США"
+        }
+    },
 
+    {
+        "id": "U0907890",
+        "title": "Gigabyte AORUS 15G",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки Gigabyte"
+        },
+        "images": {
+            "image_cover": "https://img.moyo.ua/img/products/5376/8_600.jpg?1708508493",
+            "images_set": [
+                "https://img.moyo.ua/img/gallery/5376/8/1592899_main.jpg?1681580666",
+                "https://img.moyo.ua/img/gallery/5376/8/1592897_main.jpg?1681580666",
+                "https://img.moyo.ua/img/gallery/5376/8/1592896_main.jpg?1681580666",
+                "https://img.moyo.ua/img/gallery/5376/8/1592892_main.jpg?1681580666",
+                "https://img.moyo.ua/img/gallery/5376/8/1592891_main.jpg?1681580666"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 79999,
+            "currency": "UAH",
+            "discount_percentage": 4
+        },
+        "tags": ["АКЦІЇ"],
+        "new": false,
+        "top_sales": true,
+        "summary": "15.6″, 1920×1080 (Full HD), IPS, Intel Core i7-12700H (2.5 – 4.7 ГГц), 16 ГБ, SSD – 1 ТБ, NVIDIA GeForce RTX 3060, GPU – 6 ГБ, Windows 11 Home, 2.2 кг",
+        "color": "чорний",
+        "product_code": "U0907890",
+        "additional_code": "789012",
+        "article": "AORUS15G_2024",
+        "description": "Gigabyte AORUS 15G - це ідеальний вибір для геймерів, які цінують якість і продуктивність. Завдяки потужному процесору Intel Core i7 і відеокарті NVIDIA GeForce RTX 3060 ви зможете насолоджуватися плавним ігровим досвідом у найпопулярніших іграх.",
+        "producer": "Gigabyte",
+        "model": "AORUS 15G",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Gigabyte",
+            "display_size": "15.6″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "144Hz",
+            "processor": "Intel Core i7-12700H (2.5 – 4.7 ГГц)",
+            "number_of_processor_cores": 12,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "16 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3060",
+            "amount_of_VRAM": "6 ГБ",
+            "OS": "Windows 11 Home",
+            "battery_capacity": "6 cell",
+            "weight": "2.2 кг",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "U0903456",
+        "title": "Dell Alienware M15 R7",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки Dell"
+        },
+        "images": {
+            "image_cover": "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/49/3d/2700126.jpeg",
+            "images_set": [
+                "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/f5/c8/2700127.jpeg",
+                "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/78/70/2700130.jpeg",
+                "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/de/45/2700129.jpeg",
+                "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/e0/a5/2700128.jpeg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 74030,
+            "currency": "UAH",
+            "discount_percentage": null
+        },
+        "tags": [],
+        "new": false,
+        "top_sales": true,
+        "summary": "15.6″, 1920×1080 (Full HD), IPS, Intel Core i9-12900H (2.4 – 5.0 ГГц), 32 ГБ, SSD – 2 ТБ, NVIDIA GeForce RTX 3080, GPU – 16 ГБ, Windows 11 Pro, 2.5 кг",
+        "color": "чорний",
+        "product_code": "U0903456",
+        "additional_code": "345678",
+        "article": "ALWM15R6_2024",
+        "description": "Alienware m15 R7 - найновіший геймерський ноутбук від легендарного бренду Alienware. Завдяки потужному процесору Intel Core i9 і відеокарті NVIDIA GeForce RTX 3080 ви зможете насолоджуватися ігровим процесом у найвищих налаштуваннях.",
+        "producer": "Alienware",
+        "model": "Alienware m15 R7",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Alienware",
+            "display_size": "15.6″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "144Hz",
+            "processor": "Intel Core i9-12900H (2.4 – 5.0 ГГц)",
+            "number_of_processor_cores": 14,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "6 cell",
+            "weight": "2.5 кг",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "U0905678",
+        "title": "Razer Blade 15 Advanced",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки Razer"
+        },
+        "images": {
+            "image_cover": "https://touch.com.ua/upload/resize_cache/webp/iblock/074/65cxbbo1palehokh8ccth06u197dccpt.webp",
+            "images_set": [
+                "https://touch.com.ua/upload/resize_cache/webp/iblock/056/1cm9gjunyxg80w6dxi8v4o657f02wsup.webp",
+                "https://touch.com.ua/upload/resize_cache/webp/iblock/e8c/zn45h7ouxrpbewhu40uz2rzhmzt9lyxy.webp",
+                "https://touch.com.ua/upload/resize_cache/webp/iblock/d0d/10x17lztxm6i5v0nu4oe8jyu8ltvjtqd.webp"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 139999,
+            "currency": "UAH",
+            "discount_percentage": 3
+        },
+        "tags": ["gaming"],
+        "new": false,
+        "top_sales": true,
+        "summary": "15.6″, 3840×2160 (4K Ultra HD), OLED, Intel Core i7-11800H (2.3 – 4.6 ГГц), 16 ГБ, SSD – 1 ТБ, NVIDIA GeForce RTX 3070, GPU – 8 ГБ, Windows 11 Pro, 2.1 кг",
+        "color": "чорний",
+        "product_code": "U0905678",
+        "additional_code": "567890",
+        "article": "RZRBLADE15ADV_2024",
+        "description": "Razer Blade 15 Advanced - потужний і стильний ноутбук для справжніх геймерів. Його 4K OLED дисплей забезпечить відмінну якість зображення, а потужний процесор і відеокарта дозволять насолоджуватися геймплеєм в найвимогливіших іграх.",
+        "producer": "Razer",
+        "model": "Razer Blade 15 Advanced",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Razer",
+            "display_size": "15.6″",
+            "resolving_power": "3840×2160 (4K Ultra HD)",
+            "screen": "OLED",
+            "matrix-type": "OLED",
+            "screen_refresh_rate": "60Hz",
+            "processor": "Intel Core i7-11800H (2.3 – 4.6 ГГц)",
+            "number_of_processor_cores": 8,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "16 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3070",
+            "amount_of_VRAM": "8 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "6 cell",
+            "weight": "2.1 кг",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "U0905432",
+        "title": "Razer Blade 17 Pro",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки Razer"
+        },
+        "images": {
+            "image_cover": "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/11/3c/1925589.jpeg",
+            "images_set": [
+                "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/50/47/1925592.jpeg",
+                "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/ca/c0/1925590.jpeg",
+                "https://stylus.ua/cdn-cgi/image/width=500,height=500,fit=pad,f=webp/gallery/45/26/1925591.jpeg"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 155999,
+            "currency": "UAH",
+            "discount_percentage": 3
+        },
+        "tags": ["gaming"],
+        "new": false,
+        "top_sales": false,
+        "summary": "17.3″, 2560×1440 (WQHD), IPS, Intel Core i9-12900HK (2.5 – 5.0 ГГц), 64 ГБ, SSD – 2 ТБ, NVIDIA GeForce RTX 3080 Ti, GPU – 16 ГБ, Windows 11 Pro, 3.9 кг",
+        "color": "чорний",
+        "product_code": "U0905432",
+        "additional_code": "234567",
+        "article": "RAZERBLADE17PRO_2024",
+        "description": "Ноутбук, створений для вимогливих геймерів та професіоналів у сфері відеомонтажу та візуалізації. Він забезпечить максимальну продуктивність у найскладніших завданнях.",
+        "producer": "Razer",
+        "model": "Razer Blade 17 Pro",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Razer",
+            "display_size": "17.3″",
+            "resolving_power": "2560×1440 (WQHD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "360Hz",
+            "processor": "Intel Core i9-12900HK (2.5 – 5.0 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "64 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080 Ti",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "4 cell",
+            "weight": "3.9 кг",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "U0903456",
+        "title": "Gigabyte Aorus 17G",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки Gigabyte"
+        },
+        "images": {
+            "image_cover": "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/g/i/gigabyte_aorus_17g_aorus_17g_kd-72ru325sd_black_1_.jpg/w_600",
+            "images_set": [
+                "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/g/i/gigabyte_aorus_17g_aorus_17g_kd-72ru325sd_black_10_.jpg/w_600",
+                "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/g/i/gigabyte_aorus_17g_aorus_17g_kd-72ru325sd_black_9_.jpg/w_600",
+                "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/g/i/gigabyte_aorus_17g_aorus_17g_kd-72ru325sd_black_8_.jpg/w_600",
+                "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/g/i/gigabyte_aorus_17g_aorus_17g_kd-72ru325sd_black_2_.jpg/w_600"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 63899,
+            "currency": "UAH",
+            "discount_percentage": 4
+        },
+        "tags": ["АКЦІЇ"],
+        "new": false,
+        "top_sales": false,
+        "summary": "17.3″, 1920×1080 (Full HD), IPS, Intel Core i9-11980HK (2.6 – 5.0 ГГц), 64 ГБ, SSD – 2 ТБ, NVIDIA GeForce RTX 3070, GPU – 8 ГБ, Windows 11 Pro, 3.75 кг",
+        "color": "чорний",
+        "product_code": "U0903456",
+        "additional_code": "789012",
+        "article": "GIGA17G_2024",
+        "description": "Ноутбук для справжніх геймерів, які цінують потужність та надійність. Він здатний запускати найвимогливіші ігри на вищих налаштуваннях.",
+        "producer": "Gigabyte",
+        "model": "Gigabyte Aorus 17G",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Gigabyte",
+            "display_size": "17.3″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "300Hz",
+            "processor": "Intel Core i9-11980HK (2.6 – 5.0 ГГц)",
+            "number_of_processor_cores": 16,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "64 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3070",
+            "amount_of_VRAM": "8 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "4 cell",
+            "weight": "3.75 кг",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "U0902467",
+        "title": "Acer Predator Helios 700",
+        "navigation": {
+            "category": "Ноутбуки",
+            "subcategory": "Ноутбуки Acer"
+        },
+        "images": {
+            "image_cover": "https://images.prom.ua/5049664358_noutbuk-acer-predator.jpg",
+            "images_set": [
+                "https://images.prom.ua/5049664359_w640_h640_5049664359.jpg",
+                "https://images.prom.ua/5049664360_w640_h640_5049664360.jpg",
+                "https://images.prom.ua/5049664361_w640_h640_5049664361.jpg",
+                "https://images.prom.ua/5049664362_w100_h100_5049664362.jpg",
+                "https://images.prom.ua/5049664363_w640_h640_5049664363.jpg",
+                "https://images.prom.ua/5049664364_w640_h640_5049664364.jpg"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 178544,
+            "currency": "UAH",
+            "discount_percentage": 5
+        },
+        "tags": ["НОВИНКИ", "АКЦІЯ", "ТОП"],
+        "new": false,
+        "top_sales": false,
+        "summary": "17.3″, 1920×1080 (Full HD), IPS, Intel Core i9-11900H (2.5 – 4.9 ГГц), 32 ГБ, SSD – 1 ТБ, NVIDIA GeForce RTX 3080, GPU – 16 ГБ, Windows 11 Home, 4.5 кг",
+        "color": "чорний",
+        "product_code": "U0902467",
+        "additional_code": "456789",
+        "article": "ACERHEL700_2024",
+        "description": "Геймерський ноутбук з потужним охолодженням та високоякісним дисплеєм. Ідеально підходить для екстремальних геймінгових сесій.",
+        "producer": "Acer",
+        "model": "Acer Predator Helios 700",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Acer",
+            "display_size": "17.3″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-11900H (2.5 – 4.9 ГГц)",
+            "number_of_processor_cores": 8,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Home",
+            "battery_capacity": "4 cell",
+            "weight": "4.5 кг",
+            "country_of_production": "Китай"
+        }
+    }
 ]
