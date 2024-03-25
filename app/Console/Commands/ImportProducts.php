@@ -2,11 +2,12 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Products\Image;
 use Illuminate\Console\Command;
 use App\Models\Products\Product;
 use App\Models\Category\Category;
 use Illuminate\Support\Facades\Storage;
-
+use Illuminate\Support\Facades\URL;
 class ImportProducts extends Command
 {
     protected $signature = 'import:products';
@@ -47,9 +48,21 @@ class ImportProducts extends Command
 
             $product->categories()->syncWithoutDetaching([$category->id]);
 
-            foreach ($productData['images']['images_set'] as $image) {
-                $product->images()->create(['url' => $image]);
+            foreach ($productData['images']['images_set'] as $imageUrl) {
+                $imageName = basename($imageUrl);
+                $storagePath = 'public/images/' . $imageName;
+
+                $storedPath = Storage::put($storagePath, file_get_contents($imageUrl));
+
+                if ($storedPath) {
+                    $image = new Image();
+                    $image->product_id = $product->id;
+                    $image->images_set = json_encode(basename($imageName));
+                    $image->save();
+                }
             }
+
+
 
             foreach ($productData['tags'] as $tag) {
                 $product->tags()->create(['tag' => $tag]);
