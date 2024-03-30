@@ -31,4 +31,7 @@ php artisan import:partners
 echo "Import banners..."
 php artisan import:banners
 
+echo "Import products..."
+php artisan import:products
+
 echo "done deploying"

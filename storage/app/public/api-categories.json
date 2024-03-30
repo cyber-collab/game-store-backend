@@ -1,9 +1,10 @@
-[
+{"data": [
     {
         "id":"01",
         "name":"ПК та комплектуючі",
         "slug":"components",
         "status": 1,
+        "image": "https://drive.google.com/file/d/1n5JWm1NI7xr85VCuuGHLa2QH6j3EnBdu/view?usp=drive_link",
         "subcategories":[
             {
                 "id": "01.1",
@@ -37,6 +38,7 @@
         "name":"Ноутбуки",
         "slug":"netbooks",
         "status": 1,
+        "image": "https://drive.google.com/file/d/1TMdqn_zsWju-pvS6be7WUEBKp2VXvLHV/view?usp=drive_link",
         "subcategories":[
             {
                 "id": "02.1",
@@ -75,6 +77,7 @@
         "name":"Консолі та ігри",
         "slug":"console-and-games",
         "status": 1,
+        "image": "https://drive.google.com/file/d/13uikKGDtroPIFqTD2ed-AY5gqDNyt-g_/view?usp=drive_link",
         "subcategories":[
             {
                 "id": "03.1",
@@ -118,6 +121,7 @@
         "name":"Аксесуари",
         "slug":"",
         "status": 1,
+        "image": "https://drive.google.com/file/d/1AIRLY2KR59riAXL2xrbbUrDoxk9jpAVJ/view?usp=drive_link",
         "subcategories":[
             {
                 "id": "04.1",
@@ -156,6 +160,7 @@
         "name":"Перефірія",
         "slug":"periphery",
         "status": 1,
+        "image": "https://drive.google.com/file/d/1r2kBjk4ilcE6pXC_k1zwDSIClsAn45u0/view?usp=drive_link",
         "subcategories":[
             {
                 "id": "05.1",
@@ -178,6 +183,7 @@
         "id":"06",
         "name":"Акції і пропозиції",
         "slug":"#",
-        "status": 1
+        "status": 1,
+        "image": "https://drive.google.com/file/d/1r2kBjk4ilcE6pXC_k1zwDSIClsAn45u0/view?usp=drive_link"
     }
-]
+]}
