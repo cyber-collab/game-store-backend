@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Services\Google\GoogleDriveDownloader;
+use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use App\Models\Category\Category;
 use App\Models\SubCategory;
@@ -18,11 +20,17 @@ class ImportCategories extends Command
         $jsonFile = Storage::path('public/api-categories.json');
         $categories = json_decode(file_get_contents($jsonFile), true);
 
-        foreach ($categories as $categoryData) {
+        foreach ($categories['data'] as $categoryData) {
+
+            $downloader = new GoogleDriveDownloader();
+            $storagePath = 'public/images/categories/';
+
+            $fileName = $downloader->downloadImage('category_', $categoryData['image'], $storagePath);
             $category = Category::updateOrCreate([
                 'name' => $categoryData['name'],
                 'slug' => $categoryData['slug'],
                 'status' => $categoryData['status'],
+                'image' => $fileName,
             ]);
 
             if (isset($categoryData['subcategories'])) {
