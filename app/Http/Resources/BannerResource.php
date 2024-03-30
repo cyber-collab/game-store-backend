@@ -14,9 +14,11 @@ class BannerResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+        $imagesSetWithoutQuotes = trim($this->image, '"');
+
         return [
             'id' => $this->id,
-            'image' => $this->image,
+            'image' => url('/storage/images/banners/' . $imagesSetWithoutQuotes),
         ];
     }
 }

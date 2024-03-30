@@ -1,0 +1,36 @@
+{
+    "data":[
+        {
+            "id":1,
+            "title":"Новий рік Нові перемоги",
+            "description":"Зустрічайте Новий рік з ексклюзивними цінами на комп’ютери та ноутбуки Premier, а також безкоштовне дворічне оновлення компонентів",
+            "img-set": [
+                {
+                    "id":11,
+                    "link":"https://drive.google.com/file/d/1oGCxIOOeG7zaQFsvPFmBY8TxfhytezXs/view?usp=drive_link"
+                },
+                {
+                    "id":22,
+                    "link":"https://drive.google.com/file/d/12f_AC8PsiRLkF5uk8TS-t4ZhyxZhzxWi/view?usp=drive_link"
+                },
+                {
+                    "id":33,
+                    "link":"https://drive.google.com/file/d/1ckbpYj5J_uUBacKyowaG-Zkm2QOxwh0v/view?usp=drive_link"
+                },
+                {
+                    "id":44,
+                    "link":"https://drive.google.com/file/d/1u1VvrTQmy8olU6UaZgST_MEN4iRxsRsl/view?usp=drive_link"
+                },
+                {
+                    "id":55,
+                    "link":"https://drive.google.com/file/d/10ZqReuunyQVNsQJkGJeZu8xqzB_reOHB/view?usp=drive_link"
+                },
+                {
+                    "id":66,
+                    "link":"https://drive.google.com/file/d/1E4KkldfCF3TrJJd0_l1hkAWldwHy2EEH/view?usp=drive_link"
+                }
+            ],
+            "created_at":"2024-03-13T11:48:11.000000Z",
+            "updated_at":"2024-03-13T11:48:11.000000Z"
+        }
+]}
