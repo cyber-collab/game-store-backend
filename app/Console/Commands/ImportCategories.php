@@ -45,7 +45,6 @@ class ImportCategories extends Command
             $subcategory = SubCategory::create([
                 'category_id' => $category->id,
                 'name' => $subcategoryData['name'],
-                'slug' => $subcategoryData['slug'],
             ]);
 
             $subcategory->categories()->attach($category->id);

@@ -3,12 +3,13 @@
 namespace App\Models;
 
 use App\Models\Category\Category;
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * 
+ *
  *
  * @property int $id
  * @property string $name
@@ -30,11 +31,27 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class SubCategory extends Model
 {
     use HasFactory;
+    use Sluggable;
+
 
     protected $fillable = ['name', 'slug'];
 
     public function categories(): BelongsToMany
     {
         return $this->belongsToMany(Category::class, 'category_subcategory', 'sub_category_id', 'category_id');
+    }
+
+    public function getSluggableFields(): array
+    {
+        return ['name'];
+    }
+
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'name',
+            ],
+        ];
     }
 }
