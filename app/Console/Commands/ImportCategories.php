@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Services\Google\GoogleDriveDownloader;
-use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use App\Models\Category\Category;
 use App\Models\SubCategory;
@@ -28,7 +27,6 @@ class ImportCategories extends Command
             $fileName = $downloader->downloadImage('category_', $categoryData['image'], $storagePath);
             $category = Category::updateOrCreate([
                 'name' => $categoryData['name'],
-                'slug' => $categoryData['slug'],
                 'status' => $categoryData['status'],
                 'image' => $fileName,
             ]);
