@@ -26,7 +26,7 @@ class ImportPartners extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         $jsonFile = Storage::path('public/api-partners.json');
         $partners = json_decode(file_get_contents($jsonFile), true);

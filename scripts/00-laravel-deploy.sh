@@ -13,10 +13,22 @@ php artisan config:cache
 echo "Caching routes..."
 php artisan route:cache
 
-echo "Import partners..."
-php artisan import:partners
+echo "Running migrations..."
+php artisan migrate:refresh
 
 echo "Running migrations..."
 php artisan migrate --force
+
+echo "Create storage link..."
+php artisan storage:link
+
+echo "Import categories..."
+php artisan import:categories
+
+echo "Import partners..."
+php artisan import:partners
+
+echo "Import banners..."
+php artisan import:banners
 
 echo "done deploying"
