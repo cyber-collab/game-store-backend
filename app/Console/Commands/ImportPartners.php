@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use GuzzleHttp\Client;
 use App\Models\Partner;
+use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
 
@@ -25,6 +26,7 @@ class ImportPartners extends Command
 
     /**
      * Execute the console command.
+     * @throws GuzzleException
      */
     public function handle(): void
     {
