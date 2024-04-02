@@ -7,14 +7,14 @@ use Illuminate\Console\Command;
 use App\Models\Products\Product;
 use App\Models\Category\Category;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\URL;
+
 class ImportProducts extends Command
 {
     protected $signature = 'import:products';
 
     protected $description = 'Import products data into database';
 
-    public function handle()
+    public function handle(): void
     {
         $jsonFile = Storage::path('public/catalog.json');
         $data = json_decode(file_get_contents($jsonFile), true);

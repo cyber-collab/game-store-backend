@@ -13,6 +13,7 @@ ENV REAL_IP_HEADER 1
 ENV APP_ENV staging
 ENV APP_DEBUG true
 ENV LOG_CHANNEL stderr
+RUN chmod -R 775 storage/app/public
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
