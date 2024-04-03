@@ -2,6 +2,8 @@ FROM richarvey/nginx-php-fpm:latest
 
 COPY . .
 
+RUN chmod -R 775 storage
+
 # Image config
 ENV SKIP_COMPOSER 1
 ENV WEBROOT /var/www/html/public
@@ -13,7 +15,6 @@ ENV REAL_IP_HEADER 1
 ENV APP_ENV staging
 ENV APP_DEBUG true
 ENV LOG_CHANNEL stderr
-RUN chmod -R 775 storage/app/public
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
