@@ -41,6 +41,9 @@ class SubCategory extends Model
         return $this->belongsToMany(Category::class, 'category_subcategory', 'sub_category_id', 'category_id');
     }
 
+    /**
+     * @return string[]
+     */
     public function getSluggableFields(): array
     {
         return ['name'];

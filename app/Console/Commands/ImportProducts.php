@@ -7,14 +7,14 @@ use Illuminate\Console\Command;
 use App\Models\Products\Product;
 use App\Models\Category\Category;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\URL;
+
 class ImportProducts extends Command
 {
     protected $signature = 'import:products';
 
     protected $description = 'Import products data into database';
 
-    public function handle()
+    public function handle(): void
     {
         $jsonFile = Storage::path('public/catalog.json');
         $data = json_decode(file_get_contents($jsonFile), true);
@@ -51,13 +51,12 @@ class ImportProducts extends Command
             foreach ($productData['images']['images_set'] as $imageUrl) {
                 $imageName = basename($imageUrl);
                 $storagePath = 'public/images/' . $imageName;
-
                 $storedPath = Storage::put($storagePath, file_get_contents($imageUrl));
 
                 if ($storedPath) {
                     $image = new Image();
                     $image->product_id = $product->id;
-                    $image->images_set = json_encode(basename($imageName));
+                    $image->images_set = $imageUrl;
                     $image->save();
                 }
             }

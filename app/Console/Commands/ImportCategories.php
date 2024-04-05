@@ -22,9 +22,8 @@ class ImportCategories extends Command
         foreach ($categories['data'] as $categoryData) {
 
             $downloader = new GoogleDriveDownloader();
-            $storagePath = 'public/images/categories/';
 
-            $fileName = $downloader->downloadImage('category_', $categoryData['image'], $storagePath);
+            $fileName = $downloader->downloadImage($categoryData['image']);
             $category = Category::updateOrCreate([
                 'name' => $categoryData['name'],
                 'status' => $categoryData['status'],

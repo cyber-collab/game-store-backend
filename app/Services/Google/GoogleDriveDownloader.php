@@ -18,32 +18,14 @@ class GoogleDriveDownloader
     }
 
     /**
-     * @throws GuzzleException
      * @throws \Exception
      */
-    public function downloadImage(string $startNameFile, string $imageUrl, string $storagePath): string
+    public function downloadImage(string $imageUrl): string
     {
         preg_match('/\/file\/d\/([-\w]+)/', $imageUrl, $matches);
 
         if (isset($matches[1])) {
-            $fileUrl = "https://drive.google.com/uc?id={$matches[1]}";
-
-            try {
-                $response = $this->client->get($fileUrl);
-            } catch (RequestException $e) {
-                Log::error('Failed to download image from Google Drive: ' . $e->getMessage());
-                throw new \Exception('Failed to download image from Google Drive.');
-            }
-
-            $fileName = $startNameFile . $matches[1] . '.png';
-            $storedPath = Storage::put($storagePath . $fileName, $response->getBody());
-
-            if (!$storedPath) {
-                Log::error('Failed to save image to storage.');
-                throw new \Exception('Failed to save image to storage.');
-            }
-
-            return $fileName;
+            return  "https://drive.google.com/uc?id={$matches[1]}";
         }
 
         throw new \InvalidArgumentException('Invalid image URL.');
