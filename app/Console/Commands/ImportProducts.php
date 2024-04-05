@@ -41,27 +41,21 @@ class ImportProducts extends Command
                 $product->characteristics()->create($data['characteristics']);
             }
 
-            $category = Category::firstOrCreate([
+            $category = Category::where([
                 'name' => $productData['navigation']['category'],
-                'title' => $productData['navigation']['category'],
-            ]);
+            ])->first();
 
             $product->categories()->syncWithoutDetaching([$category->id]);
 
             foreach ($productData['images']['images_set'] as $imageUrl) {
-                $imageName = basename($imageUrl);
-                $storagePath = 'public/images/' . $imageName;
-                $storedPath = Storage::put($storagePath, file_get_contents($imageUrl));
 
-                if ($storedPath) {
+                if (isset($imageUrl)) {
                     $image = new Image();
                     $image->product_id = $product->id;
                     $image->images_set = $imageUrl;
                     $image->save();
                 }
             }
-
-
 
             foreach ($productData['tags'] as $tag) {
                 $product->tags()->create(['tag' => $tag]);
