@@ -19,6 +19,5 @@ class SubCategoryResource extends JsonResource
             'name' => $this->name,
             'slug' => $this->slug,
         ];
-        // return parent::toArray($request);
     }
 }

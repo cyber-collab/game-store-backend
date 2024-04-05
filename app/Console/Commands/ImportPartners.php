@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Services\Google\GoogleDriveDownloader;
 use GuzzleHttp\Client;
 use App\Models\Partner;
 use GuzzleHttp\Exception\GuzzleException;
@@ -33,19 +34,11 @@ class ImportPartners extends Command
         $jsonFile = Storage::path('public/api-partners.json');
         $partners = json_decode(file_get_contents($jsonFile), true);
 
-        $client = new Client();
+        $downloader = new GoogleDriveDownloader();
 
         foreach ($partners['data'] as $item) {
-            preg_match('/\/file\/d\/([-\w]+)/', $item['link'], $matches);
-
-            $fileUrl = "https://drive.google.com/uc?id={$matches[1]}";
-            $response = $client->get($fileUrl);
-            $storagePath = 'public/images/partners/';
-            $fileName = 'partner_' . $matches[1] . '.png';
-
-            Storage::put($storagePath . $fileName, $response->getBody());
-
-            Partner::updateOrCreate(['link' => $fileName]);
+            $fileUrl = $downloader->downloadImage($item['link']);
+            Partner::updateOrCreate(['link' => $fileUrl]);
         }
 
         $this->info('Images from Google Drive imported successfully.');
