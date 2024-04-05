@@ -111,4 +111,13 @@ class ProductController extends Controller
 
         return response()->noContent();
     }
+
+    public function getProductsByTagNew(): AnonymousResourceCollection
+    {
+        $products = Product::has('tags')->whereHas('tags', function ($query) {
+            $query->where('id', 11);
+        })->get();
+
+        return ProductResource::collection($products);
+    }
 }
