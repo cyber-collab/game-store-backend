@@ -51,13 +51,12 @@ class ImportProducts extends Command
             foreach ($productData['images']['images_set'] as $imageUrl) {
                 $imageName = basename($imageUrl);
                 $storagePath = 'public/images/' . $imageName;
-
                 $storedPath = Storage::put($storagePath, file_get_contents($imageUrl));
 
                 if ($storedPath) {
                     $image = new Image();
                     $image->product_id = $product->id;
-                    $image->images_set = json_encode(basename($imageName));
+                    $image->images_set = $imageUrl;
                     $image->save();
                 }
             }

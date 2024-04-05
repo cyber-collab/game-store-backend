@@ -14,11 +14,9 @@ class PartnerResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        $imagesSetWithoutQuotes = trim($this->link, '"');
-
         return [
             'id' => $this->id,
-            'images' => url('/storage/images/partners/' . $imagesSetWithoutQuotes),
+            'images' => $this->link,
         ];
 
     }

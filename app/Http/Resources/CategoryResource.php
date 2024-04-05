@@ -14,13 +14,12 @@ class CategoryResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        $imagesSetWithoutQuotes = trim($this->image, '"');
         return [
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
             'status' => $this->status,
-            'image' => url('/storage/images/categories/' . $imagesSetWithoutQuotes),
+            'image' => $this->image,
             'subcategories' => SubCategoryResource::collection($this->subcategories),
         ];
     }
