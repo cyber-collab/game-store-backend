@@ -30,3 +30,4 @@ Route::apiResource('api-categories', CategoryController::class);
 Route::apiResource('api-subcategories', SubCategoryController::class);
 Route::apiResource('api-banners', BannerController::class);
 Route::apiResource('api-products', ProductController::class);
+Route::get('/api-new-products', [ProductController::class, 'getProductsByTagNew']);
