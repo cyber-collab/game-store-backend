@@ -183,7 +183,45 @@
         "id":"06",
         "name":"Акції і пропозиції",
         "slug":"#",
+        "status": 1
+    },
+    {
+        "id":"07",
+        "name":"Покупцеві",
+        "slug":"pokuptsevi",
         "status": 1,
-        "image": "https://drive.google.com/file/d/1r2kBjk4ilcE6pXC_k1zwDSIClsAn45u0/view?usp=drive_link"
+        "image": null,
+        "subcategories":[
+            {
+                "id": "07.1",
+                "name":"Про нас",
+                "slug":"pro-nas"
+            },
+            {
+                "id": "07.2",
+                "name":"FAQ та допомога",
+                "slug":"faq-ta-dopomoha"
+            },
+            {
+                "id": "07.3",
+                "name":"Гарантійне обслуговування",
+                "slug":"harantiine-obsluhovuvannia"
+            },
+            {
+                "id": "07.4",
+                "name":"Доставка і оплата",
+                "slug":"dostavka-i-oplata"
+            },
+            {
+                "id": "07.5",
+                "name":"Обмін та повернення",
+                "slug":"obmin-ta-povernennia"
+            },
+            {
+                "id": "07.6",
+                "name":"Політика конфеденційності",
+                "slug":"polityka-konfedentsiinosti"
+            }
+        ]
     }
 ]}

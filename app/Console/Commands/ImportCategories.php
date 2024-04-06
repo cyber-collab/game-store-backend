@@ -23,11 +23,13 @@ class ImportCategories extends Command
 
             $downloader = new GoogleDriveDownloader();
 
-            $fileName = $downloader->downloadImage($categoryData['image']);
+            if (isset($categoryData['image'])) {
+                $fileName = $downloader->downloadImage($categoryData['image']);
+            }
             $category = Category::updateOrCreate([
                 'name' => $categoryData['name'],
                 'status' => $categoryData['status'],
-                'image' => $fileName,
+                'image' => $fileName ?? null,
             ]);
 
             if (isset($categoryData['subcategories'])) {
