@@ -34,12 +34,14 @@ class ImportProducts extends Command
                 'currency' => $productData['cost']['currency'],
                 'discount_percentage' => $productData['cost']['discount_percentage'],
                 'sale' => $productData['cost']['sale'] ?? false,
-                'characteristics' => $productData['characteristics'],
             ]);
 
-            if (isset($data['characteristics'])) {
-                $product->characteristics()->create($data['characteristics']);
+            if(isset($productData['characteristics'])) {
+                $product->characteristics()->create([
+                    'characteristics' => json_encode($productData['characteristics']),
+                ]);
             }
+
 
             $category = Category::where([
                 'name' => $productData['navigation']['category'],
