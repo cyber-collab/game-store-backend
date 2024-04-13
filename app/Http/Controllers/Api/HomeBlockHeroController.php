@@ -8,6 +8,8 @@ use App\Http\Requests\HomeBlockHeroRequest;
 use App\Http\Resources\HomeBlockHeroResource;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
+use OpenApi\Annotations as OA;
+
 class HomeBlockHeroController extends Controller
 {
     /**
