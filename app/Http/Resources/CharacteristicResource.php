@@ -14,6 +14,6 @@ class CharacteristicResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return json_decode($this->characteristics,true);
+        return json_decode($this->characteristics, true);
     }
 }

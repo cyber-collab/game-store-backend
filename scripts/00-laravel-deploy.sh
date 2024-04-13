@@ -31,6 +31,9 @@ php artisan import:partners
 echo "Import banners..."
 php artisan import:banners
 
+echo "Import block hero..."
+php artisan import:home-hero
+
 echo "Import products..."
 php artisan import:products
 
