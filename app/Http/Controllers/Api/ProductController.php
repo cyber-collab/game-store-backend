@@ -115,7 +115,16 @@ class ProductController extends Controller
     public function getProductsByTagNew(): AnonymousResourceCollection
     {
         $products = Product::has('tags')->whereHas('tags', function ($query) {
-            $query->where('id', 11);
+            $query->where('tag', strtoupper('новинки'));
+        })->get();
+
+        return ProductResource::collection($products);
+    }
+
+    public function getProductsByTagTopSales(): AnonymousResourceCollection
+    {
+        $products = Product::has('tags')->whereHas('tags', function ($query) {
+            $query->whereIn('tag', [strtoupper('топ'), strtoupper('новинки')]);
         })->get();
 
         return ProductResource::collection($products);

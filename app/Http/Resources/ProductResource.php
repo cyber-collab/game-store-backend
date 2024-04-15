@@ -28,7 +28,7 @@ class ProductResource extends JsonResource
             'discount_percentage' => $this->discount_percentage,
             'sale' => $this->sale,
             'characteristics' => new CharacteristicResource($this->characteristics),
-            'tags' => $this->tags,
+            'tags' => TagResources::collection($this->tags),
             'categories' => CategoryResource::collection($this->categories),
         ];
     }
