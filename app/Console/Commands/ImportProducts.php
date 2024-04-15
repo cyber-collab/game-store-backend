@@ -42,7 +42,6 @@ class ImportProducts extends Command
                 ]);
             }
 
-
             $category = Category::where([
                 'name' => $productData['navigation']['category'],
             ])->first();
