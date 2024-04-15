@@ -129,4 +129,13 @@ class ProductController extends Controller
 
         return ProductResource::collection($products);
     }
+
+    public function getProductsByCategory(string $slug): AnonymousResourceCollection
+    {
+        $products = Product::whereHas('categories', function ($query) use ($slug) {
+            $query->where('slug', $slug);
+        })->get();
+
+        return ProductResource::collection($products);
+    }
 }
