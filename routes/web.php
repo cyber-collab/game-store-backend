@@ -18,7 +18,7 @@ use App\Http\Controllers\Products\ProductController;
 */
 
 Route::get('/', function () {
-    return view('main.index');
+    return view('welcome');
 });
 //
 Route::resource('categories', App\Http\Controllers\Category\CategoryController::class);
@@ -26,7 +26,7 @@ Route::resource('categories', App\Http\Controllers\Category\CategoryController::
 
 Route::resource('/products', App\Http\Controllers\Products\ProductController::class);
 
-Route::get('/dashboard', function () {
+Route::get('/categories', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 

@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Services\Google\GoogleDriveDownloader;
-use GuzzleHttp\Client;
 use App\Models\Partner;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Console\Command;

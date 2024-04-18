@@ -6,8 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CategoryRequest;
 use App\Http\Resources\CategoryResource;
 use App\Models\Category\Category;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
+use OpenApi\Annotations as OA;
 
 class CategoryController extends Controller
 {
@@ -45,6 +47,10 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
+        if (!Auth::check()) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
         $category = Category::create($request->validated());
 
         return new CategoryResource($category);
