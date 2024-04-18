@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Products\Image;
+use App\Models\SubCategory;
 use Illuminate\Console\Command;
 use App\Models\Products\Product;
 use App\Models\Category\Category;
@@ -46,7 +47,11 @@ class ImportProducts extends Command
                 'name' => $productData['navigation']['category'],
             ])->first();
 
-            $product->categories()->syncWithoutDetaching([$category->id]);
+            $subCategory = SubCategory::where([
+                'name' => $productData['navigation']['subcategory'],
+            ])->first();
+
+            $product->categories()->syncWithoutDetaching([$category->id, $subCategory->id]);
 
             foreach ($productData['images']['images_set'] as $imageUrl) {
 
