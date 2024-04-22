@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PartnerResource;
 use App\Http\Resources\ProductResource;
+use App\Interfaces\ProductRepositoryInterface;
 use App\Models\Partner;
 use App\Models\Products\Product;
 use App\Models\SubCategory;
+use App\Repositories\ProductRepository;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use App\Http\Requests\PartnerRequest;
 use Illuminate\Http\Response;
@@ -15,6 +17,11 @@ use OpenApi\Annotations as OA;
 
 class ProductController extends Controller
 {
+
+    public function __construct(protected ProductRepositoryInterface $productRepository)
+    {
+    }
+
     /**
      * @OA\Get(
      *     path="/api/api-products",
@@ -28,7 +35,7 @@ class ProductController extends Controller
      */
     public function index(): AnonymousResourceCollection
     {
-        return ProductResource::collection(Product::all());
+        return $this->productRepository->getAllProducts();
     }
 
     /**
@@ -124,34 +131,16 @@ class ProductController extends Controller
 
     public function getProductsByTagTopSales(): AnonymousResourceCollection
     {
-        $products = Product::has('tags')->whereHas('tags', function ($query) {
-            $query->whereIn('tag', [strtoupper('топ'), strtoupper('новинки')]);
-        })->get();
-
-        return ProductResource::collection($products);
+       return $this->productRepository->getProductsByTagTopSales();
     }
 
     public function getProductsByCategory(string $slug): AnonymousResourceCollection
     {
-        $products = Product::whereHas('categories', function ($query) use ($slug) {
-            $query->where('slug', $slug);
-        })->get();
-
-        return ProductResource::collection($products);
+       return $this->productRepository->getProductsByCategory($slug);
     }
 
     public function getProductsBySubcategory(string $categorySlug, string $subCategorySlug): AnonymousResourceCollection
     {
-        $products = Product::whereHas('categories', function ($query) use ($categorySlug) {
-            $query->where('slug', $categorySlug);
-        })->get();
-
-        $subCategoryId = SubCategory::where('slug', $subCategorySlug)->value('id');
-
-        $filteredProducts = $products->filter(function ($product) use ($subCategoryId) {
-            return $product->categories->contains('pivot.subcategory_id', $subCategoryId);
-        });
-
-        return ProductResource::collection($filteredProducts);
+       return $this->productRepository->getProductsBySubcategory($categorySlug, $subCategorySlug);
     }
 }
