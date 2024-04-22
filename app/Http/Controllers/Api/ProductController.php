@@ -7,6 +7,7 @@ use App\Http\Resources\PartnerResource;
 use App\Http\Resources\ProductResource;
 use App\Models\Partner;
 use App\Models\Products\Product;
+use App\Models\SubCategory;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use App\Http\Requests\PartnerRequest;
 use Illuminate\Http\Response;
@@ -137,5 +138,20 @@ class ProductController extends Controller
         })->get();
 
         return ProductResource::collection($products);
+    }
+
+    public function getProductsBySubcategory(string $categorySlug, string $subCategorySlug): AnonymousResourceCollection
+    {
+        $products = Product::whereHas('categories', function ($query) use ($categorySlug) {
+            $query->where('slug', $categorySlug);
+        })->get();
+
+        $subCategoryId = SubCategory::where('slug', $subCategorySlug)->value('id');
+
+        $filteredProducts = $products->filter(function ($product) use ($subCategoryId) {
+            return $product->categories->contains('pivot.subcategory_id', $subCategoryId);
+        });
+
+        return ProductResource::collection($filteredProducts);
     }
 }
