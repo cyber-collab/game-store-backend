@@ -29,7 +29,7 @@ class ProductResource extends JsonResource
             'sale' => $this->sale,
             'characteristics' => new CharacteristicResource($this->characteristics),
             'tags' => TagResources::collection($this->tags),
-            'categories' => CategoryResource::collection($this->categories),
+            'categories' => CategoryResource::collection($this->categories)
         ];
     }
 }

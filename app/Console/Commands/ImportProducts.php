@@ -51,10 +51,11 @@ class ImportProducts extends Command
                 'name' => $productData['navigation']['subcategory'],
             ])->first();
 
-            $product->categories()->syncWithoutDetaching([$category->id, $subCategory->id]);
+            if (isset($category) && isset($subCategory)) {
+                $product->categories()->attach([$category->id => ['subcategory_id' => $subCategory->id]]);
+            }
 
             foreach ($productData['images']['images_set'] as $imageUrl) {
-
                 if (isset($imageUrl)) {
                     $image = new Image();
                     $image->product_id = $product->id;
