@@ -142,4 +142,17 @@ class ProductController extends Controller
     {
         return $this->productRepository->getProductsBySubcategory($categorySlug, $subCategorySlug);
     }
+
+//    public function getProductsByKeywords(string $keyword): AnonymousResourceCollection
+//    {
+//        return $this->productRepository->getProductsByKeywords($keyword);
+//    }
+
+    public function getProductsByKeywords(string $keyword): AnonymousResourceCollection
+    {
+        return Product::where(function ($query) use ($keyword) {
+            $query->where('title', 'like', '%' . $keyword . '%')
+                ->orWhere('description', 'like', '%' . $keyword . '%');
+        })->get();
+    }
 }
