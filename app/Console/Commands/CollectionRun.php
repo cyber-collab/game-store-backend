@@ -62,8 +62,8 @@ class CollectionRun extends Command
 //
 //        });
 
-       $result = $userCollection->contains('name', 'Boris');
+        $result = $userCollection->contains('name', 'Boris');
 
-       dd($result);
+        dd($result);
     }
 }

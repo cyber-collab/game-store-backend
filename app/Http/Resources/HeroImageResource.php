@@ -16,6 +16,5 @@ class HeroImageResource extends JsonResource
     public function toArray($request): string
     {
         return $this->image;
-
     }
 }

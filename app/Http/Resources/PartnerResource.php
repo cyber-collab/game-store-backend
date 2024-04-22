@@ -18,6 +18,5 @@ class PartnerResource extends JsonResource
             'id' => $this->id,
             'images' => $this->link,
         ];
-
     }
 }

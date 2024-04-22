@@ -5,13 +5,11 @@ namespace App\Http\Controllers\Category;
 use App\Http\Controllers\Controller;
 use App\Models\Category\Category;
 use App\Http\Requests\Category\CategoryCreateRequest;
-
 use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Psy\Util\Str;
 use Illuminate\Support;
-
 
 class CategoryController extends Controller
 {
@@ -173,5 +171,4 @@ class CategoryController extends Controller
             return redirect()->route('categories.index')->with('error', 'Category not found');
         }
     }
-
 }
