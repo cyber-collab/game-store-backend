@@ -9,5 +9,4 @@ interface ProductRepositoryInterface
     public function getProductsByTagTopSales();
     public function getProductsByTagNew();
     public function getProductsBySubcategory(string $categorySlug, string $subCategorySlug);
-
 }

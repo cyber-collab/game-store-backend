@@ -17,7 +17,6 @@ use OpenApi\Annotations as OA;
 
 class ProductController extends Controller
 {
-
     public function __construct(protected ProductRepositoryInterface $productRepository)
     {
     }
@@ -131,16 +130,16 @@ class ProductController extends Controller
 
     public function getProductsByTagTopSales(): AnonymousResourceCollection
     {
-       return $this->productRepository->getProductsByTagTopSales();
+        return $this->productRepository->getProductsByTagTopSales();
     }
 
     public function getProductsByCategory(string $slug): AnonymousResourceCollection
     {
-       return $this->productRepository->getProductsByCategory($slug);
+        return $this->productRepository->getProductsByCategory($slug);
     }
 
     public function getProductsBySubcategory(string $categorySlug, string $subCategorySlug): AnonymousResourceCollection
     {
-       return $this->productRepository->getProductsBySubcategory($categorySlug, $subCategorySlug);
+        return $this->productRepository->getProductsBySubcategory($categorySlug, $subCategorySlug);
     }
 }
