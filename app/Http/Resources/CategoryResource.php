@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -20,7 +21,7 @@ class CategoryResource extends JsonResource
             'slug' => $this->slug,
             'status' => $this->status,
             'image' => $this->image,
-            'subcategories' => SubCategoryResource::collection($this->subcategories),
+            'subcategories' => $this->hasPivotLoaded('category_product') ? SubCategory::where('id', $this->pivot->subcategory_id)->get() : SubCategoryResource::collection($this->subcategories),
         ];
     }
 }
