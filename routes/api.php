@@ -32,4 +32,5 @@ Route::apiResource('api-banners', BannerController::class);
 Route::apiResource('api-products', ProductController::class);
 Route::get('/api-new-products', [ProductController::class, 'getProductsByTagNew']);
 Route::get('/api-top-products', [ProductController::class, 'getProductsByTagTopSales']);
-Route::get('/api-product/{slug}', [ProductController::class, 'getProductsByCategory']);
+Route::get('/api-products/category/{slug}', [ProductController::class, 'getProductsByCategory']);
+Route::get('/api-products/{categorySlug}/{subcategorySlug}', [ProductController::class, 'getProductsBySubcategory']);
