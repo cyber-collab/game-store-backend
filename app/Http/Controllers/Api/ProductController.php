@@ -14,6 +14,7 @@ use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use App\Http\Requests\PartnerRequest;
 use Illuminate\Http\Response;
 use OpenApi\Annotations as OA;
+use Illuminate\Database\Eloquent\Collection;
 
 class ProductController extends Controller
 {
@@ -121,11 +122,7 @@ class ProductController extends Controller
 
     public function getProductsByTagNew(): AnonymousResourceCollection
     {
-        $products = Product::has('tags')->whereHas('tags', function ($query) {
-            $query->where('tag', strtoupper('новинки'));
-        })->get();
-
-        return ProductResource::collection($products);
+        return $this->productRepository->getProductsByTagNew();
     }
 
     public function getProductsByTagTopSales(): AnonymousResourceCollection
@@ -141,5 +138,10 @@ class ProductController extends Controller
     public function getProductsBySubcategory(string $categorySlug, string $subCategorySlug): AnonymousResourceCollection
     {
         return $this->productRepository->getProductsBySubcategory($categorySlug, $subCategorySlug);
+    }
+
+    public function getProductsByKeywords(string $keyword): AnonymousResourceCollection
+    {
+        return $this->productRepository->getProductsByKeywords($keyword);
     }
 }

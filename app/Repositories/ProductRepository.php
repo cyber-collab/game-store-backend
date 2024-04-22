@@ -6,7 +6,9 @@ use App\Http\Resources\ProductResource;
 use App\Interfaces\ProductRepositoryInterface;
 use App\Models\Products\Product;
 use App\Models\SubCategory;
+use DebugBar\DebugBar;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Facades\DB;
 
 class ProductRepository implements ProductRepositoryInterface
 {
@@ -53,6 +55,16 @@ class ProductRepository implements ProductRepositoryInterface
         $products = Product::has('tags')->whereHas('tags', function ($query) {
             $query->where('tag', strtoupper('новинки'));
         })->get();
+
+        return ProductResource::collection($products);
+    }
+
+    public function getProductsByKeywords(string $keyword): AnonymousResourceCollection
+    {
+        $products = Product::where(function ($query) use ($keyword) {
+            $query->where('title', 'like', '%' . $keyword . '%')
+                ->orWhere('description', 'like', '%' . $keyword . '%');
+        })->with('tags')->get();
 
         return ProductResource::collection($products);
     }
