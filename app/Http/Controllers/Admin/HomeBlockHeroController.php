@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\HomeBlockHeroRequest;
 use App\Http\Resources\HomeBlockHeroResource;
 use Illuminate\Http\Response;
+
 class HomeBlockHeroController extends Controller
 {
     /**

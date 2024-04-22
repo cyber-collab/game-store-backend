@@ -27,7 +27,5 @@ class AppServiceProvider extends ServiceProvider
         if ($this->app->environment('production')) {
             $url->forceScheme('https');
         }
-
-
     }
 }

@@ -37,7 +37,7 @@ class ImportProducts extends Command
                 'sale' => $productData['cost']['sale'] ?? false,
             ]);
 
-            if(isset($productData['characteristics'])) {
+            if (isset($productData['characteristics'])) {
                 $product->characteristics()->create([
                     'characteristics' => json_encode($productData['characteristics']),
                 ]);

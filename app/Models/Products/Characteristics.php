@@ -71,5 +71,4 @@ class Characteristics extends Model
 
         $this->fill($attributes);
     }
-
 }

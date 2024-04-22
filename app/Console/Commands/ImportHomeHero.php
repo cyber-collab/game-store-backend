@@ -35,8 +35,7 @@ class ImportHomeHero extends Command
             $heroBlock = HomeBlockHero::updateOrCreate([
                     'title' => $hero['title'],
                     'description' => $hero['description'],
-                ]
-            );
+                ]);
 
             $this->createImages($heroBlock, $hero['img-set']);
         }

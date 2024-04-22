@@ -40,5 +40,4 @@ class HomeBlockHero extends Model
     {
         return $this->hasMany(HeroImage::class);
     }
-
 }
