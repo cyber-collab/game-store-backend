@@ -32,27 +32,27 @@
         "producer": "ASUS",
         "model": "ROG Strix G16 G614JZR-N4094W",
         "guarantee": 24,
-        "weight": "2.5 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "val": "ASUS" },
-            { "name": "Розмір екрану", "val": "16″" },
-            { "name": "Роздільна здатність", "val": "2560×1600 (WQXGA)" },
-            { "name": "Екран", "val": "антиблікове покриття" },
-            { "name": "Тип матриці", "val": "IPS" },
-            { "name": "Частота оновлення екрану", "val": "240Гц" },
-            { "name": "Процесор", "val": "Intel Core i9-14900HX (2.2 – 5.8 ГГц)" },
-            { "name": "Кількість ядер процесора", "val": 24 },
-            { "name": "Тип оперативної пам'яті", "val": "DDR5" },
-            { "name": "Об'єм оперативної пам'яті", "val": "16 ГБ" },
-            { "name": "Тип жорсткого диска", "val": "SSD" },
-            { "name": "Об'єм SSD", "val": "1 ТБ" },
-            { "name": "Тип відеокарти", "val": "дискретна" },
-            { "name": "Відеокарта", "val": null },
-            { "name": "Об'єм відеопам'яті", "val": null },
-            { "name": "Операційна система", "val": "Windows 11 Home" },
-            { "name": "Ємність акумулятора", "val": "4 cell" }
-        ]
+        "characteristics": {
+            "producer": "ASUS",
+            "display_size": "16″",
+            "resolving_power": "2560×1600 (WQXGA)",
+            "screen": "антиблікове покриття",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-14900HX (2.2 – 5.8 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "16 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": null,
+            "amount_of_VRAM": null,
+            "OS": "Windows 11 Home",
+            "battery_capacity": "4 cell",
+            "weight": "2.5 кг",
+            "country_of_production": "Китай"
+        }
     },
 
     {
@@ -88,29 +88,30 @@
         "producer": "MSI",
         "model": "MSI GE Raider",
         "guarantee": 12,
-        "weight": "3.1 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "val": "MSI" },
-            { "name": "Розмір екрану", "val": "17″" },
-            { "name": "Роздільна здатність", "val": "2560×1600 (WQXGA)" },
-            { "name": "Екран", "val": "матова" },
-            { "name": "Тип матриці", "val": "IPS" },
-            { "name": "Частота оновлення екрану", "val": "240Гц" },
-            { "name": "Процесор", "val": "Intel Core i9-13950HX (4.0-5.5 ГГц)" },
-            { "name": "Кількість ядер процесора", "val": 24 },
-            { "name": "Тип оперативної пам'яті", "val": "DDR5" },
-            { "name": "Об'єм оперативної пам'яті", "val": "64 ГБ" },
-            { "name": "Тип жорсткого диска", "val": "SSD" },
-            { "name": "Об'єм SSD", "val": "1 ТБ" },
-            { "name": "Тип відеокарти", "val": "дискретна" },
-            { "name": "Відеокарта", "val": "NVIDIA GeForce RTX 4080" },
-            { "name": "Об'єм відеопам'яті", "val": "12 ГБ" },
-            { "name": "Операційна система", "val": "Windows 11" },
-            { "name": "Ємність акумулятора", "val": "4 cell" },
-            { "name": "Особливості", "val": ["підсвічування клавіатури"] }
-        ]
+        "characteristics": {
+            "producer": "MSI",
+            "display_size": "17″",
+            "resolving_power": "2560×1600 (WQXGA)",
+            "screen": "матова",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-13950HX (4.0-5.5 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "64 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 4080",
+            "amount_of_VRAM": "12 ГБ",
+            "OS": "Windows 11",
+            "battery_capacity": "4 cell",
+            "weight": "3.1 кг",
+            "country_of_production": "Китай",
+            "features": ["підсвітка клавіатури"]
+        }
     },
+
     {
         "id": "U0895909",
         "title": "ASUS ROG Strix SCAR 18 G834JYR-R6059X",
@@ -144,27 +145,28 @@
         "producer": "ASUS",
         "model": "ROG Strix SCAR 18 G834JYR-R6059X",
         "guarantee": 24,
-        "weight": "3.1 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "val": "ASUS" },
-            { "name": "Розмір екрану", "val": "18″" },
-            { "name": "Роздільна здатність", "val": "2560×1600 (WQXGA)" },
-            { "name": "Екран", "val": "матова" },
-            { "name": "Тип матриці", "val": "Mini LED" },
-            { "name": "Частота оновлення екрану", "val": "240Hz" },
-            { "name": "Процесор", "val": "Intel Core i9-14900HX (2.2 – 5.8 ГГц)" },
-            { "name": "Кількість ядер процесора", "val": 24 },
-            { "name": "Тип оперативної пам'яті", "val": "DDR5" },
-            { "name": "Об'єм оперативної пам'яті", "val": "32 ГБ" },
-            { "name": "Тип жорсткого диска", "val": "SSD" },
-            { "name": "Об'єм SSD", "val": "2 ТБ SSD (2 x 1 ТБ)" },
-            { "name": "Тип відеокарти", "val": "дискретна" },
-            { "name": "Відеокарта", "val": "NVIDIA GeForce RTX 4090" },
-            { "name": "Об'єм відеопам'яті", "val": "16 ГБ" },
-            { "name": "Операційна система", "val": "Windows 11 Pro" },
-            { "name": "Ємність батареї", "val": "90 Втг" }
-        ]
+        "characteristics": {
+            "producer": "ASUS",
+            "display_size": "18″",
+            "resolving_power": "2560×1600 (WQXGA)",
+            "screen": "матова",
+            "matrix-type": "Mini LED",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-14900HX (2.2 – 5.8 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ SSD (2 x 1 ТБ)",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 4090",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "90 Втг",
+            "weight": "3.1 кг",
+            "country_of_production": "Китай",
+            "features": ["вбудований мікрофон", "стереодинаміки", "мишка в комплекті", "рюкзак в комплекті"]
+        }
     },
 
     {
@@ -198,31 +200,32 @@
         "producer": "Lenovo",
         "model": "Legion T5 26IRB8 / i5-13400F",
         "guarantee": 12,
-        "characteristics": [
-            { "name": "Тип ПК", "val": "Ігрові" },
-            { "name": "Виробник", "val": "Lenovo" },
-            { "name": "Серія процесора", "val": "Intel Core i5" },
-            { "name": "Модель процесора", "val": "13400F" },
-            { "name": "Кількість ядер процесора", "val": 10 },
-            { "name": "Кількість потоків", "val": "16 потоків" },
-            { "name": "Базова частота процесора", "val": "2.5 ГГц" },
-            {
-                "name": "Максимальна частота процесора (Turbo Boost)",
-                "val": "4.6 ГГц"
-            },
-            { "name": "Чіпсет", "val": "Intel B660" },
-            { "name": "Тип відеокарти", "val": "дискретна" },
-            { "name": "Відеокарта", "val": "GeForce RTX 3060" },
-            { "name": "Об'єм відеопам'яті відеокарти", "val": "12 ГБ" },
-            { "name": "Об'єм оперативної пам'яті", "val": "16 ГБ" },
-            { "name": "Тип жорстких дисків", "val": "HDD, SSD" },
-            { "name": "Матеріали", "val": "метал, пластик, скло" }
-        ]
+        "characteristics": {
+            "pc_type": "Ігрові",
+            "producer": "Lenovo",
+            "processor_series": "Intel Core i5",
+            "processor_model": "13400F",
+            "number_of_processor_cores": 10,
+            "number_of_streams": "16 потоків",
+            "CPU_frequency": "2.5",
+            "chipset": "Intel B660",
+            "video_card_type": "дискретна",
+            "video_card": "GeForce RTX 3060",
+            "types_of_hard_drives": "HDD, SSD",
+            "HDD_size": "1 TB",
+            "SSD_size": "512 GB",
+            "optical_drive": "без DVD",
+            "OS": "без ОС",
+            "material": "метал, пластик, скло",
+            "weight": "14 кг",
+            "features": ["TPM-модуль", "вікно на боковій панелі"],
+            "country_of_production": "Китай"
+        }
     },
 
     {
         "id": "U0838791",
-        "title": "Lenovo Legion T5 26ARA8 / Ryzen7 7700",
+        "title": "Lenovo Legion T5 26IRB8 / i5-13400F",
         "navigation": {
             "category": "ПК та комплектуючі",
             "subcategory": "Готові рішення"
@@ -251,32 +254,27 @@
         "producer": "Lenovo",
         "model": "Legion T5 26ARA8 / Ryzen7 7700",
         "guarantee": 12,
-        "weight": "14 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Тип ПК", "value": "Ігрові" },
-            { "name": "Виробник", "value": "Lenovo" },
-            { "name": "Серія процесора", "value": "AMD Ryzen 7" },
-            { "name": "Модель процесора", "value": "7700" },
-            { "name": "Кількість ядер процесора", "value": 8 },
-            { "name": "Кількість потоків", "value": "16 потоків" },
-            { "name": "Базова частота процесора", "value": "4.5 ГГц" },
-            {
-                "name": "Максимальна частота процесора (Turbo Boost)",
-                "value": "5.4 ГГц"
-            },
-            { "name": "Чіпсет", "value": "AMD B650" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "GeForce RTX 3060" },
-            { "name": "Об'єм відеопам'яті відеокарти", "value": "12 ГБ" },
-            { "name": "Об'єм оперативної пам'яті", "value": "16 ГБ" },
-            { "name": "Тип жорстких дисків", "value": "HDD, SSD" },
-            { "name": "Об'єм HDD", "value": "2 TB" },
-            { "name": "Об'єм SSD", "value": "512 GB" },
-            { "name": "Оптичний привід", "value": "без DVD" },
-            { "name": "Операційна система", "value": "без ОС" },
-            { "name": "Матеріал корпусу", "value": "метал, пластик, скло" }
-        ]
+        "characteristics": {
+            "pc_type": "Ігрові",
+            "producer": "Lenovo",
+            "processor_series": "AMD Ryzen 7",
+            "processor_model": "Zen 4 7700",
+            "number_of_processor_cores": 8,
+            "number_of_streams": "16 потоків",
+            "CPU_frequency": "4.5",
+            "chipset": "AMD B650",
+            "video_card_type": "дискретна",
+            "video_card": "GeForce RTX 3060",
+            "types_of_hard_drives": "HDD, SSD",
+            "HDD_size": "2 TB",
+            "SSD_size": "512 GB",
+            "optical_drive": "без DVD",
+            "OS": "без ОС",
+            "material": "метал, пластик, скло",
+            "weight": "14 кг",
+            "features": ["TPM-модуль", "вікно на боковій панелі"],
+            "country_of_production": "Китай"
+        }
     },
 
     {
@@ -310,14 +308,8 @@
         "producer": "Cougar",
         "model": "700K EVO",
         "guarantee": 12,
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Тип", "value": "клавіатура ігрова з підсвіткою" },
-            { "name": "Тип підключення", "value": "бездротова" },
-            { "name": "Підсвітка", "value": "так" },
-            { "name": "Розкладка", "value": "англійська" },
-            { "name": "Сумісність", "value": "Mac OS, Windows" }
-        ]
+        "characteristics": {
+        }
     },
 
     {
@@ -350,15 +342,15 @@
         "producer": "SteelSeries",
         "model": null,
         "guarantee": 24,
-        "weight": "0.8 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Тип", "value": "ігрова" },
-            { "name": "Тип підключення", "value": "дротова" },
-            { "name": "Підсвітка", "value": "ні" },
-            { "name": "Розкладка", "value": "англійська, українська" },
-            { "name": "Сумісність", "value": "Mac OS, Windows" }
-        ]
+        "characteristics": {
+            "type": "ігрова, з підсвіткою",
+            "connection_type": "дротова",
+            "illumination": "так",
+            "keyboard_layout": "англійська, російська",
+            "compatibility": "Mac OS, Windows",
+            "weight": "1.8 кг",
+            "country_of_production": "Китай"
+        }
     },
 
     {
@@ -392,14 +384,8 @@
         "producer": "Bloody",
         "model": "Q100 Bloody (Black)",
         "guarantee": 12,
-        "country_of_production": "США",
-        "characteristics": [
-            { "name": "Тип", "value": "ігрова" },
-            { "name": "Тип підключення", "value": "дротова" },
-            { "name": "Підсвітка", "value": "ні" },
-            { "name": "Розкладка", "value": "англійська, українська" },
-            { "name": "Сумісність", "value": "Mac OS, Windows" }
-        ]
+        "characteristics": {
+        }
     },
     {
         "id": "U0912345",
@@ -436,27 +422,27 @@
         "producer": "Razer",
         "model": "Blade 15 Advanced",
         "guarantee": 24,
-        "weight": "2.2 кг",
-        "country_of_production": "США",
-        "characteristics": [
-            { "name": "Виробник", "value": "Razer" },
-            { "name": "Розмір екрану", "value": "15.6″" },
-            { "name": "Роздільна здатність", "value": "3840×2160 (4K)" },
-            { "name": "Тип екрану", "value": "OLED" },
-            { "name": "Тип матриці", "value": "OLED" },
-            { "name": "Частота оновлення екрану", "value": "60Hz" },
-            { "name": "Процесор", "value": "Intel Core i9-12900H (2.4 – 5.0 ГГц)" },
-            { "name": "Кількість ядер процесора", "value": 14 },
-            { "name": "Тип пам'яті RAM", "value": "DDR4" },
-            { "name": "Обсяг пам'яті RAM", "value": "32 ГБ" },
-            { "name": "Тип жорсткого диска", "value": "SSD" },
-            { "name": "Обсяг SSD", "value": "2 ТБ" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "NVIDIA GeForce RTX 3080 Ti" },
-            { "name": "Обсяг відеопам'яті", "value": "16 ГБ" },
-            { "name": "Операційна система", "value": "Windows 11 Pro" },
-            { "name": "Ємність акумулятора", "value": "6 cell" }
-        ]
+        "characteristics": {
+            "producer": "Razer",
+            "display_size": "15.6″",
+            "resolving_power": "3840×2160 (4K)",
+            "screen": "OLED",
+            "matrix-type": "OLED",
+            "screen_refresh_rate": "60Hz",
+            "processor": "Intel Core i9-12900H (2.4 – 5.0 ГГц)",
+            "number_of_processor_cores": 14,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080 Ti",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "6 cell",
+            "weight": "2.2 кг",
+            "country_of_production": "США"
+        }
     },
 
     {
@@ -494,28 +480,29 @@
         "producer": "Gigabyte",
         "model": "AORUS 15G",
         "guarantee": 24,
-        "weight": "2.2 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "value": "Gigabyte" },
-            { "name": "Розмір екрану", "value": "15.6″" },
-            { "name": "Роздільна здатність", "value": "1920×1080 (Full HD)" },
-            { "name": "Тип екрану", "value": "IPS" },
-            { "name": "Тип матриці", "value": "IPS" },
-            { "name": "Частота оновлення екрану", "value": "144Hz" },
-            { "name": "Процесор", "value": "Intel Core i7-12700H (2.5 – 4.7 ГГц)" },
-            { "name": "Кількість ядер процесора", "value": 12 },
-            { "name": "Тип пам'яті RAM", "value": "DDR4" },
-            { "name": "Обсяг пам'яті RAM", "value": "16 ГБ" },
-            { "name": "Тип жорсткого диска", "value": "SSD" },
-            { "name": "Обсяг SSD", "value": "1 ТБ" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "NVIDIA GeForce RTX 3060" },
-            { "name": "Обсяг відеопам'яті", "value": "6 ГБ" },
-            { "name": "Операційна система", "value": "Windows 11 Home" },
-            { "name": "Ємність акумулятора", "value": "6 cell" }
-        ]
+        "characteristics": {
+            "producer": "Gigabyte",
+            "display_size": "15.6″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "144Hz",
+            "processor": "Intel Core i7-12700H (2.5 – 4.7 ГГц)",
+            "number_of_processor_cores": 12,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "16 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3060",
+            "amount_of_VRAM": "6 ГБ",
+            "OS": "Windows 11 Home",
+            "battery_capacity": "6 cell",
+            "weight": "2.2 кг",
+            "country_of_production": "Китай"
+        }
     },
+
     {
         "id": "U0903456",
         "title": "Dell Alienware M15 R7",
@@ -550,27 +537,27 @@
         "producer": "Alienware",
         "model": "Alienware m15 R7",
         "guarantee": 24,
-        "weight": "2.5 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "value": "Alienware" },
-            { "name": "Розмір екрану", "value": "15.6″" },
-            { "name": "Роздільна здатність", "value": "1920×1080 (Full HD)" },
-            { "name": "Тип екрану", "value": "IPS" },
-            { "name": "Тип матриці", "value": "IPS" },
-            { "name": "Частота оновлення екрану", "value": "144Hz" },
-            { "name": "Процесор", "value": "Intel Core i9-12900H (2.4 – 5.0 ГГц)" },
-            { "name": "Кількість ядер процесора", "value": 14 },
-            { "name": "Тип пам'яті RAM", "value": "DDR4" },
-            { "name": "Обсяг пам'яті RAM", "value": "32 ГБ" },
-            { "name": "Тип жорсткого диска", "value": "SSD" },
-            { "name": "Обсяг SSD", "value": "2 ТБ" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "NVIDIA GeForce RTX 3080" },
-            { "name": "Обсяг відеопам'яті", "value": "16 ГБ" },
-            { "name": "Операційна система", "value": "Windows 11 Pro" },
-            { "name": "Ємність акумулятора", "value": "6 cell" }
-        ]
+        "characteristics": {
+            "producer": "Alienware",
+            "display_size": "15.6″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "144Hz",
+            "processor": "Intel Core i9-12900H (2.4 – 5.0 ГГц)",
+            "number_of_processor_cores": 14,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "6 cell",
+            "weight": "2.5 кг",
+            "country_of_production": "Китай"
+        }
     },
 
     {
@@ -606,28 +593,29 @@
         "producer": "Razer",
         "model": "Razer Blade 15 Advanced",
         "guarantee": 24,
-        "weight": "2.1 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "value": "Razer" },
-            { "name": "Розмір екрану", "value": "15.6″" },
-            { "name": "Роздільна здатність", "value": "3840×2160 (4K Ultra HD)" },
-            { "name": "Тип екрану", "value": "OLED" },
-            { "name": "Тип матриці", "value": "OLED" },
-            { "name": "Частота оновлення екрану", "value": "60Hz" },
-            { "name": "Процесор", "value": "Intel Core i7-11800H (2.3 – 4.6 ГГц)" },
-            { "name": "Кількість ядер процесора", "value": 8 },
-            { "name": "Тип пам'яті RAM", "value": "DDR4" },
-            { "name": "Обсяг пам'яті RAM", "value": "16 ГБ" },
-            { "name": "Тип жорсткого диска", "value": "SSD" },
-            { "name": "Обсяг SSD", "value": "1 ТБ" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "NVIDIA GeForce RTX 3070" },
-            { "name": "Обсяг відеопам'яті", "value": "8 ГБ" },
-            { "name": "Операційна система", "value": "Windows 11 Pro" },
-            { "name": "Ємність акумулятора", "value": "6 cell" }
-        ]
+        "characteristics": {
+            "producer": "Razer",
+            "display_size": "15.6″",
+            "resolving_power": "3840×2160 (4K Ultra HD)",
+            "screen": "OLED",
+            "matrix-type": "OLED",
+            "screen_refresh_rate": "60Hz",
+            "processor": "Intel Core i7-11800H (2.3 – 4.6 ГГц)",
+            "number_of_processor_cores": 8,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "16 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3070",
+            "amount_of_VRAM": "8 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "6 cell",
+            "weight": "2.1 кг",
+            "country_of_production": "Китай"
+        }
     },
+
     {
         "id": "U0905432",
         "title": "Razer Blade 17 Pro",
@@ -661,28 +649,29 @@
         "producer": "Razer",
         "model": "Razer Blade 17 Pro",
         "guarantee": 24,
-        "weight": "3.9 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "value": "Razer" },
-            { "name": "Розмір екрану", "value": "17.3″" },
-            { "name": "Роздільна здатність", "value": "2560×1440 (WQHD)" },
-            { "name": "Тип екрану", "value": "IPS" },
-            { "name": "Тип матриці", "value": "IPS" },
-            { "name": "Частота оновлення екрану", "value": "360Hz" },
-            { "name": "Процесор", "value": "Intel Core i9-12900HK (2.5 – 5.0 ГГц)" },
-            { "name": "Кількість ядер процесора", "value": 24 },
-            { "name": "Тип пам'яті RAM", "value": "DDR5" },
-            { "name": "Обсяг пам'яті RAM", "value": "64 ГБ" },
-            { "name": "Тип жорсткого диска", "value": "SSD" },
-            { "name": "Обсяг SSD", "value": "2 ТБ" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "NVIDIA GeForce RTX 3080 Ti" },
-            { "name": "Обсяг відеопам'яті", "value": "16 ГБ" },
-            { "name": "Операційна система", "value": "Windows 11 Pro" },
-            { "name": "Ємність акумулятора", "value": "4 cell" }
-        ]
+        "characteristics": {
+            "producer": "Razer",
+            "display_size": "17.3″",
+            "resolving_power": "2560×1440 (WQHD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "360Hz",
+            "processor": "Intel Core i9-12900HK (2.5 – 5.0 ГГц)",
+            "number_of_processor_cores": 24,
+            "RAM_type": "DDR5",
+            "RAM_capacity": "64 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080 Ti",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "4 cell",
+            "weight": "3.9 кг",
+            "country_of_production": "Китай"
+        }
     },
+
     {
         "id": "U0903456",
         "title": "Gigabyte Aorus 17G",
@@ -717,28 +706,29 @@
         "producer": "Gigabyte",
         "model": "Gigabyte Aorus 17G",
         "guarantee": 24,
-        "weight": "3.75 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "value": "Gigabyte" },
-            { "name": "Розмір екрану", "value": "17.3″" },
-            { "name": "Роздільна здатність", "value": "1920×1080 (Full HD)" },
-            { "name": "Тип екрану", "value": "IPS" },
-            { "name": "Тип матриці", "value": "IPS" },
-            { "name": "Частота оновлення екрану", "value": "300Hz" },
-            { "name": "Процесор", "value": "Intel Core i9-11980HK (2.6 – 5.0 ГГц)" },
-            { "name": "Кількість ядер процесора", "value": 16 },
-            { "name": "Тип пам'яті RAM", "value": "DDR4" },
-            { "name": "Обсяг пам'яті RAM", "value": "64 ГБ" },
-            { "name": "Тип жорсткого диска", "value": "SSD" },
-            { "name": "Обсяг SSD", "value": "2 ТБ" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "NVIDIA GeForce RTX 3070" },
-            { "name": "Обсяг відеопам'яті", "value": "8 ГБ" },
-            { "name": "Операційна система", "value": "Windows 11 Pro" },
-            { "name": "Ємність акумулятора", "value": "4 cell" }
-        ]
+        "characteristics": {
+            "producer": "Gigabyte",
+            "display_size": "17.3″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "300Hz",
+            "processor": "Intel Core i9-11980HK (2.6 – 5.0 ГГц)",
+            "number_of_processor_cores": 16,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "64 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "2 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3070",
+            "amount_of_VRAM": "8 ГБ",
+            "OS": "Windows 11 Pro",
+            "battery_capacity": "4 cell",
+            "weight": "3.75 кг",
+            "country_of_production": "Китай"
+        }
     },
+
     {
         "id": "U0902467",
         "title": "Acer Predator Helios 700",
@@ -775,28 +765,29 @@
         "producer": "Acer",
         "model": "Acer Predator Helios 700",
         "guarantee": 24,
-        "weight": "4.5 кг",
-        "country_of_production": "Китай",
-        "characteristics": [
-            { "name": "Виробник", "value": "Acer" },
-            { "name": "Розмір екрану", "value": "17.3″" },
-            { "name": "Роздільна здатність", "value": "1920×1080 (Full HD)" },
-            { "name": "Тип екрану", "value": "IPS" },
-            { "name": "Тип матриці", "value": "IPS" },
-            { "name": "Частота оновлення екрану", "value": "240Hz" },
-            { "name": "Процесор", "value": "Intel Core i9-11900H (2.5 – 4.9 ГГц)" },
-            { "name": "Кількість ядер процесора", "value": 8 },
-            { "name": "Тип пам'яті RAM", "value": "DDR4" },
-            { "name": "Обсяг пам'яті RAM", "value": "32 ГБ" },
-            { "name": "Тип жорсткого диска", "value": "SSD" },
-            { "name": "Обсяг SSD", "value": "1 ТБ" },
-            { "name": "Тип відеокарти", "value": "дискретна" },
-            { "name": "Відеокарта", "value": "NVIDIA GeForce RTX 3080" },
-            { "name": "Обсяг відеопам'яті", "value": "16 ГБ" },
-            { "name": "Операційна система", "value": "Windows 11 Home" },
-            { "name": "Ємність акумулятора", "value": "4 cell" }
-        ]
+        "characteristics": {
+            "producer": "Acer",
+            "display_size": "17.3″",
+            "resolving_power": "1920×1080 (Full HD)",
+            "screen": "IPS",
+            "matrix-type": "IPS",
+            "screen_refresh_rate": "240Hz",
+            "processor": "Intel Core i9-11900H (2.5 – 4.9 ГГц)",
+            "number_of_processor_cores": 8,
+            "RAM_type": "DDR4",
+            "RAM_capacity": "32 ГБ",
+            "types_of_hard_drives": "SSD",
+            "SSD_size": "1 ТБ",
+            "video_card_type": "дискретна",
+            "video_card": "NVIDIA GeForce RTX 3080",
+            "amount_of_VRAM": "16 ГБ",
+            "OS": "Windows 11 Home",
+            "battery_capacity": "4 cell",
+            "weight": "4.5 кг",
+            "country_of_production": "Китай"
+        }
     },
+
     {
         "id": "SSD123456",
         "title": "Samsung 970 EVO Plus",
@@ -830,22 +821,21 @@
         "producer": "Samsung",
         "model": "970 EVO Plus",
         "guarantee": 36,
-        "weight": "7 г",
-        "country_of_production": "Південна Корея",
-        "characteristics": [
-            { "name": "Виробник", "value": "Samsung" },
-            { "name": "Інтерфейс", "value": "NVMe PCIe Gen3 x4" },
-            { "name": "Форм-фактор", "value": "M.2 (2280)" },
-            { "name": "Обсяг", "value": "1 ТБ" },
-            { "name": "Швидкість послідовного читання", "value": "до 3500 МБ/с" },
-            { "name": "Швидкість послідовного запису", "value": "до 3300 МБ/с" },
-            { "name": "MTBF", "value": "1.5 млн годин" },
-            { "name": "TBW", "value": "600 ТБ" },
-            { "name": "Шифрування", "value": "AES 256-bit" },
-            { "name": "Габарити", "value": "80.15 x 22.15 x 2.38 мм" },
-            { "name": "Вага", "value": "7 г" },
-            { "name": "Робоча температура", "value": "0°C до 70°C" }
-        ]
+        "characteristics": {
+            "producer": "Samsung",
+            "interface": "NVMe PCIe Gen3 x4",
+            "form_factor": "M.2 (2280)",
+            "capacity": "1 ТБ",
+            "sequential_read_speed": "до 3500 МБ/с",
+            "sequential_write_speed": "до 3300 МБ/с",
+            "MTBF": "1.5 млн годин",
+            "TBW": "600 ТБ",
+            "encryption": "AES 256-bit",
+            "dimensions": "80.15 x 22.15 x 2.38 мм",
+            "weight": "7 г",
+            "operating_temperature": "0°C до 70°C",
+            "country_of_production": "Південна Корея"
+        }
     },
     {
         "id": "SSD789012",
@@ -879,22 +869,21 @@
         "producer": "Western Digital",
         "model": "Blue SN550",
         "guarantee": 36,
-        "weight": "6.5 г",
-        "country_of_production": "Малайзія",
-        "characteristics": [
-            { "name": "Виробник", "value": "Western Digital" },
-            { "name": "Інтерфейс", "value": "NVMe PCIe Gen3 x4" },
-            { "name": "Форм-фактор", "value": "M.2 (2280)" },
-            { "name": "Обсяг", "value": "500 ГБ" },
-            { "name": "Швидкість послідовного читання", "value": "до 2400 МБ/с" },
-            { "name": "Швидкість послідовного запису", "value": "до 1750 МБ/с" },
-            { "name": "MTBF", "value": "1.75 млн годин" },
-            { "name": "TBW", "value": "300 ТБ" },
-            { "name": "Шифрування", "value": "N/A" },
-            { "name": "Габарити", "value": "80 x 22 x 2.38 мм" },
-            { "name": "Вага", "value": "6.5 г" },
-            { "name": "Робоча температура", "value": "0°C до 70°C" }
-        ]
+        "characteristics": {
+            "producer": "Western Digital",
+            "interface": "NVMe PCIe Gen3 x4",
+            "form_factor": "M.2 (2280)",
+            "capacity": "500 ГБ",
+            "sequential_read_speed": "до 2400 МБ/с",
+            "sequential_write_speed": "до 1750 МБ/с",
+            "MTBF": "1.75 млн годин",
+            "TBW": "300 ТБ",
+            "encryption": "N/A",
+            "dimensions": "80 x 22 x 2.38 мм",
+            "weight": "6.5 г",
+            "operating_temperature": "0°C до 70°C",
+            "country_of_production": "Малайзія"
+        }
     },
     {
         "id": "SSD456789",
@@ -928,24 +917,22 @@
         "producer": "Crucial",
         "model": "MX500",
         "guarantee": 60,
-        "weight": "45 г",
-        "country_of_production": "США",
-        "characteristics": [
-            { "name": "Виробник", "value": "Crucial" },
-            { "name": "Інтерфейс", "value": "SATA III (6Gb/s)" },
-            { "name": "Форм-фактор", "value": "2.5-дюймовий" },
-            { "name": "Обсяг", "value": "1 ТБ" },
-            { "name": "Швидкість послідовного читання", "value": "до 560 МБ/с" },
-            { "name": "Швидкість послідовного запису", "value": "до 510 МБ/с" },
-            { "name": "MTBF", "value": "1.8 млн годин" },
-            { "name": "TBW", "value": "500 ГБ" },
-            { "name": "Шифрування", "value": "AES 256-bit" },
-            { "name": "Габарити", "value": "100.45 x 69.85 x 7 мм" },
-            { "name": "Вага", "value": "45 г" },
-            { "name": "Робоча температура", "value": "0°C до 70°C" }
-        ]
+        "characteristics": {
+            "producer": "Crucial",
+            "interface": "SATA III (6Gb/s)",
+            "form_factor": "2.5-дюймовий",
+            "capacity": "1 ТБ",
+            "sequential_read_speed": "до 560 МБ/с",
+            "sequential_write_speed": "до 510 МБ/с",
+            "MTBF": "1.8 млн годин",
+            "TBW": "500 ГБ",
+            "encryption": "AES 256-bit",
+            "dimensions": "100.45 x 69.85 x 7 мм",
+            "weight": "45 г",
+            "operating_temperature": "0°C до 70°C",
+            "country_of_production": "США"
+        }
     },
-
     {
         "id": "SSD234567",
         "title": "Seagate FireCuda 520 2TB M.2 PCIe",
@@ -978,24 +965,22 @@
         "producer": "Seagate",
         "model": "FireCuda 520",
         "guarantee": 60,
-        "weight": "9 г",
-        "country_of_production": "Філіппіни",
-        "characteristics": [
-            { "name": "Виробник", "value": "Seagate" },
-            { "name": "Інтерфейс", "value": "PCIe Gen4 x4" },
-            { "name": "Форм-фактор", "value": "M.2 2280" },
-            { "name": "Обсяг", "value": "2 ТБ" },
-            { "name": "Швидкість послідовного читання", "value": "до 5000 МБ/с" },
-            { "name": "Швидкість послідовного запису", "value": "до 4400 МБ/с" },
-            { "name": "MTBF", "value": "1.8 млн годин" },
-            { "name": "TBW", "value": "1400 ТБ" },
-            { "name": "Шифрування", "value": "AES 256-bit" },
-            { "name": "Габарити", "value": "80.15 x 22.15 x 3.58 мм" },
-            { "name": "Вага", "value": "9 г" },
-            { "name": "Робоча температура", "value": "0°C до 70°C" }
-        ]
+        "characteristics": {
+            "producer": "Seagate",
+            "interface": "PCIe Gen4 x4",
+            "form_factor": "M.2 2280",
+            "capacity": "2 ТБ",
+            "sequential_read_speed": "до 5000 МБ/с",
+            "sequential_write_speed": "до 4400 МБ/с",
+            "MTBF": "1.8 млн годин",
+            "TBW": "1400 ТБ",
+            "encryption": "AES 256-bit",
+            "dimensions": "80.15 x 22.15 x 3.58 мм",
+            "weight": "9 г",
+            "operating_temperature": "0°C до 70°C",
+            "country_of_production": "Філіппіни"
+        }
     },
-
     {
         "id": "HDD789012",
         "title": "Жорсткий диск Seagate BarraCuda HDD 2TB 7200rpm 256MB",
@@ -1032,22 +1017,21 @@
         "country_of_production": "Китай",
         "weight": "610 г",
         "characteristics": [
-            { "name": "Виробник", "val": "Seagate" },
-            { "name": "Інтерфейси", "val": "SATA 6Gb/s" },
-            { "name": "Об'єм накопичувача", "val": "2 ТБ" },
-            { "name": "Швидкість обертання шпинделя, об/хв", "val": "7200 об/хв" },
-            { "name": "Кеш", "val": "256 МБ" },
-            { "name": "Форм-фактор", "val": "3.5-дюймовий" },
-            { "name": "Гучність", "val": "25 дБ" },
-            { "name": "MTBF час", "val": "1 млн годин" },
-            { "name": "Габарити (ВхШхГ), мм", "val": "101.6 x 26.1 x 146.99 мм" },
-            { "name": "Температура", "val": "0°C до 60°C" }
+            {"name": "Виробник", "val": "Seagate"},
+            {"name": "Інтерфейси", "val": "SATA 6Gb/s"},
+            {"name": "Об'єм накопичувача", "val": "2 ТБ"},
+            {"name": "Швидкість обертання шпинделя, об/хв", "val": "7200 об/хв"},
+            {"name": "Кеш", "val": "256 МБ"},
+            {"name": "Форм-фактор", "val": "3.5-дюймовий"},
+            {"name": "Гучність", "val": "25 дБ"},
+            {"name": "MTBF час", "val": "1 млн годин"},
+            {"name": "Габарити (ВхШхГ), мм", "val": "101.6 x 26.1 x 146.99 мм"},
+            {"name": "Температура", "val": "0°C до 60°C"}
         ]
     },
-
     {
         "id": "HDD123456",
-        "title": "Жорсткий диск 3.5' 4TB Western Digital",
+        "title": "Жорсткий диск 3.5' 4TB WD",
         "navigation": {
             "category": "ПК та комплектуючі",
             "subcategory": "Жорсткі диски"
@@ -1077,23 +1061,21 @@
         "producer": "Western Digital",
         "model": "Red",
         "guarantee": 60,
-        "country_of_production": "Малайзія",
-        "characteristics": [
-            {"name": "producer",  "value": "Western Digital"},
-            {"name": "interface", "value": "SATA 6Gb/s"},
-            {"name": "capacity", "value": "4 ТБ"},
-            {"name": "rotational_speed", "value": "5400 об/хв"},
-            {"name": "cache", "value": "256 МБ"},
-            {"name": "form_factor", "value": "3.5-дюймовий"},
-            {"name": "noise_level", "value": "25 дБ"},
-            {"name": "MTBF", "value": "1 млн годин"},
-            {"name": "dimensions", "value": "101.6 x 26.1 x 147 мм"},
-            {"name": "weight", "value": "610 г" },
-            {"name": "operating_temperature", "value": "0°C до 65°C"}
-        ]
+        "characteristics": {
+            "producer": "Western Digital",
+            "interface": "SATA 6Gb/s",
+            "capacity": "4 ТБ",
+            "rotational_speed": "5400 об/хв",
+            "cache": "256 МБ",
+            "form_factor": "3.5-дюймовий",
+            "noise_level": "25 дБ",
+            "MTBF": "1 млн годин",
+            "dimensions": "101.6 x 26.1 x 147 мм",
+            "weight": "610 г",
+            "operating_temperature": "0°C до 65°C",
+            "country_of_production": "Малайзія"
+        }
     },
-
-
     {
         "id": "HDD234567",
         "title": "Жорсткий диск Toshiba P300 4TB 5400rpm 128MB",
@@ -1125,18 +1107,1010 @@
         "producer": "Toshiba",
         "model": "P300",
         "guarantee": 24,
-        "country_of_production": "Філіппіни",
-        "characteristics": [
-            {"name": "producer",  "value": "Toshiba"},
-            {"name": "interface", "value": "SATA 6Gb/s"},
-            {"name": "capacity", "value": "1 ТБ"},
-            {"name": "rotational_speed", "value": "7200 об/хв"},
-            {"name": "cache", "value": "128 МБ"},
-            {"name": "form_factor", "value": "3.5-дюймовий"},
-            {"name": "noise_level", "value": "26 дБ"},
-            {"name": "MTBF", "value": "1 млн годин"},
-            {"name": "dimensions", "value": "147 x 101.6 x 26.1 мм"},
-            {"name": "weight", "value": "450 г" }
-        ]
+        "characteristics": {
+            "producer": "Toshiba",
+            "interface": "SATA 6Gb/s",
+            "capacity": "1 ТБ",
+            "rotational_speed": "7200 об/хв",
+            "cache": "128 МБ",
+            "form_factor": "3.5-дюймовий",
+            "noise_level": "26 дБ",
+            "MTBF": "1 млн годин",
+            "dimensions": "147 x 101.6 x 26.1 мм",
+            "weight": "450 г",
+            "operating_temperature": "0°C до 60°C",
+            "country_of_production": "Філіппіни"
+        }
+    },
+    {
+        "id": "HDD234567",
+        "title": "Жорсткий диск Toshiba P300 2TB 7200rpm 256MB",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Жорсткі диски"
+        },
+        "images": {
+            "image_cover": "https://content.rozetka.com.ua/goods/images/big/379157182.jpg",
+            "images_set": [
+                "https://content.rozetka.com.ua/goods/images/big/379157182.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 800,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": ["ТОП"],
+        "new": false,
+        "top_sales": true,
+        "summary": "HDD, 1TB, 7200 RPM, 64MB Cache, SATA 6Gb/s",
+        "color": "чорний",
+        "product_code": "HDD234567",
+        "additional_code": "456789",
+        "article": "P300_2024",
+        "description": "Надійний жорсткий диск від Toshiba з високою швидкістю обертання та великим обсягом пам'яті. Ідеальний для робочих станцій та систем зберігання даних.",
+        "producer": "Toshiba",
+        "model": "P300",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Toshiba",
+            "interface": "SATA 6Gb/s",
+            "capacity": "2 ТБ",
+            "rotational_speed": "7200 об/хв",
+            "cache": "256 МБ",
+            "form_factor": "3.5-дюймовий",
+            "noise_level": "26 дБ",
+            "MTBF": "1 млн годин",
+            "dimensions": "147 x 101.6 x 26.1 мм",
+            "weight": "450 г",
+            "operating_temperature": "0°C до 60°C",
+            "country_of_production": "Філіппіни"
+        }
+    },
+
+    {
+        "id": "HDD345678",
+        "title": "HDD HITACHI Ultrastar SSD400S",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Жорсткі диски"
+        },
+        "images": {
+            "image_cover": "https://redlop.de/media/image/product/1840/lg/hitachi-ultrastar-ssd400s-hussl4010ass600-100gb-neu.jpg",
+            "images_set": [
+                "https://redlop.de/media/image/product/1840/lg/hitachi-ultrastar-ssd400s-hussl4010ass600-100gb-neu.jpg"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 19199,
+            "currency": "UAH",
+            "discount_percentage": 5
+        },
+        "tags": ["АКЦІЯ"],
+        "new": false,
+        "top_sales": true,
+        "summary": "Enterprise HDD, 6TB, 7200 RPM, 256MB Cache, SATA 6Gb/s",
+        "color": "сріблястий",
+        "product_code": "HDD345678",
+        "additional_code": "567890",
+        "article": "ULTRASTARHC510_2024",
+        "description": "Надійний жорсткий диск від Hitachi з великим обсягом пам'яті та високою швидкістю обертання. Підходить для серверів та систем зберігання даних в корпоративному середовищі.",
+        "producer": "Hitachi",
+        "model": "Ultrastar DC HC510",
+        "guarantee": 36,
+        "characteristics": {
+            "producer": "Hitachi",
+            "interface": "SATA 6Gb/s",
+            "capacity": "6 ТБ",
+            "rotational_speed": "7200 об/хв",
+            "cache": "256 МБ",
+            "form_factor": "3.5-дюймовий",
+            "noise_level": "29 дБ",
+            "MTBF": "2.5 млн годин",
+            "dimensions": "147 x 101.6 x 26.1 мм",
+            "weight": "720 г",
+            "operating_temperature": "5°C до 60°C",
+            "country_of_production": "Японія"
+        }
+    },
+    {
+        "id": "HDD456789",
+        "title": "Накопичувач SSD 2TB Samsung 870 EVO",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "SSD накопичувачі"
+        },
+        "images": {
+            "image_cover": "https://click.ua/content/shop/products/89058/photos/nakopitel-ssd-2tb-samsung-870-evo-2-5-sataiii-mlc-mz-77e2t0b-eu-800x567-88cc.jpg",
+            "images_set": [
+                "https://click.ua/content/shop/products/89058/photos/nakopitel-ssd-2tb-samsung-870-evo-2-5-sataiii-mlc-mz-77e2t0b-eu-800x800-4254.jpg",
+                "https://click.ua/content/shop/products/89058/photos/nakopitel-ssd-2tb-samsung-870-evo-2-5-sataiii-mlc-mz-77e2t0b-eu-798x800-7461.jpg",
+                "https://click.ua/content/shop/products/89058/photos/nakopitel-ssd-2tb-samsung-870-evo-2-5-sataiii-mlc-mz-77e2t0b-eu-800x800-f8e6.jpg",
+                "https://click.ua/content/shop/products/89058/photos/nakopitel-ssd-2tb-samsung-870-evo-2-5-sataiii-mlc-mz-77e2t0b-eu-800x533-38c2.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 7499,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": ["НОВИНКИ"],
+        "new": true,
+        "top_sales": false,
+        "summary": "SSD, 1TB, SATA III, Read speed up to 560MB/s, Write speed up to 530MB/s",
+        "color": "чорний",
+        "product_code": "SSD870EVO",
+        "additional_code": "123456",
+        "article": "SAMSUNGSSD870EVO_2024",
+        "description": "Надійний та швидкий SSD від відомого виробника Samsung. Ідеальний варіант для оновлення вашого комп'ютера або ноутбука.",
+        "producer": "Samsung",
+        "model": "SSD 870 EVO",
+        "guarantee": 60,
+        "characteristics": {
+            "producer": "Samsung",
+            "interface": "SATA III",
+            "capacity": "2 ТБ",
+            "form_factor": "2.5-дюймовий",
+            "sequential_read_speed": "до 560 МБ/с",
+            "sequential_write_speed": "до 530 МБ/с",
+            "MTBF": "1.5 млн годин",
+            "TBW": "600 ТБ",
+            "encryption": "N/A",
+            "dimensions": "100 x 69.85 x 6.8 мм",
+            "weight": "51 г",
+            "operating_temperature": "0°C до 70°C",
+            "country_of_production": "Південна Корея"
+        }
+    },
+
+    {
+        "id": "HDD567890",
+        "title": "SSD накопичувач ADATA Ultimate SU800 512 GB",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "SSD накопичувач"
+        },
+        "images": {
+            "image_cover": "https://images.prom.ua/4228151324_w640_h640_ssd-nakopichuvach-adata.jpg",
+            "images_set": [
+                "https://images.prom.ua/4228151324_w640_h640_ssd-nakopichuvach-adata.jpg"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 3100,
+            "currency": "UAH",
+            "discount_percentage": 10
+        },
+        "tags": ["АКЦІЯ"],
+        "new": false,
+        "top_sales": true,
+        "summary": "SSD, 512GB, SATA III, Read speed up to 560MB/s, Write speed up to 520MB/s",
+        "color": "чорний",
+        "product_code": "SU800",
+        "additional_code": "234567",
+        "article": "ADATASU800_2024",
+        "description": "Надійний та швидкий SSD від ADATA з великим обсягом пам'яті. Ідеальний вибір для оновлення вашого ПК або ноутбука.",
+        "producer": "ADATA",
+        "model": "SU800",
+        "guarantee": 36,
+        "characteristics": {
+            "producer": "ADATA",
+            "interface": "SATA III",
+            "capacity": "512 ГБ",
+            "form_factor": "2.5-дюймовий",
+            "sequential_read_speed": "до 560 МБ/с",
+            "sequential_write_speed": "до 520 МБ/с",
+            "MTBF": "2 млн годин",
+            "TBW": "400 ТБ",
+            "encryption": "N/A",
+            "dimensions": "100 x 69.85 x 7 мм",
+            "weight": "47.5 г",
+            "operating_temperature": "0°C до 70°C",
+            "country_of_production": "Тайвань"
+        }
+    },
+
+    {
+        "id": "GPU123456",
+        "title": "Відеокарта Biostar GeForce RTX3080 10GB",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Відеокарти"
+        },
+        "images": {
+            "image_cover": "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/b/3/b3080_web_tv8w.png/w_600",
+            "images_set": [
+                "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/b/3/b3080__qswj.jpg/w_600",
+                "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/b/3/b3080_io_ades.jpg/w_600",
+                "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/b/3/b3080___yxxw.jpg/w_600"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 29899,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": ["ТОП"],
+        "new": false,
+        "top_sales": true,
+        "summary": "Відеокарта NVIDIA GeForce RTX 3080, 10 ГБ GDDR6X, PCIe 4.0, 320-bit",
+        "color": "чорний",
+        "product_code": "GPU123456",
+        "additional_code": "789012",
+        "article": "GEFORCERTX3080_2024",
+        "description": "Потужна відеокарта від NVIDIA з високими показниками продуктивності. Ідеально підходить для геймінгу та ресурсомістких завдань.",
+        "producer": "NVIDIA",
+        "model": "GeForce RTX 3080",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "NVIDIA",
+            "graphics_processor": "NVIDIA GeForce RTX 3080",
+            "memory_size": "10 ГБ",
+            "memory_type": "GDDR6X",
+            "interface": "PCI Express 4.0",
+            "memory_bus_width": "320 біт",
+            "core_clock": "1500 МГц",
+            "boost_clock": "1710 МГц",
+            "CUDA_cores": 8704,
+            "outputs": ["HDMI 2.1", "DisplayPort 1.4a", "USB Type-C"],
+            "recommended_power_supply": "750 Вт",
+            "power_connector": "2x 8-pin",
+            "dimensions": "285 x 112 x 53 мм",
+            "weight": "1327 г",
+            "operating_temperature": "-50°C до 110°C",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "GPU234567",
+        "title": "Відеокарта XFX PCI-Ex Radeon RX 6800 Speedster SWFT 319 16GB GDDR6 (256bit)",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Відеокарти"
+        },
+        "images": {
+            "image_cover": "https://content2.rozetka.com.ua/goods/images/big/237063744.jpg",
+            "images_set": [
+                "https://content1.rozetka.com.ua/goods/images/big/237063745.jpg",
+                "https://content2.rozetka.com.ua/goods/images/big/237063746.jpg",
+                "https://content.rozetka.com.ua/goods/images/big/237063747.jpg",
+                "https://content1.rozetka.com.ua/goods/images/big/237063749.jpg"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 21499,
+            "currency": "UAH",
+            "discount_percentage": 3
+        },
+        "tags": ["ТОП"],
+        "new": false,
+        "top_sales": true,
+        "summary": "Відеокарта AMD Radeon RX 6800 XT, 16 ГБ GDDR6, PCIe 4.0, 256-bit",
+        "color": "сріблястий",
+        "product_code": "GPU234567",
+        "additional_code": "890123",
+        "article": "RADEONRX6800XT_2024",
+        "description": "Потужна відеокарта від AMD з високими показниками продуктивності. Ідеально підходить для геймінгу та професійних завдань.",
+        "producer": "AMD",
+        "model": "Radeon RX 6800 XT",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "AMD",
+            "graphics_processor": "AMD Radeon RX 6800 XT",
+            "memory_size": "16 ГБ",
+            "memory_type": "GDDR6",
+            "interface": "PCI Express 4.0",
+            "memory_bus_width": "256 біт",
+            "core_clock": "1825 МГц",
+            "boost_clock": "2250 МГц",
+            "stream_processors": 4608,
+            "outputs": ["HDMI 2.1", "DisplayPort 1.4", "USB Type-C"],
+            "recommended_power_supply": "750 Вт",
+            "power_connector": "2x 8-pin",
+            "dimensions": "267 x 120 x 40 мм",
+            "weight": "1000 г",
+            "operating_temperature": "-30°C до 90°C",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "GPU345678",
+        "title": "Відеокарта MSI RTX 3090 24GB GAMING X TRIO",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Відеокарти"
+        },
+        "images": {
+            "image_cover": "https://v-stock.com.ua/image/catalog/product/80490_0.jpg",
+            "images_set": [
+                "https://v-stock.com.ua/image/catalog/product/80490_2.jpg",
+                "https://v-stock.com.ua/image/catalog/product/80490_4.jpg",
+                "https://v-stock.com.ua/image/catalog/product/80490_3.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 25000,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": ["ТОП"],
+        "new": false,
+        "top_sales": false,
+        "summary": "Відеокарта NVIDIA GeForce RTX 3090, 24 ГБ GDDR6X, PCIe 4.0, 384-bit",
+        "color": "чорний",
+        "product_code": "GPU345678",
+        "additional_code": "901234",
+        "article": "GEFORCERTX3090_2024",
+        "description": "Надзвичайно потужна відеокарта від NVIDIA з максимальними показниками продуктивності. Ідеально підходить для високонавантажених завдань у геймінгу та професійних застосуваннях.",
+        "producer": "MSI",
+        "model": "GeForce RTX 3090",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "MSI",
+            "graphics_processor": "MSI GeForce RTX 3090",
+            "memory_size": "24 ГБ",
+            "memory_type": "GDDR6X",
+            "interface": "PCI Express 4.0",
+            "memory_bus_width": "384 біт",
+            "core_clock": "1395 МГц",
+            "boost_clock": "1695 МГц",
+            "CUDA_cores": 10496,
+            "outputs": ["HDMI 2.1", "DisplayPort 1.4a"],
+            "recommended_power_supply": "750 Вт",
+            "power_connector": "2x 8-pin",
+            "dimensions": "313 x 138 x 55 мм",
+            "weight": "1385 г",
+            "operating_temperature": "-50°C до 110°C",
+            "country_of_production": "Китай"
+        }
+    },
+
+    {
+        "id": "GPU456789",
+        "title": "Відеокарта AMD Radeon RX 6900 XT 16GB GDDR6 Ultimate PowerColor",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Відеокарти"
+        },
+        "images": {
+            "image_cover": "https://avic.com.ua/assets/cache/products/247142/videokarta-amd-radeon-rx-6900-xt-16gb-gddr6-ultimate-powercolor-axrx-6900xtu-16gbd6-3dhe-oc1-prod_xl.jpg",
+            "images_set": [
+                "https://avic.com.ua/assets/cache/products/247142/videokarta-amd-radeon-rx-6900-xt-16gb-gddr6-ultimate-powercolor-axrx-6900xtu-16gbd6-3dhe-oc-prod_md.jpg",
+                "https://avic.com.ua/assets/cache/products/247142/videokarta-amd-radeon-rx-6900-xt-16gb-gddr6-ultimate-powercolor-axrx-6900xtu-16gbd6-3dhe-oc2-prod_md.jpg",
+                "https://avic.com.ua/assets/cache/products/247142/videokarta-amd-radeon-rx-6900-xt-16gb-gddr6-ultimate-powercolor-axrx-6900xtu-16gbd6-3dhe-oc3-prod_xl.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 40254,
+            "currency": "UAH",
+            "discount_percentage": 7
+        },
+        "tags": ["ТОП", "АКЦІЯ"],
+        "new": false,
+        "top_sales": false,
+        "summary": "Відеокарта AMD Radeon RX 6900 XT, 16 ГБ GDDR6, PCIe 4.0, 256-bit",
+        "color": "чорний",
+        "product_code": "GPU456789",
+        "additional_code": "012345",
+        "article": "RADEONRX6900XT_2024",
+        "description": "Надзвичайно потужна відеокарта від AMD з передовими технологіями та великим обсягом пам'яті. Ідеально підходить для геймінгу на найвищому рівні та вирішення високонавантажених професійних завдань.",
+        "producer": "AMD",
+        "model": "Radeon RX 6900 XT",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "AMD",
+            "graphics_processor": "AMD Radeon RX 6900 XT",
+            "memory_size": "16 ГБ",
+            "memory_type": "GDDR6",
+            "interface": "PCI Express 4.0",
+            "memory_bus_width": "256 біт",
+            "core_clock": "1825 МГц",
+            "boost_clock": "2250 МГц",
+            "stream_processors": 5120,
+            "outputs": ["HDMI 2.1", "DisplayPort 1.4"],
+            "recommended_power_supply": "850 Вт",
+            "power_connector": "2x 8-pin",
+            "dimensions": "267 x 120 x 40 мм",
+            "weight": "1200 г",
+            "operating_temperature": "-30°C до 90°C",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "CPU123456",
+        "title": "Процесор AMD Ryzen 9 5900X 3.7 GHz / 64 MB",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Процесори"
+        },
+        "images": {
+            "image_cover": "https://content.rozetka.com.ua/goods/images/big/152398702.jpg",
+            "images_set": [
+                "https://video.rozetka.com.ua/video4/kompyutery_i_noutbuki/kompyuternye_komplektuyushie/processory_amd_ryzen_5000-series.mp4"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 13999,
+            "currency": "UAH",
+            "discount_percentage": 1
+        },
+        "tags": ["ТОП", "АКЦІЯ"],
+        "new": false,
+        "top_sales": true,
+        "summary": "Процесор AMD Ryzen 9 5900X, 12 ядер, 24 потоки, 3.7 ГГц базова частота, до 4.8 ГГц в режимі Boost",
+        "color": "чорний",
+        "product_code": "CPU123456",
+        "additional_code": "789012",
+        "article": "RYZEN95900X_2024",
+        "description": "Високопродуктивний процесор від AMD з великою кількістю ядер та потоків. Ідеально підходить для ігор, відеомонтажу та інших високонавантажених завдань.",
+        "producer": "AMD",
+        "model": "Ryzen 9 5900X",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "AMD",
+            "architecture": "Zen 3",
+            "cores": 12,
+            "threads": 24,
+            "base_clock": "3.7 ГГц",
+            "boost_clock": "до 4.8 ГГц",
+            "L1_cache": "768 КБ",
+            "L2_cache": "6 МБ",
+            "L3_cache": "64 МБ",
+            "TDP": "105 Вт",
+            "socket": "Socket AM4",
+            "memory_support": "DDR4",
+            "memory_channels": "двоканальний",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "CPU234567",
+        "title": "Процесор Intel Core i9-12900K 3.2 GHz / 30 MB",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Процесори"
+        },
+        "images": {
+            "image_cover": "https://content.rozetka.com.ua/goods/images/big/231752039.jpg",
+            "images_set": [
+                "https://content1.rozetka.com.ua/goods/images/big/231752040.jpg",
+                "https://content.rozetka.com.ua/goods/images/big/231752041.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 24248,
+            "currency": "UAH",
+            "discount_percentage": 10
+        },
+        "tags": ["ТОП", "АКЦІЯ"],
+        "new": false,
+        "top_sales": true,
+        "summary": "Процесор Intel Core i9-12900K, 16 ядер, 24 потоки, 3.2 ГГц базова частота, до 5.2 ГГц в режимі Turbo Boost",
+        "color": "сріблястий",
+        "product_code": "CPU234567",
+        "additional_code": "890123",
+        "article": "COREI912900K_2024",
+        "description": "Високопродуктивний процесор від Intel з великою кількістю ядер та потоків. Забезпечує високу швидкодію та продуктивність у різних завданнях.",
+        "producer": "Intel",
+        "model": "Core i9-12900K",
+        "guarantee": 36,
+        "characteristics": {
+            "producer": "Intel",
+            "architecture": "Alder Lake",
+            "cores": 16,
+            "threads": 24,
+            "base_clock": "3.2 ГГц",
+            "turbo_clock": "до 5.2 ГГц",
+            "L1_cache": "1.5 МБ",
+            "L2_cache": "8 МБ",
+            "L3_cache": "30 МБ",
+            "TDP": "125 Вт",
+            "socket": "Socket LGA 1700",
+            "memory_support": "DDR5-4800, DDR4-3200",
+            "memory_channels": "двоканальний",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "CPU345678",
+        "title": "Процесор AMD Ryzen Threadripper 3990X",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Процесори"
+        },
+        "images": {
+            "image_cover": "https://img.telemart.ua/592028-734518/amd-ryzen-threadripper-7970x-4053ghz-128mb-str5-box-100-100001351wof.jpg",
+            "images_set": [
+                "https://img.telemart.ua/592028-734519/amd-ryzen-threadripper-7970x-4053ghz-128mb-str5-box-100-100001351wof.jpg",
+                "https://img.telemart.ua/592028-734520/amd-ryzen-threadripper-7970x-4053ghz-128mb-str5-box-100-100001351wof.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 154440,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": ["ТОП"],
+        "new": false,
+        "top_sales": false,
+        "summary": "Процесор AMD Ryzen Threadripper 3990X, 64 ядра, 128 потоків, 2.9 ГГц базова частота, до 4.3 ГГц в режимі Turbo Boost",
+        "color": "чорний",
+        "product_code": "CPU345678",
+        "additional_code": "012345",
+        "article": "RYZENTHREADRIPPER3990X_2024",
+        "description": "Найпотужніший процесор від AMD для високонавантажених завдань та професійного використання. Ідеально підходить для роботи з великими об'ємами даних, відеоредакції та інших складних завдань.",
+        "producer": "AMD",
+        "model": "Ryzen Threadripper 3990X",
+        "guarantee": 36,
+        "characteristics": {
+            "producer": "AMD",
+            "architecture": "Zen 2",
+            "cores": 64,
+            "threads": 128,
+            "base_clock": "2.9 ГГц",
+            "turbo_clock": "до 4.3 ГГц",
+            "L1_cache": "3 МБ",
+            "L2_cache": "32 МБ",
+            "L3_cache": "256 МБ",
+            "TDP": "280 Вт",
+            "socket": "Socket sTRX4",
+            "memory_support": "DDR4",
+            "memory_channels": "четирьохканальний",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "CPU456789",
+        "title": "Процесор Intel Xeon W-3175X",
+        "navigation": {
+            "category": "ПК та комплектуючі",
+            "subcategory": "Процесори"
+        },
+        "images": {
+            "image_cover": "https://images.prom.ua/5200087465_procesor-intel-xeon.jpg",
+            "images_set": [
+                "https://images.prom.ua/5200087465_procesor-intel-xeon.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 144334,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": ["НОВИНКА"],
+        "new": false,
+        "top_sales": false,
+        "summary": "Процесор Intel Xeon W-3175X, 28 ядер, 56 потоків, 3.1 ГГц базова частота, до 4.3 ГГц в режимі Turbo Boost",
+        "color": "сріблястий",
+        "product_code": "CPU456789",
+        "additional_code": "234567",
+        "article": "XEONW3175X_2024",
+        "description": "Екстремально потужний процесор від Intel для професійного використання. Забезпечує високу продуктивність у великих розрахунках, наукових дослідженнях та великих обчисленнях.",
+        "producer": "Intel",
+        "model": "Xeon W-3175X",
+        "guarantee": 36,
+        "characteristics": {
+            "producer": "Intel",
+            "architecture": "Skylake",
+            "cores": 28,
+            "threads": 56,
+            "base_clock": "3.1 ГГц",
+            "turbo_clock": "до 4.3 ГГц",
+            "L1_cache": "1.125 МБ",
+            "L2_cache": "28 МБ",
+            "L3_cache": "38.5 МБ",
+            "TDP": "255 Вт",
+            "socket": "Socket 3647",
+            "memory_support": "DDR4-2666",
+            "memory_channels": "шестиканальний",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "PS5-123456",
+        "title": "Ігрова приставка Sony PlayStation 5 825GB",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі PlayStation"
+        },
+        "images": {
+            "image_cover": "https://avic.com.ua/assets/cache/products/228418/igrovaya-pristavka-sony-playstation-5-prod_md.jpg",
+            "images_set": [
+                "https://game-shop.com.ua/prodimages/23802/thumbs/116267_600_600.jpg",
+                "https://game-shop.com.ua/prodimages/23802/thumbs/116266_600_600.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 25775,
+            "currency": "UAH",
+            "discount_percentage": 8
+        },
+        "tags": ["АКЦІЯ"],
+        "new": true,
+        "top_sales": true,
+        "summary": "Консоль PlayStation 5 з потужним апаратним наповненням та підтримкою ігор в 4K.",
+        "color": "чорний",
+        "product_code": "PS5-123456",
+        "additional_code": "789012",
+        "article": "PS5_2024",
+        "description": "Нове покоління консолі PlayStation забезпечує найвищу продуктивність у своєму класі. Графіка 4K, підтримка віртуальної реальності та ігри на вибір з великого асортименту.",
+        "producer": "Sony",
+        "model": "PlayStation 5",
+        "guarantee": 12,
+        "characteristics": {
+            "producer": "Sony",
+            "processor": "Custom AMD Zen 2",
+            "graphics": "Custom AMD RDNA 2",
+            "memory": "16 ГБ GDDR6",
+            "internal_storage": "825 ГБ SSD",
+            "resolution_support": "4K",
+            "optical_drive": "4K UHD Blu-ray",
+            "output_ports": ["HDMI", "USB"],
+            "wireless_connectivity": "Wi-Fi 6, Bluetooth 5.1",
+            "dimensions": "390 x 104 x 260 мм",
+            "weight": "4.5 кг",
+            "country_of_production": "Японія"
+        }
+    },
+
+    {
+        "id": "PS5Pro-789012",
+        "title": "Ігрова приставка PlayStation 5 Pro",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі PlayStation"
+        },
+        "images": {
+            "image_cover": "https://avic.com.ua/assets/cache/products/228418/igrovaya-pristavka-sony-playstation-5-prod_md.jpg",
+            "images_set": [
+                "https://game-shop.com.ua/prodimages/23802/thumbs/116267_600_600.jpg",
+                "https://game-shop.com.ua/prodimages/23802/thumbs/116266_600_600.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 27599,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": [],
+        "new": true,
+        "top_sales": false,
+        "summary": "Покращена версія консолі PlayStation 5 з підтримкою 8K та покращеним апаратним наповненням.",
+        "color": "чорний",
+        "product_code": "PS5Pro-789012",
+        "additional_code": "345678",
+        "article": "PS5PRO_2024",
+        "description": "PlayStation 5 Pro - це краще з кращого. Завдяки підтримці графіки в роздільній здатності 8K та покращеному апаратному наповненню, ця консоль забезпечить найвищий рівень ігрового досвіду.",
+        "producer": "Sony",
+        "model": "PlayStation 5 Pro",
+        "guarantee": 12,
+        "characteristics": {
+            "producer": "Sony",
+            "processor": "Custom AMD Zen 2",
+            "graphics": "Custom AMD RDNA 3",
+            "memory": "24 ГБ GDDR6",
+            "internal_storage": "1 ТБ SSD",
+            "resolution_support": "8K",
+            "optical_drive": "4K UHD Blu-ray",
+            "output_ports": ["HDMI 2.1", "USB-C"],
+            "wireless_connectivity": "Wi-Fi 6E, Bluetooth 5.2",
+            "dimensions": "390 x 104 x 260 мм",
+            "weight": "5 кг",
+            "country_of_production": "Японія"
+        }
+    },
+
+    {
+        "id": "PS5Ultra-135790",
+        "title": "Ігрова приставка PlayStation 5 Ultra",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі PlayStation"
+        },
+        "images": {
+            "image_cover": "https://img.telemart.ua/487476-626081/sony-playstation-5-ultra-hd-blu-ray-9424930.jpg",
+            "images_set": [
+                "https://img.telemart.ua/487476-626082/sony-playstation-5-ultra-hd-blu-ray-9424930.png"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 23999,
+            "currency": "UAH",
+            "discount_percentage": 13
+        },
+        "tags": ["ТОП"],
+        "new": true,
+        "top_sales": false,
+        "summary": "Найпотужніша консоль PlayStation 5 Ultra з підтримкою 8K, швидким SSD та розширеною графікою.",
+        "color": "чорний",
+        "product_code": "PS5Ultra-135790",
+        "additional_code": "246801",
+        "article": "PS5ULTRA_2024",
+        "description": "PlayStation 5 Ultra - це апогей ігрової технології. Забезпечує неймовірно реалістичний геймплей в роздільній здатності 8K, надзвичайно швидкий SSD для миттєвого завантаження ігор та найсучаснішу графіку.",
+        "producer": "Sony",
+        "model": "PlayStation 5 Ultra",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Sony",
+            "processor": "Custom AMD Zen 3",
+            "graphics": "Custom AMD RDNA 4",
+            "memory": "32 ГБ GDDR6X",
+            "internal_storage": "2 ТБ SSD",
+            "resolution_support": "8K",
+            "optical_drive": "Без пристрою оптичного зчитування",
+            "output_ports": ["HDMI 2.1", "USB-C"],
+            "wireless_connectivity": "Wi-Fi 6E, Bluetooth 5.2",
+            "dimensions": "390 x 104 x 260 мм",
+            "weight": "5.5 кг",
+            "country_of_production": "Японія"
+        }
+    },
+
+    {
+        "id": "PS5Elite-246801",
+        "title": "PlayStation 5 Elite",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі PlayStation"
+        },
+        "images": {
+            "image_cover": "https://game-shop.com.ua/prodimages/28529/133415.jpg",
+            "images_set": [
+                "https://game-shop.com.ua/prodimages/28529/thumbs/134026_600_600.jpg",
+                "https://game-shop.com.ua/prodimages/28529/thumbs/133416_600_600.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 30000,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": [],
+        "new": true,
+        "top_sales": false,
+        "summary": "Найпрестижніша консоль PlayStation 5 Elite з ультрасучасним апаратним забезпеченням та ексклюзивними функціями.",
+        "color": "чорний",
+        "product_code": "PS5Elite-246801",
+        "additional_code": "357912",
+        "article": "PS5ELITE_2024",
+        "description": "PlayStation 5 Elite - це ексклюзивна консоль для справжніх геймерів. Її потужне апаратне забезпечення, унікальні функції та вражаючий дизайн роблять її неперевершеним вибором для кращого ігрового досвіду.",
+        "producer": "Sony",
+        "model": "PlayStation 5 Elite",
+        "guarantee": 24,
+        "characteristics": {
+            "producer": "Sony",
+            "processor": "Custom AMD Zen 3",
+            "graphics": "Custom AMD RDNA 4",
+            "memory": "32 ГБ GDDR6X",
+            "internal_storage": "4 ТБ SSD",
+            "resolution_support": "8K",
+            "optical_drive": "Без пристрою оптичного зчитування",
+            "output_ports": ["HDMI 2.1", "USB-C"],
+            "wireless_connectivity": "Wi-Fi 6E, Bluetooth 5.2",
+            "dimensions": "390 x 104 x 260 мм",
+            "weight": "6 кг",
+            "country_of_production": "Японія"
+        }
+    },
+
+
+    {
+        "id": "XBOXSERIESX-987654",
+        "title": "Ігрова приставка Xbox Series X",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі Xbox"
+        },
+        "images": {
+            "image_cover": "https://game-shop.com.ua/prodimages/23833/thumbs/116333_600_600.jpg",
+            "images_set": [
+                "https://game-shop.com.ua/prodimages/23833/thumbs/116333_600_600.jpg",
+                "https://game-shop.com.ua/prodimages/23833/thumbs/114387_600_600.jpg"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 28499,
+            "currency": "UAH",
+            "discount_percentage": 30
+        },
+        "tags": ["АКЦІЯ"],
+        "new": true,
+        "top_sales": true,
+        "summary": "Консоль Xbox Series X з потужним апаратним наповненням та підтримкою ігор в 4K.",
+        "color": "чорний",
+        "product_code": "XBOXSERIESX-987654",
+        "additional_code": "012345",
+        "article": "XBOXSERIESX_2024",
+        "description": "Нове покоління консолі Xbox забезпечує найвищу продуктивність у своєму класі. Графіка 4K, підтримка віртуальної реальності та ігри на вибір з великого асортименту.",
+        "producer": "Microsoft",
+        "model": "Xbox Series X",
+        "guarantee": 12,
+        "characteristics": {
+            "producer": "Microsoft",
+            "processor": "Custom AMD Zen 2",
+            "graphics": "Custom AMD RDNA 2",
+            "memory": "16 ГБ GDDR6",
+            "internal_storage": "1 ТБ NVMe SSD",
+            "resolution_support": "4K",
+            "optical_drive": "4K UHD Blu-ray",
+            "output_ports": ["HDMI", "USB"],
+            "wireless_connectivity": "Wi-Fi 6, Bluetooth 5.1",
+            "dimensions": "301 x 151 x 151 мм",
+            "weight": "4.45 кг",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "XBOXSERIESS-246810",
+        "title": "Ігрова приставка Xbox Series S",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі Xbox"
+        },
+        "images": {
+            "image_cover": "https://yabloki.ua/media/cache/sylius_shop_product_original/99/ea/0389591b85b521cf8f2e597a0079.png.webp",
+            "images_set": [
+                "https://yabloki.ua/media/cache/sylius_shop_product_original/06/fe/311b2247d563587c46b794815e8c.png.webp",
+                "https://yabloki.ua/media/cache/sylius_shop_product_original/3a/32/f7c07ac1eb71ebe4c7b7297bdf25.png.webp",
+                "https://yabloki.ua/media/cache/sylius_shop_product_original/48/83/0bcff5e4628fcdfe212647d4665e.png.webp"
+            ]
+        },
+        "cost": {
+            "sale": true,
+            "price": 11362,
+            "currency": "UAH",
+            "discount_percentage": 8
+        },
+        "tags": ["БЮДЖЕТНА ОПЦІЯ"],
+        "new": true,
+        "top_sales": false,
+        "summary": "Компактна консоль Xbox Series S з високоякісним геймплеєм та підтримкою ігор в 1440p.",
+        "color": "білий",
+        "product_code": "XBOXSERIESS-246810",
+        "additional_code": "135792",
+        "article": "XBOXSERIESS_2024",
+        "description": "Xbox Series S - це чудовий вибір для тих, хто шукає доступну та потужну консоль. Забезпечує якісний геймплей в роздільній здатності 1440p та підтримує великий вибір ігор.",
+        "producer": "Microsoft",
+        "model": "Xbox Series S",
+        "guarantee": 12,
+        "characteristics": {
+            "producer": "Microsoft",
+            "processor": "Custom AMD Zen 2",
+            "graphics": "Custom AMD RDNA 2",
+            "memory": "10 ГБ GDDR6",
+            "internal_storage": "512 ГБ NVMe SSD",
+            "resolution_support": "1440p",
+            "optical_drive": "Без пристрою оптичного зчитування",
+            "output_ports": ["HDMI", "USB"],
+            "wireless_connectivity": "Wi-Fi 5, Bluetooth 5.0",
+            "dimensions": "275 x 151 x 63.5 мм",
+            "weight": "1.93 кг",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "XBOXSERIESS-246810",
+        "title": "Ігрова приставка Xbox Series S 1TB",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі Xbox"
+        },
+        "images": {
+            "image_cover": "https://i.moyo.ua/img/products/5514/91_600.jpg",
+            "images_set": [
+                "https://i.moyo.ua/img/gallery/5514/91/1765089_main.jpg",
+                "https://i.moyo.ua/img/gallery/5514/91/1765092_main.jpg",
+                "https://i.moyo.ua/img/gallery/5514/91/1765085_main.jpg",
+                "https://i.moyo.ua/img/gallery/5514/91/1765086_main.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 17999,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": [],
+        "new": true,
+        "top_sales": false,
+        "summary": "Компактна консоль Xbox Series S з високоякісним геймплеєм та підтримкою ігор в 1440p.",
+        "color": "білий",
+        "product_code": "XBOXSERIESS-246810",
+        "additional_code": "135792",
+        "article": "XBOXSERIESS_2024",
+        "description": "Xbox Series S - це чудовий вибір для тих, хто шукає доступну та потужну консоль. Забезпечує якісний геймплей в роздільній здатності 1440p та підтримує великий вибір ігор.",
+        "producer": "Microsoft",
+        "model": "Xbox Series S",
+        "guarantee": 12,
+        "characteristics": {
+            "producer": "Microsoft",
+            "processor": "Custom AMD Zen 2",
+            "graphics": "Custom AMD RDNA 2",
+            "memory": "1 TБ",
+            "internal_storage": "512 ГБ NVMe SSD",
+            "resolution_support": "1440p",
+            "optical_drive": "Без пристрою оптичного зчитування",
+            "output_ports": ["HDMI", "USB"],
+            "wireless_connectivity": "Wi-Fi 5, Bluetooth 5.0",
+            "dimensions": "275 x 151 x 63.5 мм",
+            "weight": "1.93 кг",
+            "country_of_production": "США"
+        }
+    },
+
+    {
+        "id": "XBOXONES-951753",
+        "title": "Ігрова приставка Xbox Series One S 1TB",
+        "navigation": {
+            "category": "Консолі та ігри",
+            "subcategory": "Консолі Xbox"
+        },
+        "images": {
+            "image_cover": "https://i.allo.ua/media/catalog/product/cache/1/image/736x512/9df78eab33525d08d6e5fb8d27136e95/import/2814503611703792.jpeg",
+            "images_set": [
+                "https://i.allo.ua/media/catalog/product/cache/1/image/736x512/9df78eab33525d08d6e5fb8d27136e95/import/2837704011703792.jpg",
+                "https://i.allo.ua/media/catalog/product/cache/1/image/736x512/9df78eab33525d08d6e5fb8d27136e95/import/2837704111703792.jpg",
+                "https://i.allo.ua/media/catalog/product/cache/1/image/736x512/9df78eab33525d08d6e5fb8d27136e95/import/2837704211703792.jpg",
+                "https://i.allo.ua/media/catalog/product/cache/1/image/736x512/9df78eab33525d08d6e5fb8d27136e95/import/2837704311703792.jpg"
+            ]
+        },
+        "cost": {
+            "sale": false,
+            "price": 18124,
+            "currency": "UAH",
+            "discount_percentage": 0
+        },
+        "tags": [],
+        "new": false,
+        "top_sales": false,
+        "summary": "Компактна консоль Xbox One S з підтримкою HDR та потужними можливостями.",
+        "color": "білий",
+        "product_code": "XBOXONES-951753",
+        "additional_code": "753951",
+        "article": "XBOXONE_S_2024",
+        "description": "Xbox One S - це оптимальний вибір для тих, хто шукає якісний ігровий досвід. Завдяки підтримці HDR і вражаючій графіці, ця консоль забезпечить неперевершені враження від ігор.",
+        "producer": "Microsoft",
+        "model": "Xbox One S",
+        "guarantee": 12,
+        "characteristics": {
+            "producer": "Microsoft",
+            "processor": "Custom AMD Jaguar",
+            "graphics": "Custom AMD GCN",
+            "memory": "8 ГБ DDR3",
+            "internal_storage": "1 ТБ HDD",
+            "resolution_support": "1080p",
+            "optical_drive": "4K UHD Blu-ray",
+            "output_ports": ["HDMI", "USB"],
+            "wireless_connectivity": "Wi-Fi, Bluetooth",
+            "dimensions": "295 x 230 x 65 мм",
+            "weight": "2.9 кг",
+            "country_of_production": "США"
+        }
     }
 ]
