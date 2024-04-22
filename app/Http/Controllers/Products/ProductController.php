@@ -22,14 +22,14 @@ class ProductController extends Controller
     {
         $categories = Category::all();
         $products = Product::with('costs')->latest()->paginate(10);
-        return view('product.index', compact('products',  'categories'));
+        return view('product.index', compact('products', 'categories'));
     }
 
     public function create()
     {
         $categories = Category::all();
         $characteristics = new \stdClass(); // Создаем пустой объект
-        return view('product.create', compact('categories', 'characteristics' ));
+        return view('product.create', compact('categories', 'characteristics'));
     }
 
 

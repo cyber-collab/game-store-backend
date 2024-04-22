@@ -20,7 +20,6 @@ class ImportCategories extends Command
         $categories = json_decode(file_get_contents($jsonFile), true);
 
         foreach ($categories['data'] as $categoryData) {
-
             $downloader = new GoogleDriveDownloader();
 
             if (isset($categoryData['image'])) {

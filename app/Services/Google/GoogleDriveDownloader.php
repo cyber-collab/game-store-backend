@@ -30,5 +30,4 @@ class GoogleDriveDownloader
 
         throw new \InvalidArgumentException('Invalid image URL.');
     }
-
 }
