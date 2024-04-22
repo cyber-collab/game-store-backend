@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Interfaces\ProductRepositoryInterface;
+use App\Repositories\ProductRepository;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\UrlGenerator;
 use Nette\Utils\Paginator;
@@ -17,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
             $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
         }
         $this->app->register(\L5Swagger\L5SwaggerServiceProvider::class);
+        $this->app->bind(ProductRepositoryInterface::class, ProductRepository::class);
     }
 
     /**
