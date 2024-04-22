@@ -34,4 +34,4 @@ Route::get('/api-new-products', [ProductController::class, 'getProductsByTagNew'
 Route::get('/api-top-products', [ProductController::class, 'getProductsByTagTopSales']);
 Route::get('/api-products/category/{slug}', [ProductController::class, 'getProductsByCategory']);
 Route::get('/api-products/{categorySlug}/{subcategorySlug}', [ProductController::class, 'getProductsBySubcategory']);
-Route::get('/api-products/keyword/{keyword}', [ProductController::class, 'getProductsByKeywords']);
+Route::get('/search/{keyword}', [ProductController::class, 'getProductsByKeywords']);

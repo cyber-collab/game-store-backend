@@ -61,9 +61,11 @@ class ProductRepository implements ProductRepositoryInterface
 
     public function getProductsByKeywords(string $keyword): AnonymousResourceCollection
     {
-        return Product::where(function ($query) use ($keyword) {
+        $products = Product::where(function ($query) use ($keyword) {
             $query->where('title', 'like', '%' . $keyword . '%')
                 ->orWhere('description', 'like', '%' . $keyword . '%');
-        })->get();
+        })->with('tags')->get();
+
+        return ProductResource::collection($products);
     }
 }
