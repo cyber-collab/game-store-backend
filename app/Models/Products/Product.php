@@ -61,7 +61,7 @@ class Product extends Model
 
     public function categories()
     {
-        return $this->belongsToMany(Category::class, 'category_product');
+        return $this->belongsToMany(Category::class, 'category_product', 'product_id', 'category_id')->withPivot('subcategory_id');
     }
 
     public function images()
