@@ -68,4 +68,9 @@ class ProductRepository implements ProductRepositoryInterface
 
         return ProductResource::collection($products);
     }
+    public function getProductsSortingByDate(string $sortingMethod = 'desc'): AnonymousResourceCollection
+    {
+        $products = Product::orderBy('created_at', $sortingMethod)->get();
+        return ProductResource::collection($products);
+    }
 }

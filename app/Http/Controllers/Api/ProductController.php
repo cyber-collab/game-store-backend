@@ -144,4 +144,9 @@ class ProductController extends Controller
     {
         return $this->productRepository->getProductsByKeywords($keyword);
     }
+
+    public function getProductsSortingByDate(string $sortingMethod): AnonymousResourceCollection
+    {
+        return  $this->productRepository->getProductsSortingByDate($sortingMethod);
+    }
 }
