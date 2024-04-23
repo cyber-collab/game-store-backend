@@ -4,10 +4,15 @@ namespace App\Models\Products;
 
 use App\Models\Category\Category;
 use App\Models\Products\Characteristics;
+use Database\Factories\Products\ProductFactory;
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Products\Cost;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Carbon;
 
 /**
  *
@@ -23,35 +28,36 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string|null $product_code
  * @property string|null $additional_code
  * @property string|null $article
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Category> $categories
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Collection<int, Category> $categories
  * @property-read int|null $categories_count
  * @property-read Characteristics|null $characteristics
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Cost> $costs
+ * @property-read Collection<int, Cost> $costs
  * @property-read int|null $costs_count
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Products\Image> $images
+ * @property-read Collection<int, Image> $images
  * @property-read int|null $images_count
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Products\Tag> $tags
+ * @property-read Collection<int, Tag> $tags
  * @property-read int|null $tags_count
- * @method static \Database\Factories\Products\ProductFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|Product newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Product newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Product query()
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereAdditionalCode($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereArticle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereColor($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereNew($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereProductCode($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereQuantity($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereSummary($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereTopSales($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Product whereUpdatedAt($value)
- * @mixin \Eloquent
+ * @method static ProductFactory factory($count = null, $state = [])
+ * @method static Builder|Product newModelQuery()
+ * @method static Builder|Product newQuery()
+ * @method static Builder|Product query()
+ * @method static Builder|Product whereAdditionalCode($value)
+ * @method static Builder|Product whereArticle($value)
+ * @method static Builder|Product whereColor($value)
+ * @method static Builder|Product whereCreatedAt($value)
+ * @method static Builder|Product whereDescription($value)
+ * @method static Builder|Product whereId($value)
+ * @method static Builder|Product whereNew($value)
+ * @method static Builder|Product whereProductCode($value)
+ * @method static Builder|Product whereQuantity($value)
+ * @method static Builder|Product whereSummary($value)
+ * @method static Builder|Product whereTitle($value)
+ * @method static Builder|Product whereTopSales($value)
+ * @method static Builder|Product whereUpdatedAt($value)
+ * @method static orderBy(string $string, string $sortingMethod)
+ * @mixin Eloquent
  */
 class Product extends Model
 {

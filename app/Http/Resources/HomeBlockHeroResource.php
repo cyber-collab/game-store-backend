@@ -16,6 +16,7 @@ class HomeBlockHeroResource extends JsonResource
     {
         return  [
             'title' => $this->title,
+            'subtitle' => $this->subtitle,
             'description' => $this->description,
             'images' => HeroImageResource::collection($this->heroImages),
         ];

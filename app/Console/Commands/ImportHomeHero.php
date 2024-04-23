@@ -34,6 +34,7 @@ class ImportHomeHero extends Command
         foreach ($heroBlock['data'] as $hero) {
             $heroBlock = HomeBlockHero::updateOrCreate([
                     'title' => $hero['title'],
+                    'subtitle' => $hero['subtitle'],
                     'description' => $hero['description'],
                 ]);
 

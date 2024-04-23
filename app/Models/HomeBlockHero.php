@@ -34,7 +34,7 @@ class HomeBlockHero extends Model
 
     protected $table = 'homepage_blocks_hero';
 
-    protected $fillable = ['title', 'description'];
+    protected $fillable = ['title', 'subtitle', 'description'];
 
     public function heroImages(): HasMany
     {
