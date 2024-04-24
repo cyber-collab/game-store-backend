@@ -11,4 +11,5 @@ interface ProductRepositoryInterface
     public function getProductsBySubcategory(string $categorySlug, string $subCategorySlug);
     public function getProductsByKeywords(string $keyword);
     public function getProductsSortingByDate(string $sortingMethod);
+    public function getProductsById(int $id);
 }

@@ -74,4 +74,11 @@ class ProductRepository implements ProductRepositoryInterface
 
         return ProductResource::collection($products);
     }
+
+    public function getProductsById(int $id): ProductResource
+    {
+        $product = Product::findOrFail($id);
+
+        return new ProductResource($product);
+    }
 }

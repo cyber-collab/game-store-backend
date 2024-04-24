@@ -120,6 +120,11 @@ class ProductController extends Controller
         return response()->noContent();
     }
 
+    public function show(int $id): ProductResource
+    {
+        return $this->productRepository->getProductsById($id);
+    }
+
     public function getProductsByTagNew(): AnonymousResourceCollection
     {
         return $this->productRepository->getProductsByTagNew();

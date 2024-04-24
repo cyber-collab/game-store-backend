@@ -57,6 +57,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Product whereTopSales($value)
  * @method static Builder|Product whereUpdatedAt($value)
  * @method static orderBy(string $string, string $sortingMethod)
+ * @method static findOrFail(int $id)
  * @mixin Eloquent
  */
 class Product extends Model
