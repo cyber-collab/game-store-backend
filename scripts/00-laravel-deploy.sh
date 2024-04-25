@@ -37,4 +37,7 @@ php artisan import:home-hero
 echo "Import products..."
 php artisan import:products
 
+echo "Clear cache after deploying"
+php artisan optimize
+
 echo "done deploying"
