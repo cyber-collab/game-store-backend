@@ -23,13 +23,10 @@ class ProductResource extends JsonResource
             'product_code' => $this->product_code,
             'additional_code' => $this->additional_code,
             'article' => $this->article,
-            'price' => $this->price,
-            'currency' => $this->currency,
-            'discount_percentage' => $this->discount_percentage,
-            'sale' => $this->sale,
             'characteristics' => new CharacteristicResource($this->characteristics),
             'tags' => TagResources::collection($this->tags),
-            'categories' => CategoryResource::collection($this->categories)
+            'categories' => CategoryResource::collection($this->categories),
+            'cost' => CostResource::collection($this->costs)
         ];
     }
 }
