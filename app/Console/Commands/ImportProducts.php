@@ -37,6 +37,13 @@ class ImportProducts extends Command
                 'sale' => $productData['cost']['sale'] ?? false,
             ]);
 
+            $product->costs()->create([
+                'price' => $productData['cost']['price'],
+                'currency' => $productData['cost']['currency'],
+                'discount_percentage' => $productData['cost']['discount_percentage'],
+                'sale' => $productData['cost']['sale'] ?? false,
+            ]);
+
             if (isset($productData['characteristics'])) {
                 $product->characteristics()->create([
                     'characteristics' => json_encode($productData['characteristics']),
