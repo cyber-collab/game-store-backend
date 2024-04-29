@@ -6,7 +6,6 @@ use App\Http\Resources\ProductResource;
 use App\Interfaces\ProductRepositoryInterface;
 use App\Models\Products\Product;
 use App\Models\SubCategory;
-use DebugBar\DebugBar;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Support\Facades\DB;
 
@@ -20,7 +19,7 @@ class ProductRepository implements ProductRepositoryInterface
     public function getProductsByTagTopSales(): AnonymousResourceCollection
     {
         $products = Product::has('tags')->whereHas('tags', function ($query) {
-            $query->whereIn('tag', [strtoupper('топ'), strtoupper('новинки')]);
+            $query->whereIn('tag', [DB::raw("UPPER('топ')"), DB::raw("UPPER('новинки')")]);
         })->get();
 
         return ProductResource::collection($products);
@@ -53,7 +52,7 @@ class ProductRepository implements ProductRepositoryInterface
     public function getProductsByTagNew(): AnonymousResourceCollection
     {
         $products = Product::has('tags')->whereHas('tags', function ($query) {
-            $query->where('tag', strtoupper('новинки'));
+            $query->where('tag', DB::raw("UPPER('новинки')"));
         })->get();
 
         return ProductResource::collection($products);
@@ -62,12 +61,13 @@ class ProductRepository implements ProductRepositoryInterface
     public function getProductsByKeywords(string $keyword): AnonymousResourceCollection
     {
         $products = Product::where(function ($query) use ($keyword) {
-            $query->where('title', 'like', '%' . $keyword . '%')
-                ->orWhere('description', 'like', '%' . $keyword . '%');
+            $query->where('title', 'ILIKE', '%' . $keyword . '%')
+                ->orWhere('description', 'ILIKE', '%' . $keyword . '%');
         })->with('tags')->get();
 
         return ProductResource::collection($products);
     }
+
     public function getProductsSortingByDate(string $sortingMethod = 'desc'): AnonymousResourceCollection
     {
         $products = Product::orderBy('created_at', $sortingMethod)->get();
