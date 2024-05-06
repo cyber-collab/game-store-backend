@@ -31,19 +31,8 @@ class ImportBanners extends Command
         $jsonFile = Storage::path('public/api-banners.json');
         $partners = json_decode(file_get_contents($jsonFile), true);
 
-        $client = new Client();
-
         foreach ($partners['data'] as $item) {
-            preg_match('/\/file\/d\/([-\w]+)/', $item['image'], $matches);
-
-            $fileUrl = "https://drive.google.com/uc?id={$matches[1]}";
-            $response = $client->get($fileUrl);
-            $storagePath = 'public/images/banners/';
-            $fileName = 'banner_' . $matches[1] . '.png';
-
-            Storage::put($storagePath . $fileName, $response->getBody());
-
-            Banner::updateOrCreate(['image' => $fileName]);
+            Banner::updateOrCreate(['image' => $item['image']]);
         }
 
         $this->info('Images from Google Drive imported successfully.');

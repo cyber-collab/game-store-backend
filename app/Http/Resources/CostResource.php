@@ -15,10 +15,10 @@ class CostResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-        'sale' =>   $this->sale,
-        'price' => $this->price,
-        'currency' =>  $this->currency,
-        'discount_percentage' => $this->discount_percentage,
+            'sale' => $this->sale,
+            'price' => $this->price,
+            'currency' => $this->currency,
+            'discount_percentage' => $this->discount_percentage,
         ];
     }
 }
