@@ -25,10 +25,15 @@ class ImportCategories extends Command
             if (isset($categoryData['image'])) {
                 $fileName = $downloader->downloadImage($categoryData['image']);
             }
+
+            if (isset($categoryData['icon'])) {
+                $fileNameIcon = $downloader->downloadImage($categoryData['icon']);
+            }
             $category = Category::updateOrCreate([
                 'name' => $categoryData['name'],
                 'status' => $categoryData['status'],
                 'image' => $fileName ?? null,
+                'icon' => $fileNameIcon ?? null,
             ]);
 
             if (isset($categoryData['subcategories'])) {

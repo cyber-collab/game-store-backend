@@ -1,227 +1,236 @@
-{"data": [
-    {
-        "id":"01",
-        "name":"ПК та комплектуючі",
-        "slug":"components",
-        "status": 1,
-        "image": "https://drive.google.com/file/d/1n5JWm1NI7xr85VCuuGHLa2QH6j3EnBdu/view?usp=drive_link",
-        "subcategories":[
-            {
-                "id": "01.1",
-                "name":"Готові рішення",
-                "slug":"ready-solutions"
-            },
-            {
-                "id": "01.2",
-                "name":"Процесори",
-                "slug":"processors"
-            },
-            {
-                "id": "01.3",
-                "name":"SSD накопичувачі",
-                "slug":"ssd-drives"
-            },
-            {
-                "id": "01.4",
-                "name":"Жорсткі диски",
-                "slug":"hard-drivers"
-            },
-            {
-                "id": "01.5",
-                "name":"Відеокарти",
-                "slug":"video-cards"
-            }
-        ]
-    },
-    {
-        "id":"02",
-        "name":"Ноутбуки",
-        "slug":"netbooks",
-        "status": 1,
-        "image": "https://drive.google.com/file/d/1TMdqn_zsWju-pvS6be7WUEBKp2VXvLHV/view?usp=drive_link",
-        "subcategories":[
-            {
-                "id": "02.1",
-                "name":"Ноутбуки ASUS",
-                "slug":"asus-netbooks"
-            },
-            {
-                "id": "02.2",
-                "name":"Ноутбуки Acer",
-                "slug":"acer-netbooks"
-            },
-            {
-                "id": "02.3",
-                "name":"Ноутбуки Razer",
-                "slug":"razer-netbooks"
-            },
-            {
-                "id": "02.4",
-                "name":"Ноутбуки Gigabyte",
-                "slug":"gigabyte-netbooks"
-            },
-            {
-                "id": "02.5",
-                "name":"Ноутбуки Dell",
-                "slug":"dell-netbooks"
-            },
-            {
-                "id": "02.5",
-                "name":"Ноутбуки MSI",
-                "slug":"msi-netbooks"
-            }
-        ]
-    },
-    {
-        "id":"03",
-        "name":"Консолі та ігри",
-        "slug":"console-and-games",
-        "status": 1,
-        "image": "https://drive.google.com/file/d/13uikKGDtroPIFqTD2ed-AY5gqDNyt-g_/view?usp=drive_link",
-        "subcategories":[
-            {
-                "id": "03.1",
-                "name":"Консолі PlayStation",
-                "slug":"playstation-consoles"
-            },
-            {
-                "id": "03.2",
-                "name":"Консолі XBOX",
-                "slug":"xbox-consoles"
-            },
-            {
-                "id": "03.3",
-                "name":"Консолі Nintendo",
-                "slug":"nintendo-consoles"
-            },
-            {
-                "id": "03.4",
-                "name":"Інші консолі",
-                "slug":"another-consoles"
-            },
-            {
-                "id": "03.5",
-                "name":"Ігри для PlayStation",
-                "slug":"playstation-games"
-            },
-            {
-                "id": "03.6",
-                "name":"Ігри для XBOX",
-                "slug":"xbox-games"
-            },
-            {
-                "id": "03.7",
-                "name":"Ігри для Nintendo",
-                "slug":"nintendo-games"
-            }
-        ]
-    },
-    {
-        "id":"04",
-        "name":"Аксесуари",
-        "slug":"",
-        "status": 1,
-        "image": "https://drive.google.com/file/d/1AIRLY2KR59riAXL2xrbbUrDoxk9jpAVJ/view?usp=drive_link",
-        "subcategories":[
-            {
-                "id": "04.1",
-                "name":"Ігрові клавіатури",
-                "slug":"gaming-keyboards"
-            },
-            {
-                "id": "04.2",
-                "name":"Ігрові миші",
-                "slug":"gaming-mouses"
-            },
-            {
-                "id": "04.3",
-                "name":"Ігрові навушники",
-                "slug":"gaming-headphones"
-            },
-            {
-                "id": "04.4",
-                "name":"Окуляри віртуальної реальності",
-                "slug":"virtual-reality-glasses"
-            },
-            {
-                "id": "04.5",
-                "name":"Джойстики та геймпади",
-                "slug":"joysticks-gamepads"
-            },
-            {
-                "id": "04.6",
-                "name":"Рулі та штурвали",
-                "slug":"Rudder-steering-wheels"
-            }
-        ]
-    },
-    {
-        "id":"05",
-        "name":"Перефірія",
-        "slug":"periphery",
-        "status": 1,
-        "image": "https://drive.google.com/file/d/1r2kBjk4ilcE6pXC_k1zwDSIClsAn45u0/view?usp=drive_link",
-        "subcategories":[
-            {
-                "id": "05.1",
-                "name":"Ігрові столи",
-                "slug":"gaming-tables"
-            },
-            {
-                "id": "05.2",
-                "name":"Ігрові крісла",
-                "slug":"gaming-chairs"
-            },
-            {
-                "id": "05.3",
-                "name":"Ігрові поверхні",
-                "slug":"gaming-surfaces"
-            }
-        ]
-    },
-    {
-        "id":"06",
-        "name":"Акції і пропозиції",
-        "slug":"#",
-        "status": 1
-    },
-    {
-        "id":"07",
-        "name":"Покупцеві",
-        "slug":"pokuptsevi",
-        "status": 1,
-        "image": null,
-        "subcategories":[
-            {
-                "id": "07.1",
-                "name":"Про нас",
-                "slug":"pro-nas"
-            },
-            {
-                "id": "07.2",
-                "name":"FAQ та допомога",
-                "slug":"faq-ta-dopomoha"
-            },
-            {
-                "id": "07.3",
-                "name":"Гарантійне обслуговування",
-                "slug":"harantiine-obsluhovuvannia"
-            },
-            {
-                "id": "07.4",
-                "name":"Доставка і оплата",
-                "slug":"dostavka-i-oplata"
-            },
-            {
-                "id": "07.5",
-                "name":"Обмін та повернення",
-                "slug":"obmin-ta-povernennia"
-            },
-            {
-                "id": "07.6",
-                "name":"Політика конфеденційності",
-                "slug":"polityka-konfedentsiinosti"
-            }
-        ]
-    }
-]}
+{
+    "data": [
+        {
+            "id": "01",
+            "name": "ПК та комплектуючі",
+            "slug": "components",
+            "status": 1,
+            "image": "https://drive.google.com/file/d/1n5JWm1NI7xr85VCuuGHLa2QH6j3EnBdu/view?usp=drive_link",
+            "icon": "https://drive.google.com/file/d/1ZcC_LVX-MIbNhhDGPzoNQxg5L93bwYjB/view?usp=drive_link",
+            "subcategories": [
+                {
+                    "id": "01.1",
+                    "name": "Готові рішення",
+                    "slug": "ready-solutions"
+                },
+                {
+                    "id": "01.2",
+                    "name": "Процесори",
+                    "slug": "processors"
+                },
+                {
+                    "id": "01.3",
+                    "name": "SSD накопичувачі",
+                    "slug": "ssd-drives"
+                },
+                {
+                    "id": "01.4",
+                    "name": "Жорсткі диски",
+                    "slug": "hard-drivers"
+                },
+                {
+                    "id": "01.5",
+                    "name": "Відеокарти",
+                    "slug": "video-cards"
+                }
+            ]
+        },
+        {
+            "id": "02",
+            "name": "Ноутбуки",
+            "slug": "netbooks",
+            "status": 1,
+            "image": "https://drive.google.com/file/d/1TMdqn_zsWju-pvS6be7WUEBKp2VXvLHV/view?usp=drive_link",
+            "icon": "https://drive.google.com/file/d/1F19xIs3KpXvp4AvGGIXigwnDYUmgFcsH/view?usp=drive_link",
+            "subcategories": [
+                {
+                    "id": "02.1",
+                    "name": "Ноутбуки ASUS",
+                    "slug": "asus-netbooks"
+                },
+                {
+                    "id": "02.2",
+                    "name": "Ноутбуки Acer",
+                    "slug": "acer-netbooks"
+                },
+                {
+                    "id": "02.3",
+                    "name": "Ноутбуки Razer",
+                    "slug": "razer-netbooks"
+                },
+                {
+                    "id": "02.4",
+                    "name": "Ноутбуки Gigabyte",
+                    "slug": "gigabyte-netbooks"
+                },
+                {
+                    "id": "02.5",
+                    "name": "Ноутбуки Dell",
+                    "slug": "dell-netbooks"
+                },
+                {
+                    "id": "02.5",
+                    "name": "Ноутбуки MSI",
+                    "slug": "msi-netbooks"
+                }
+            ]
+        },
+        {
+            "id": "03",
+            "name": "Консолі та ігри",
+            "slug": "console-and-games",
+            "status": 1,
+            "image": "https://drive.google.com/file/d/13uikKGDtroPIFqTD2ed-AY5gqDNyt-g_/view?usp=drive_link",
+            "icon": "https://drive.google.com/file/d/1e77z9c5dqRKsoH4eHFjceSMdvkT-M80q/view?usp=drive_link",
+            "subcategories": [
+                {
+                    "id": "03.1",
+                    "name": "Консолі PlayStation",
+                    "slug": "playstation-consoles"
+                },
+                {
+                    "id": "03.2",
+                    "name": "Консолі XBOX",
+                    "slug": "xbox-consoles"
+                },
+                {
+                    "id": "03.3",
+                    "name": "Консолі Nintendo",
+                    "slug": "nintendo-consoles"
+                },
+                {
+                    "id": "03.4",
+                    "name": "Інші консолі",
+                    "slug": "another-consoles"
+                },
+                {
+                    "id": "03.5",
+                    "name": "Ігри для PlayStation",
+                    "slug": "playstation-games"
+                },
+                {
+                    "id": "03.6",
+                    "name": "Ігри для XBOX",
+                    "slug": "xbox-games"
+                },
+                {
+                    "id": "03.7",
+                    "name": "Ігри для Nintendo",
+                    "slug": "nintendo-games"
+                }
+            ]
+        },
+        {
+            "id": "04",
+            "name": "Аксесуари",
+            "slug": "",
+            "status": 1,
+            "image": "https://drive.google.com/file/d/1AIRLY2KR59riAXL2xrbbUrDoxk9jpAVJ/view?usp=drive_link",
+            "icon": "https://drive.google.com/file/d/1Xgarxk_6jp0wiFKCnvnqeHvT3Hg1USvO/view?usp=drive_link",
+            "subcategories": [
+                {
+                    "id": "04.1",
+                    "name": "Ігрові клавіатури",
+                    "slug": "gaming-keyboards"
+                },
+                {
+                    "id": "04.2",
+                    "name": "Ігрові миші",
+                    "slug": "gaming-mouses"
+                },
+                {
+                    "id": "04.3",
+                    "name": "Ігрові навушники",
+                    "slug": "gaming-headphones"
+                },
+                {
+                    "id": "04.4",
+                    "name": "Окуляри віртуальної реальності",
+                    "slug": "virtual-reality-glasses"
+                },
+                {
+                    "id": "04.5",
+                    "name": "Джойстики та геймпади",
+                    "slug": "joysticks-gamepads"
+                },
+                {
+                    "id": "04.6",
+                    "name": "Рулі та штурвали",
+                    "slug": "Rudder-steering-wheels"
+                }
+            ]
+        },
+        {
+            "id": "05",
+            "name": "Перефірія",
+            "slug": "periphery",
+            "status": 1,
+            "image": "https://drive.google.com/file/d/1r2kBjk4ilcE6pXC_k1zwDSIClsAn45u0/view?usp=drive_link",
+            "icon": "https://drive.google.com/file/d/17AoZX5iS54DdL2GfL1MGAxSuAKBRv7KD/view?usp=drive_link",
+            "subcategories": [
+                {
+                    "id": "05.1",
+                    "name": "Ігрові столи",
+                    "slug": "gaming-tables"
+                },
+                {
+                    "id": "05.2",
+                    "name": "Ігрові крісла",
+                    "slug": "gaming-chairs"
+                },
+                {
+                    "id": "05.3",
+                    "name": "Ігрові поверхні",
+                    "slug": "gaming-surfaces"
+                }
+            ]
+        },
+        {
+            "id": "06",
+            "name": "Акції і пропозиції",
+            "icon": "https://drive.google.com/file/d/19dsTZrj5KwZYcA33qmtmipkGHiKVWSy7/view?usp=drive_link",
+            "slug": "#",
+            "status": 1
+        },
+        {
+            "id": "07",
+            "name": "Покупцеві",
+            "slug": "pokuptsevi",
+            "status": 1,
+            "image": null,
+            "icon": "https://drive.google.com/file/d/1bq6w-zhXayJ3H1MQs5VUP1QSDodPkcWx/view?usp=drive_link",
+            "subcategories": [
+                {
+                    "id": "07.1",
+                    "name": "Про нас",
+                    "slug": "pro-nas"
+                },
+                {
+                    "id": "07.2",
+                    "name": "FAQ та допомога",
+                    "slug": "faq-ta-dopomoha"
+                },
+                {
+                    "id": "07.3",
+                    "name": "Гарантійне обслуговування",
+                    "slug": "harantiine-obsluhovuvannia"
+                },
+                {
+                    "id": "07.4",
+                    "name": "Доставка і оплата",
+                    "slug": "dostavka-i-oplata"
+                },
+                {
+                    "id": "07.5",
+                    "name": "Обмін та повернення",
+                    "slug": "obmin-ta-povernennia"
+                },
+                {
+                    "id": "07.6",
+                    "name": "Політика конфеденційності",
+                    "slug": "polityka-konfedentsiinosti"
+                }
+            ]
+        }
+    ]
+}
