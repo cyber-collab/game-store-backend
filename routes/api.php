@@ -36,3 +36,4 @@ Route::get('/api-products/category/{slug}', [ProductController::class, 'getProdu
 Route::get('/api-products/{categorySlug}/{subcategorySlug}', [ProductController::class, 'getProductsBySubcategory']);
 Route::get('/search/{keyword}', [ProductController::class, 'getProductsByKeywords']);
 Route::get('/search-by-date/{sortingMethod}', [ProductController::class, 'getProductsSortingByDate']);
+Route::get('/search-by-price/{sortingMethod}', [ProductController::class, 'getProductsSortingByPrice']);

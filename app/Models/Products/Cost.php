@@ -2,8 +2,11 @@
 
 namespace App\Models\Products;
 
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
 /**
  *
@@ -14,20 +17,21 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $price
  * @property string $currency
  * @property int|null $discount_percentage
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @method static \Illuminate\Database\Eloquent\Builder|Cost newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Cost newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Cost query()
- * @method static \Illuminate\Database\Eloquent\Builder|Cost whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Cost whereCurrency($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Cost whereDiscountPercentage($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Cost whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Cost wherePrice($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Cost whereProductId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Cost whereSale($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Cost whereUpdatedAt($value)
- * @mixin \Eloquent
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @method static Builder|Cost newModelQuery()
+ * @method static Builder|Cost newQuery()
+ * @method static Builder|Cost query()
+ * @method static Builder|Cost whereCreatedAt($value)
+ * @method static Builder|Cost whereCurrency($value)
+ * @method static Builder|Cost whereDiscountPercentage($value)
+ * @method static Builder|Cost whereId($value)
+ * @method static Builder|Cost wherePrice($value)
+ * @method static Builder|Cost whereProductId($value)
+ * @method static Builder|Cost whereSale($value)
+ * @method static Builder|Cost whereUpdatedAt($value)
+ * @method static orderBy(string $string, string $sortingMethod)
+ * @mixin Eloquent
  */
 class Cost extends Model
 {
@@ -37,6 +41,5 @@ class Cost extends Model
         'price',
         'currency',
         'discount_percentage',
-
     ];
 }
