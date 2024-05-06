@@ -21,6 +21,7 @@ class CategoryResource extends JsonResource
             'slug' => $this->slug,
             'status' => $this->status,
             'image' => $this->image,
+            'icon' => $this->icon,
             'subcategories' => $this->hasPivotLoaded('category_product') ?
                 SubCategory::where('id', $this->pivot->subcategory_id)->get() :
                 SubCategoryResource::collection($this->subcategories),

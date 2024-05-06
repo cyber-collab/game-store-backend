@@ -5,9 +5,14 @@ namespace App\Models\Category;
 use App\Models\Products\Product;
 use App\Models\SubCategory;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Database\Factories\Category\CategoryFactory;
+use Eloquent;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Carbon;
 
 /**
  *
@@ -20,34 +25,34 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string|null $image
  * @property int $status
  * @property int|null $parent_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Product> $products
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Collection<int, Product> $products
  * @property-read int|null $products_count
- * @property-read \Illuminate\Database\Eloquent\Collection<int, SubCategory> $subcategories
+ * @property-read Collection<int, SubCategory> $subcategories
  * @property-read int|null $subcategories_count
- * @method static \Database\Factories\Category\CategoryFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|Category newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Category newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Category query()
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereImage($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereParentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereSlug($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereStatus($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Category whereUpdatedAt($value)
- * @mixin \Eloquent
+ * @method static CategoryFactory factory($count = null, $state = [])
+ * @method static Builder|Category newModelQuery()
+ * @method static Builder|Category newQuery()
+ * @method static Builder|Category query()
+ * @method static Builder|Category whereCreatedAt($value)
+ * @method static Builder|Category whereDescription($value)
+ * @method static Builder|Category whereId($value)
+ * @method static Builder|Category whereImage($value)
+ * @method static Builder|Category whereName($value)
+ * @method static Builder|Category whereParentId($value)
+ * @method static Builder|Category whereSlug($value)
+ * @method static Builder|Category whereStatus($value)
+ * @method static Builder|Category whereTitle($value)
+ * @method static Builder|Category whereUpdatedAt($value)
+ * @mixin Eloquent
  */
 class Category extends Model
 {
     use HasFactory;
     use Sluggable;
 
-    protected $fillable = ['name', 'title',  'image', 'slug', 'description', 'parent_id', 'status'];
+    protected $fillable = ['name', 'icon', 'title',  'image', 'slug', 'description', 'parent_id', 'status'];
 
     public function products()
     {
