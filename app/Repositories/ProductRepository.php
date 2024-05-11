@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use App\Http\Resources\ProductResource;
 use App\Interfaces\ProductRepositoryInterface;
+use App\Models\Products\Cost;
 use App\Models\Products\Product;
 use App\Models\SubCategory;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
@@ -71,6 +72,15 @@ class ProductRepository implements ProductRepositoryInterface
     public function getProductsSortingByDate(string $sortingMethod = 'desc'): AnonymousResourceCollection
     {
         $products = Product::orderBy('created_at', $sortingMethod)->get();
+
+        return ProductResource::collection($products);
+    }
+
+    public function getProductsSortingByPrice(string $sortingMethod): AnonymousResourceCollection
+    {
+        $products = Product::select(['products.*', 'costs.price as cost_price'])
+        ->join('costs', 'costs.product_id', '=', 'products.id')
+        ->orderBy('cost_price', $sortingMethod)->get();
 
         return ProductResource::collection($products);
     }
